@@ -1,0 +1,412 @@
+import Image from "next/image";
+import BRlogo from "../public/img/logo/BRlogo.png";
+import mBRlogo from "../public/img/logo/mBRlogo.png";
+import WebDevTab from "../public/img/navigate/web/82c.png";
+import AdminTab from "../public/img/navigate/admin/a3.png";
+import SocialTab from "../public/img/navigate/social/s2.png";
+import AppProjects from "../public/img/navigate/projects/p2.png";
+import AppBlog from "../public/img/navigate/blog/b2.png";
+import AppTweak from "../public/img/navigate/tweak/t2.png";
+import AppAbout from "../public/img/navigate/about/a1.png";
+import AppTeam from "../public/img/navigate/team/t8.png";
+
+export function Index() {
+
+  /*
+   * Build and Run v.2.0.2 Index.
+   *
+   * Note: The corresponding styles are in the ./index.css file.
+   */
+
+  return (
+    <div className="wrapper">
+      <div className="container">
+        <div id="mBRlogo" className="show-on-desktop hide-on-mobile">
+          <Image src={mBRlogo} alt="mBRlogo" />
+        </div>
+
+        <div id="welcome">
+          <h1>
+            <span> Introducing The Future</span>
+            Welcome To Our Community 👋
+          </h1>
+        </div>
+        <div id="description">
+          <span>You can access our online platform with your mobile device and desktop.</span>
+          <div></div>
+          <span>We are currently building our IOS and Android App. Stay tuned!</span>
+        </div>
+
+        <div id="hero" className="rounded">
+          <div className="text-container">
+            <h2>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+              <span>You&apos;re up and running</span>
+            </h2>
+            <a href="#webdev-tab"> Build a Website </a>
+          </div>
+          <div className="logo-container">
+            <svg
+              fill="currentColor"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            ></svg>
+            <Image src={BRlogo} alt="BRlogo" />
+          </div>
+        </div>
+
+        <div id="middle-content">
+          <div id="learning-materials" className="rounded shadow">
+            <h2>App Features</h2>
+            <a
+              href="https://www.brstore.us/projects/"
+              target="_blank"
+              rel="noreferrer"
+              className="list-item-link"
+            >
+              <div className="features">
+              <Image src={AppProjects} alt="AppProjects" />
+              </div>
+        
+              <span>
+                Projects
+                <span>Good art inspires, Good design motivates </span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.brstore.us/blog/"
+              target="_blank"
+              rel="noreferrer"
+              className="list-item-link"
+            >
+              <div className="features">
+              <Image src={AppBlog} alt="AppBlog" />
+              </div>
+           
+              <span>
+                Blog
+                <span>Be part of our community ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.brstore.us/tweak-apps/"
+              target="_blank"
+              rel="noreferrer"
+              className="list-item-link"
+            >
+               <div className="features">
+              <Image src={AppTweak} alt="AppTweak" />
+              </div>
+                <title>Tweak Apps</title>
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              {/* </svg> */}
+              <span>
+                Tweak Apps
+                <span>Tools that could make your life much easier </span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.brstore.us/about/"
+              target="_blank"
+              rel="noreferrer"
+              className="list-item-link"
+            >
+              
+              <div className="features">
+              <Image src={AppAbout} alt="AppAbout" />
+              </div>
+              
+              <span>
+                About
+                <span> What we represent to you ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.brstore.us/team/"
+              target="_blank"
+              rel="noreferrer"
+              className="list-item-link"
+            >
+                <div className="features">
+              <Image src={AppTeam} alt="AppTeam" />
+              </div>
+              <span>
+                Team
+                <span>Individuals with outstanding skills ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+              </span>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+          <div id="other-links">
+            <a
+              id="webdev-tab"
+              className="button-pill rounded shadow"
+              href="https://www.brstore.us/pricing/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Image src={WebDevTab} alt="WebDevTab" />
+
+              <title>Build a Website</title>
+              <span>
+                Start Now
+                <span>The ideal method for creating a business website</span>
+              </span>
+            </a>
+            <div id="nx-cloud" className="rounded shadow">
+              <div>
+                <div id="Admin" className="Admin">
+                  <Image src={AdminTab} alt="AdminTab" />
+                </div>
+                <h2>
+                  Administration Panel
+                  <span>Users Portal</span>
+                </h2>
+              </div>
+              <p>
+                Using this platform, you may control what happens on your website
+              </p>
+              <a href="https://www.brstore.us/admin/" target="_blank">
+                <div>
+                  <pre>Access Now</pre>
+                </div>
+              </a>
+              <a
+                href="https://www.brstore.us/guide"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {' '}
+                Docs 📖 {' '}
+              </a>
+            </div>
+            <a
+              id="nx-repo"
+              className="button-pill rounded shadow"
+              href="https://smmfollowers.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div id="Social" className="Social">
+                <Image src={SocialTab} alt="SocialTab" />
+              </div>
+              <span>
+                Social Media Booster
+                <span> Powerful Engagement Tool </span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div id="commands" className="rounded shadow">
+          <h2>Build and Run</h2>
+          <p>Learn How To Get Started</p>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              FAQs
+            </summary>
+            <pre>
+              <span>What is Build and Run?</span>
+              Build and Run (B&R) is a technology company that provides multiple services from all categories for a fair price.
+              <span>What service do we provide?</span>
+              We provides all kinds of services, such as Website, Application Development, Design, Arts, Social Media Marketing, News, Tweaks, and More.
+              <span>What makes our Administrator Panel so special?</span>
+              First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
+              <span>How can you reach us?</span>
+              Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
+              <span>How can you partner with us?</span>
+              Send us an email at support@brstore.us if you are a person or business and would want to collaborate with us.
+              <span>How can you join our team?</span>
+              Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@brstore.us.
+            </pre>
+          </details>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Privacy Policy
+            </summary>
+            <pre>Navigate to the tab 'Company' in the footer section.</pre>
+          </details>
+          <details>
+            <summary>
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              Terms Of Service
+            </summary>
+            <pre>
+              Navigate to the tab 'Company' in the footer section.
+            </pre>
+          </details>
+        </div>
+
+        <p id="love">
+          Build and Run v2.0.2 crafted with
+          <svg
+            fill="currentColor"
+            stroke="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+            />
+          </svg>
+        </p>
+      </div>
+      <div>
+        <footer className="footer">
+          <div className="waves">
+            {/* <div className="wave" id="wave1"></div> */}
+            {/* <div className="wave" id="wave2"></div> */}
+            {/* <div className="wave" id="wave3"></div> */}
+            {/* <div className="wave" id="wave4"></div> */}
+          </div>
+          <ul className="social-icon">
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a></li>
+          </ul>
+          <ul className="menu">
+            <li className="menu__item"><a className="menu__link" href="https://www.brstore.us/company" target="_blank">Company</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://www.brstore.us/partners/" target="_blank">Partners</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+
+          </ul>
+          <p>&copy;2023 B&R | All Rights Reserved</p>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </div>
+    </div>
+  );
+}
+
+export default Index;
