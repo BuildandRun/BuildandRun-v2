@@ -467,6 +467,11 @@ summary svg {
   flex-direction: column;
 }
 
+.social-bar {
+  width: 32px;
+  height: auto;
+}
+
 .social-icon,
 .menu {
   position: relative;

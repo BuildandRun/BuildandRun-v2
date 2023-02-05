@@ -9,6 +9,11 @@ import AppBlog from "../public/img/navigate/blog/b2.png";
 import AppTweak from "../public/img/navigate/tweak/t2.png";
 import AppAbout from "../public/img/navigate/about/a1.png";
 import AppTeam from "../public/img/navigate/team/t8.png";
+import Facebook from "../public/img/footer/logo-facebook.svg"
+import Twitter from "../public/img/footer/logo-twitter.svg"
+import Instagram from "../public/img/footer/logo-instagram.svg"
+import Linkedin from "../public/img/footer/logo-linkedin.svg"
+import Youtube from "../public/img/footer/logo-youtube.svg"
 
 export function Index() {
 
@@ -379,19 +384,29 @@ export function Index() {
           </div>
           <ul className="social-icon">
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <div className="social-bar">
+            <Image src={Facebook} alt="Facebook" />
+            </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <div className="social-bar">
+            <Image src={Twitter} alt="Twitter" />
+            </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <div className="social-bar">
+            <Image src={Instagram} alt="Instagram" />
+            </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
+            <div className="social-bar">
+            <Image src={Linkedin} alt="Linkedin" />
+            </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
-              <ion-icon name="logo-youtube"></ion-icon>
+            <div className="social-bar">
+            <Image src={Youtube} alt="Youtube" />
+            </div>
             </a></li>
           </ul>
           <ul className="menu">
