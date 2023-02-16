@@ -248,13 +248,13 @@ export function Index() {
               <p>
                 Using this platform, you may control what happens on your website
               </p>
-              <a href="https://www.admin.brstore.us" target="_blank">
+              <a href="https://admin.brstore.us" target="_blank">
                 <div>
                   <pre>Access Now</pre>
                 </div>
               </a>
               <a
-                href="https://www.admin.brstore.us/admin-panel-v1.0.1/"
+                href="https://admin.brstore.us/admin-panel-v1.0.1/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -265,7 +265,7 @@ export function Index() {
             <a
               id="nx-repo"
               className="button-pill rounded shadow"
-              href="https://www.media.brstore.us"
+              href="https://media.brstore.us"
               target="_blank"
               rel="noreferrer"
             >
