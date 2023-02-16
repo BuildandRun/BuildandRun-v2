@@ -2,15 +2,11 @@
   "name": "app",
   "version": "0.0.1",
   "dependencies": {
-    "@nrwl/next": "14.6.3",
+    "@nrwl/next": "^14.8.6",
     "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@nrwl/workspace": "14.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "~4.7.2"
-  },
-  "devDependencies": {
-    "@testing-library/react": "13.3.0"
   },
   "scripts": {
     "start": "next start"

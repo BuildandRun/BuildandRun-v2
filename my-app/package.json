@@ -4,14 +4,15 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'"
   },
   "private": true,
   "dependencies": {
-    "@nrwl/next": "14.6.3",
+    "@ionic/angular": "^6.5.2",
+    "@nrwl/next": "^14.8.6",
     "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@nrwl/cli": "14.6.3",
@@ -19,8 +20,8 @@
     "@nrwl/jest": "14.6.3",
     "@nrwl/linter": "14.6.3",
     "@nrwl/nx-cloud": "latest",
-    "@nrwl/react": "14.6.3",
-    "@nrwl/web": "14.6.3",
+    "@nrwl/react": "^14.8.6",
+    "@nrwl/web": "^14.8.6",
     "@nrwl/workspace": "14.6.3",
     "@testing-library/react": "13.3.0",
     "@types/jest": "28.1.1",
