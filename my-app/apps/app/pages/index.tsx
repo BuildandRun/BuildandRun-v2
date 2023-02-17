@@ -192,7 +192,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://www.brstore.us/team/"
+              href="https://team.brstore.us"
               target="_blank"
               rel="noreferrer"
               className="list-item-link"
