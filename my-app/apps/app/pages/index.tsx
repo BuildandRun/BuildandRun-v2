@@ -9,11 +9,11 @@ import AppBlog from "../public/img/navigate/blog/b2.png";
 import AppTweak from "../public/img/navigate/tweak/t2.png";
 import AppAbout from "../public/img/navigate/about/a1.png";
 import AppTeam from "../public/img/navigate/team/t8.png";
-import Facebook from "../public/img/footer/logo-facebook.svg"
-import Twitter from "../public/img/footer/logo-twitter.svg"
-import Instagram from "../public/img/footer/logo-instagram.svg"
-import Linkedin from "../public/img/footer/logo-linkedin.svg"
-import Youtube from "../public/img/footer/logo-youtube.svg"
+import Facebook from "../public/img/footer/logo-facebook.svg";
+import Twitter from "../public/img/footer/logo-twitter.svg";
+import Instagram from "../public/img/footer/logo-instagram.svg";
+import Linkedin from "../public/img/footer/logo-linkedin.svg";
+import Youtube from "../public/img/footer/logo-youtube.svg";
 
 export function Index() {
 
@@ -77,8 +77,7 @@ export function Index() {
           <div id="learning-materials" className="rounded shadow">
             <h2>App Features</h2>
             <a
-              href="https://www.brstore.us/projects/"
-              target="_blank"
+              href="https://tech.brstore.us"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -105,8 +104,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://www.blog.brstore.us"
-              target="_blank"
+              href="https://blog.brstore.us"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -133,8 +131,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://www.brstore.us/tweak-apps/"
-              target="_blank"
+              href="https://app.brstore.us"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -163,8 +160,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://www.brstore.us/about/"
-              target="_blank"
+              href="./company"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -193,7 +189,6 @@ export function Index() {
             </a>
             <a
               href="https://team.brstore.us"
-              target="_blank"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -223,8 +218,7 @@ export function Index() {
             <a
               id="webdev-tab"
               className="button-pill rounded shadow"
-              href="https://www.brstore.us/pricing/"
-              target="_blank"
+              href="https://pricing.brstore.us/"
               rel="noreferrer"
             >
               <Image src={WebDevTab} alt="WebDevTab" />
@@ -410,8 +404,8 @@ export function Index() {
             </a></li>
           </ul>
           <ul className="menu">
-            <li className="menu__item"><a className="menu__link" href="https://www.brstore.us/company" target="_blank">Company</a></li>
-            <li className="menu__item"><a className="menu__link" href="https://www.brstore.us/partners/" target="_blank">Partners</a></li>
+            <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
+            <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
             <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
 
           </ul>
