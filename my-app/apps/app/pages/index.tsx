@@ -60,7 +60,9 @@ export function Index() {
               </svg>
               <span>You&apos;re up and running</span>
             </h2>
+            <div className="blinker">
             <a href="#webdev-tab"> Build a Website </a>
+            </div>
           </div>
           <div className="logo-container">
             <svg
