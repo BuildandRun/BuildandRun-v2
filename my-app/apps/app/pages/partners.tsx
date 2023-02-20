@@ -98,7 +98,7 @@ const Partnership: React.FC = () => {
             </a></li>
           </ul>
           <ul className="menu">
-            <li className="menu__item"><a className="menu__link" href="https://brstore.us/" target="_blank">Homepage</a></li>
+            <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
             <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
             <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
 

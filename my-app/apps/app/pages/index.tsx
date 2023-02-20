@@ -326,7 +326,7 @@ export function Index() {
               </svg>
               Privacy Policy
             </summary>
-            <pre>Navigate to the tab 'Company' in the footer section.</pre>
+            <pre><a href="./privacy-policy">Click ➤ Privacy Policy 🔒</a></pre>
           </details>
           <details>
             <summary>
@@ -346,7 +346,7 @@ export function Index() {
               Terms Of Service
             </summary>
             <pre>
-              Navigate to the tab 'Company' in the footer section.
+            <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
             </pre>
           </details>
         </div>
@@ -371,10 +371,6 @@ export function Index() {
       <div>
         <footer className="footer">
           <div className="waves">
-            {/* <div className="wave" id="wave1"></div> */}
-            {/* <div className="wave" id="wave2"></div> */}
-            {/* <div className="wave" id="wave3"></div> */}
-            {/* <div className="wave" id="wave4"></div> */}
           </div>
           <ul className="social-icon">
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">

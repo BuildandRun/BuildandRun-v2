@@ -641,4 +641,10 @@ summary svg {
  .divider{
   width:1px;
 }
+#titlehero {
+  font-size: xx-large;
+}
+.legal {
+  margin: 3rem 1rem 0rem 1rem;
+}
 
