@@ -188,7 +188,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://team.brstore.us"
+              href="./team/index.html"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -218,7 +218,7 @@ export function Index() {
             <a
               id="webdev-tab"
               className="button-pill rounded shadow"
-              href="https://brstore.us/pricing/index.html"
+              href="./pricing/index.html"
               rel="noreferrer"
             >
               <Image src={WebDevTab} alt="WebDevTab" />
