@@ -1,9 +1,5 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/privacy-policy": "pages/privacy-policy.js",
-  "/terms-of-service": "pages/terms-of-service.js",
-  "/company": "pages/company.js"
+  "/_document": "pages/_document.js"
 }

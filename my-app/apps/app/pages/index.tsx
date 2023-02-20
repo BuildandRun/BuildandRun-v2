@@ -295,17 +295,17 @@ export function Index() {
               FAQs
             </summary>
             <pre>
-              <span>What is Build and Run?</span>
+              <span>⎆ What is Build and Run?</span>
               Build and Run (B&R) is a technology company that provides multiple services from all categories for a fair price.
-              <span>What service do we provide?</span>
+              <span>⎆ What service do we provide?</span>
               We provides all kinds of services, such as Website, Application Development, Design, Arts, Social Media Marketing, News, Tweaks, and More.
-              <span>What makes our Administrator Panel so special?</span>
+              <span>⎆ What makes our Administrator Panel so special?</span>
               First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
-              <span>How can you reach us?</span>
+              <span>⎆ How can you reach us?</span>
               Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
-              <span>How can you partner with us?</span>
+              <span>⎆ How can you partner with us?</span>
               Send us an email at support@brstore.us if you are a person or business and would want to collaborate with us.
-              <span>How can you join our team?</span>
+              <span>⎆ How can you join our team?</span>
               Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@brstore.us.
             </pre>
           </details>
