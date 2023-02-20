@@ -14,8 +14,8 @@ const nextConfig = {
   },
   rewrites: async () => [
     {
-      source: "/public/pricing/index.html",
-      destination: "/pages/api/myfile.js",
+      source: "/public/pricing/index.php",
+      destination: "/pages/api/pricing.js",
     },
   ],
 };

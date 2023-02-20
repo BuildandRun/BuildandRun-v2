@@ -218,7 +218,7 @@ export function Index() {
             <a
               id="webdev-tab"
               className="button-pill rounded shadow"
-              href="https://brstore.us/pricing"
+              href="https://brstore.us/pricing/index.php"
               rel="noreferrer"
             >
               <Image src={WebDevTab} alt="WebDevTab" />
