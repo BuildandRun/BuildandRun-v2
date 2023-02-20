@@ -70,34 +70,36 @@ export default function company() {
             />
           </svg>
         </p>
+        <div className="divider2">
         <footer className="footer">
           <ul className="social-icon">
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
-            <div className="social-bar">
+            <div className="social-bar2">
             <Image src={Facebook} alt="Facebook" />
             </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
-            <div className="social-bar">
+            <div className="social-bar2">
             <Image src={Twitter} alt="Twitter" />
             </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
-            <div className="social-bar">
+            <div className="social-bar2">
             <Image src={Instagram} alt="Instagram" />
             </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-            <div className="social-bar">
+            <div className="social-bar2">
             <Image src={Linkedin} alt="Linkedin" />
             </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
-            <div className="social-bar">
+            <div className="social-bar2">
             <Image src={Youtube} alt="Youtube" />
             </div>
             </a></li>
           </ul>
+          <div>
           <ul className="menu">
             <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
             <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
@@ -108,7 +110,9 @@ export default function company() {
 
           </ul>
           <p>&copy;2023 B&R | All Rights Reserved</p>
+          </div>
         </footer>
+        </div>
       </div>
       
 
