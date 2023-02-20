@@ -12,6 +12,12 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  rewrites: async () => [
+    {
+      source: "/public/pricing/index.html",
+      destination: "/pages/api/myfile.js",
+    },
+  ],
 };
 
 module.exports = withNx(nextConfig);
