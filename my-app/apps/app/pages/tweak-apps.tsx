@@ -78,33 +78,150 @@ export function Index() {
         {/* TWEAK APPS  */}
         
            <div className="tweak-apps">
-                <div className="movies">
-                    <div className="slider">
-                        <a href="#slide-1">1</a>
-                        <a href="#slide-2">2</a>
-                        <a href="#slide-3">3</a>
-                        <a href="#slide-4">4</a>
-                        <a href="#slide-5">5</a>
 
+                 {/* SECTION  */}
+
+                <div className="movies">
+                    <div className="tweak-title">
+                        <h1>Movies 🎬</h1>
+                    </div>
+                    <p>Tools and popular movie apps that allow you to watch all movies for free.</p>
+                    <div className="slider" id="slider-spacer">
                         <div className="slides">
-                            <div id="slide-1">
+                            <div id="movies-1">
                             1
                             </div>
-                            <div id="slide-2">
+                            <div id="movies-2">
                             2
                             </div>
-                            <div id="slide-3">
+                            <div id="movies-3">
                             3
                             </div>
-                            <div id="slide-4">
+                            <div id="movies-4">
                             4
                             </div>
-                            <div id="slide-5">
+                            <div id="movies-5">
                             5
                             </div>
                         </div>
+                        <div className="number-selector">
+                        <a href="#movies-1">1️⃣</a>ㅤ|
+                        ㅤ<a href="#movies-2">2️⃣</a>ㅤ|
+                        ㅤ<a href="#movies-3">3️⃣</a>ㅤ|
+                        ㅤ<a href="#movies-4">4️⃣</a>ㅤ|
+                        ㅤ<a href="#movies-5">5️⃣</a>
+                        </div>
                     </div>
-                </div>                
+                </div>    
+                    {/* SECTION  */}
+                    <div className="divider2"></div>
+                    {/* SECTION  */}
+
+                    <div className="ai-bots">
+                    <div className="tweak-title">
+                        <h1>AI & Bots 🤖</h1>
+                    </div>
+                    <p>Most advance Artificial Intelligence tools that will make your life much more easier.</p>
+                    <div className="slider" id="slider-spacer">
+                        <div className="slides">
+                            <div id="ai-bots-1">
+                            1
+                            </div>
+                            <div id="ai-bots-2">
+                            2
+                            </div>
+                            <div id="ai-bots-3">
+                            3
+                            </div>
+                            <div id="ai-bots-4">
+                            4
+                            </div>
+                            <div id="ai-bots-5">
+                            5
+                            </div>
+                        </div>
+                        <div className="number-selector">
+                        <a href="#ai-bots-1">1️⃣</a>ㅤ|
+                        ㅤ<a href="#ai-bots-2">2️⃣</a>ㅤ|
+                        ㅤ<a href="#ai-bots-3">3️⃣</a>ㅤ|
+                        ㅤ<a href="#ai-bots-4">4️⃣</a>ㅤ|
+                        ㅤ<a href="#ai-bots-5">5️⃣</a>
+                        </div>
+                    </div>
+                </div>    
+                            {/* SECTION  */}      
+                            <div className="divider2"></div>
+                            {/* SECTION  */}
+
+                    <div className="editors">
+                    <div className="tweak-title">
+                        <h1>Editors 🎨</h1>
+                    </div>
+                    <p>Find the right tools to create and edit any art or image.</p>
+                    <div className="slider" id="slider-spacer">
+                        <div className="slides">
+                            <div id="editors-1">
+                            1
+                            </div>
+                            <div id="editors-2">
+                            2
+                            </div>
+                            <div id="editors-3">
+                            3
+                            </div>
+                            <div id="editors-4">
+                            4
+                            </div>
+                            <div id="editors-5">
+                            5
+                            </div>
+                        </div>
+                        <div className="number-selector">
+                        <a href="#editors-1">1️⃣</a>ㅤ|
+                        ㅤ<a href="#editors-2">2️⃣</a>ㅤ|
+                        ㅤ<a href="#editors-3">3️⃣</a>ㅤ|
+                        ㅤ<a href="#editors-4">4️⃣</a>ㅤ|
+                        ㅤ<a href="#editors-5">5️⃣</a>
+                        </div>
+                    </div>
+                </div>    
+                            {/* SECTION  */}     
+                            <div className="divider2"></div>
+                            {/* SECTION  */}
+
+                    <div className="cryptocurrencies">
+                    <div className="tweak-title">
+                        <h1>Cryptocurrencies 🪙</h1>
+                    </div>
+                    <p>Top cryptocurrencies you will love to invest your money in.</p>
+                    <div className="slider" id="slider-spacer">
+                        <div className="slides">
+                            <div id="cryptocurrencies-1">
+                            1
+                            </div>
+                            <div id="cryptocurrencies-2">
+                            2
+                            </div>
+                            <div id="cryptocurrencies-3">
+                            3
+                            </div>
+                            <div id="cryptocurrencies-4">
+                            4
+                            </div>
+                            <div id="cryptocurrencies-5">
+                            5
+                            </div>
+                        </div>
+                        <div className="number-selector">
+                        <a href="#cryptocurrencies-1">1️⃣</a>ㅤ|
+                        ㅤ<a href="#cryptocurrencies-2">2️⃣</a>ㅤ|
+                        ㅤ<a href="#cryptocurrencies-3">3️⃣</a>ㅤ|
+                        ㅤ<a href="#cryptocurrencies-4">4️⃣</a>ㅤ|
+                        ㅤ<a href="#cryptocurrencies-5">5️⃣</a>
+                        </div>
+                    </div>
+                </div>    
+                    {/* SECTION  */}           
             </div>
         {/* TWEAK APPS  */}
 

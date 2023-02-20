@@ -648,7 +648,7 @@ summary svg {
 }
 
 .divider2{
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 #titlehero {
@@ -666,6 +666,18 @@ summary svg {
 .row {
   width: 100%;
   clear: both;
+}
+
+.tweak-apps {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.tweak-title {
+font-size: xx-large;
+font-weight: bold;
+}
+.number-selector {
+  margin-top: 1rem;
 }
 
           /*  SLIDER MOBILE SCREEN */
@@ -716,7 +728,6 @@ summary svg {
             scroll-snap-align: start;
             flex-shrink: 0;
             width: 300px;
-            /* height: 300px; */
             margin-right: 50px;
             border-radius: 10px;
             background: #eee;
@@ -765,6 +776,9 @@ summary svg {
           .slider > a:focus {
             background: #000;
           }
+          #slider-spacer {
+            margin-top: 1rem;
+          }
         }
 
           /*  SLIDER MOBILE SCREEN */
@@ -779,10 +793,9 @@ summary svg {
               box-sizing: border-box;
             }
           .slider {
-            width: 600px;
+            width: 768px;
             text-align: center;
             overflow: hidden;
-            /* display: flex; */
             justify-content: center;
             align-items: center;
           }
@@ -818,7 +831,6 @@ summary svg {
             scroll-snap-align: start;
             flex-shrink: 0;
             width: 300px;
-            /* height: 300px; */
             margin-right: 50px;
             border-radius: 10px;
             background: #eee;
@@ -866,5 +878,8 @@ summary svg {
           }
           .slider > a:focus {
             background: #000;
+          }
+          #slider-spacer {
+            margin-top: 1rem;
           }
           }
