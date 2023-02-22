@@ -15,6 +15,14 @@ import Instagram from "../public/img/footer/logo-instagram.svg";
 import Linkedin from "../public/img/footer/logo-linkedin.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
+// TWEAK IMAGE //
+import kickass from "../public/img/tweak-apps/kickass.png";
+import fmovies from "../public/img/tweak-apps/fmovies.png";
+import popcorn from "../public/img/tweak-apps/popcorn.png";
+import putlocker from "../public/img/tweak-apps/putlocker.png";
+import showbox from "../public/img/tweak-apps/showbox.png";
+
+
 export function Index() {
 
   /*
@@ -85,23 +93,139 @@ export function Index() {
                     <div className="tweak-title">
                         <h1>Movies 🎬</h1>
                     </div>
-                    <p>Tools and popular movie apps that allow you to watch all movies for free.</p>
+                    <p>Most popular movie apps that allow you to watch all movies for free.</p>
                     <div className="slider" id="slider-spacer">
                         <div className="slides">
                             <div id="movies-1">
-                            1
+                                    {/* MODULE */}
+                                    <div><a href="https://kickass.sx/home/" target="_blank">
+                                    <div className="cardi">
+                                        <div className="app-row">
+                                            <div className="tweak-image">
+                                        <Image src={kickass} alt="kickass" />
+                                           </div>
+                                    <h3 className="cardi__title">Kickass Torent
+                                    </h3>
+                                        </div>
+                                        <div className="app-row">
+                                    <p className="cardi__content">All recent and new movies (Download µTorrent or BitTorrent) </p>
+                                        </div>
+                                    <div className="cardi__date">
+                                            ⭐⭐⭐
+                                    </div>
+                                    <div className="cardi__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                    </svg>
+                                    </div>
+                                    </div></a>
+                                    </div>
+                                    {/* MODULE */}
                             </div>
                             <div id="movies-2">
-                            2
+                                         {/* MODULE */}
+                                         <div><a href="https://fmovies.wtf/" target="_blank">
+                                    <div className="cardi">
+                                        <div className="app-row">
+                                            <div className="tweak-image">
+                                        <Image src={fmovies} alt="fmovies" />
+                                           </div>
+                                    <h3 className="cardi__title">FMovies
+                                    </h3>
+                                        </div>
+                                        <div className="app-row">
+                                    <p className="cardi__content">All recent and new movies (Online Users Only) </p>
+                                        </div>
+                                    <div className="cardi__date">
+                                            ⭐⭐⭐⭐
+                                    </div>
+                                    <div className="cardi__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                    </svg>
+                                    </div>
+                                    </div></a>
+                                    </div>
+                                    {/* MODULE */}
                             </div>
                             <div id="movies-3">
-                            3
+                                          {/* MODULE */}
+                                          <div><a href="https://github.com/popcorn-official/popcorn-desktop/releases" target="_blank">
+                                    <div className="cardi">
+                                        <div className="app-row">
+                                            <div className="tweak-image">
+                                        <Image src={popcorn} alt="popcorn" />
+                                           </div>
+                                    <h3 className="cardi__title">Popcorn Time
+                                    </h3>
+                                        </div>
+                                        <div className="app-row">
+                                    <p className="cardi__content">All recent and new movies (Runs on all devices)</p>
+                                        </div>
+                                    <div className="cardi__date">
+                                            ⭐⭐⭐⭐⭐
+                                    </div>
+                                    <div className="cardi__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                    </svg>
+                                    </div>
+                                    </div></a>
+                                    </div>
+                                    {/* MODULE */}
                             </div>
                             <div id="movies-4">
-                            4
+                                             {/* MODULE */}
+                                             <div><a href="https://www2.putlockers.ws/" target="_blank">
+                                             {/* <div><a href="https://putlocker-movies.space/" target="_blank"> */}
+                                    <div className="cardi">
+                                        <div className="app-row">
+                                            <div className="tweak-image">
+                                        <Image src={putlocker} alt="putlocker" />
+                                           </div>
+                                    <h3 className="cardi__title">Putlocker
+                                    </h3>
+                                        </div>
+                                        <div className="app-row">
+                                    <p className="cardi__content">All recent and new movies (Online Users Only)</p>
+                                        </div>
+                                    <div className="cardi__date">
+                                            ⭐⭐
+                                    </div>
+                                    <div className="cardi__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                    </svg>
+                                    </div>
+                                    </div></a>
+                                    </div>
+                                    {/* MODULE */}
                             </div>
                             <div id="movies-5">
-                            5
+                                             {/* MODULE */}
+                                             <div><a href="https://bestforandroid.com/apk/showbox/" target="_blank">
+                                    <div className="cardi">
+                                        <div className="app-row">
+                                            <div className="tweak-image">
+                                        <Image src={showbox} alt="showbox" />
+                                           </div>
+                                    <h3 className="cardi__title">Showbox
+                                    </h3>
+                                        </div>
+                                        <div className="app-row">
+                                    <p className="cardi__content">All recent and new movies (Android Users Only)</p>
+                                        </div>
+                                    <div className="cardi__date">
+                                            ⭐
+                                    </div>
+                                    <div className="cardi__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                                    </svg>
+                                    </div>
+                                    </div></a>
+                                    </div>
+                                    {/* MODULE */}
                             </div>
                         </div>
                         <div className="number-selector">
@@ -121,7 +245,7 @@ export function Index() {
                     <div className="tweak-title">
                         <h1>AI & Bots 🤖</h1>
                     </div>
-                    <p>Most advance Artificial Intelligence tools that will make your life much more easier.</p>
+                    <p>Most advance artificial intelligence tools that will make your life much more easier.</p>
                     <div className="slider" id="slider-spacer">
                         <div className="slides">
                             <div id="ai-bots-1">

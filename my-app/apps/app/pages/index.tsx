@@ -133,7 +133,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://app.brstore.us"
+              href="./tweak-apps"
               rel="noreferrer"
               className="list-item-link"
             >
