@@ -38,7 +38,13 @@ import soundbolt from "../public/img/tweak-apps/ai-bots/soundbolt.png";
 import naturalreader from "../public/img/tweak-apps/ai-bots/naturalreader.png";
 import cleverbot from "../public/img/tweak-apps/ai-bots/cleverbot.png";
 import animaker from "../public/img/tweak-apps/ai-bots/animaker.png";
-
+// ----- EDITORS ----- //
+import inshot from "../public/img/tweak-apps/editors/inshot.png";
+import lightricks from "../public/img/tweak-apps/editors/lightricks.png";
+import noelshack from "../public/img/tweak-apps/editors/noelshack.png";
+import photoshopfix from "../public/img/tweak-apps/editors/photoshopfix.png";
+import removebged from "../public/img/tweak-apps/editors/removebged.png";
+import iloveimg from "../public/img/tweak-apps/editors/iloveimg.png";
 
 // import  from "../public/img/tweak-apps/ai-bots/.png";
 
@@ -687,19 +693,160 @@ export function Index() {
             <div className="slider" id="slider-spacer">
               <div className="slides">
                 <div id="editors-1">
-                  1
+                  {/* MODULE */}
+                  <div><a href="https://inshot.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={inshot} alt="inshot" />
+                        </div>
+                        <h3 className="cardi__title">Inshot
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Be Creative with filters, effects and stickers.</p>
+                      </div>
+                      <div className="cardi__date">
+                        IPhone, Android
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="editors-2">
-                  2
+                  {/* MODULE */}
+                  <div><a href="https://www.lightricks.com/products" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={lightricks} alt="Lightricks" />
+                        </div>
+                        <h3 className="cardi__title">Lightricks
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Make any of your art live!</p>
+                      </div>
+                      <div className="cardi__date">
+                        IPhone, Android
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="editors-3">
-                  3
+                  {/* MODULE */}
+                  <div><a href="https://www.noelshack.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={noelshack} alt="NoelShack" />
+                        </div>
+                        <h3 className="cardi__title">NoelShack
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Store image online for up to 3 months.</p>
+                      </div>
+                      <div className="cardi__date">
+                        IPhone, Mac, Android, Windows
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="editors-4">
-                  4
+                  {/* MODULE */}
+                  <div><a href="https://play.google.com/store/apps/details?id=com.adobe.adobephotoshopfix&hl=en_US&gl=US" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={photoshopfix} alt="photoshopfix" />
+                        </div>
+                        <h3 className="cardi__title">Photoshop Fix
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Excellent to heal any image.</p>
+                      </div>
+                      <div className="cardi__date">
+                        Android
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="editors-5">
-                  5
+                  {/* MODULE */}
+                  <div><a href="https://www.iloveimg.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={iloveimg} alt="iloveimg" />
+                        </div>
+                        <h3 className="cardi__title">ILoveIMG
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Resize any image of your choice.</p>
+                      </div>
+                      <div className="cardi__date">
+                        Mac, Windows
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="editors-6">
+                  {/* MODULE */}
+                  <div><a href="https://www.remove.bg/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={removebged} alt="removebged" />
+                        </div>
+                        <h3 className="cardi__title">Remove Bg
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">AI removes image background.</p>
+                      </div>
+                      <div className="cardi__date">
+                        Mac, Windows
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
               </div>
               <div className="number-selector">
@@ -707,7 +854,8 @@ export function Index() {
                 ㅤ<a href="#editors-2">2️⃣</a>ㅤ|
                 ㅤ<a href="#editors-3">3️⃣</a>ㅤ|
                 ㅤ<a href="#editors-4">4️⃣</a>ㅤ|
-                ㅤ<a href="#editors-5">5️⃣</a>
+                ㅤ<a href="#editors-5">5️⃣</a>ㅤ|
+                ㅤ<a href="#editors-6">6️⃣</a>
               </div>
             </div>
           </div>
