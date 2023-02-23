@@ -15,12 +15,32 @@ import Instagram from "../public/img/footer/logo-instagram.svg";
 import Linkedin from "../public/img/footer/logo-linkedin.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
-// TWEAK IMAGE //
-import kickass from "../public/img/tweak-apps/kickass.png";
-import fmovies from "../public/img/tweak-apps/fmovies.png";
-import popcorn from "../public/img/tweak-apps/popcorn.png";
-import putlocker from "../public/img/tweak-apps/putlocker.png";
-import showbox from "../public/img/tweak-apps/showbox.png";
+// ----- TWEAK IMAGE ----- //
+// ----- MOVIES ----- //
+import kickass from "../public/img/tweak-apps/movies/kickass.png";
+import fmovies from "../public/img/tweak-apps/movies/fmovies.png";
+import popcorn from "../public/img/tweak-apps/movies/popcorn.png";
+import putlocker from "../public/img/tweak-apps/movies/putlocker.png";
+import showbox from "../public/img/tweak-apps/movies/showbox.png";
+// ----- AI & BOTS ----- //
+import chatgpt from "../public/img/tweak-apps/ai-bots/chatgpt.png";
+import writesonic from "../public/img/tweak-apps/ai-bots/writesonic.png";
+import midjourney from "../public/img/tweak-apps/ai-bots/midjourney.png";
+import removebg from "../public/img/tweak-apps/ai-bots/removebg.png";
+import quillbot from "../public/img/tweak-apps/ai-bots/quillbot.png";
+import imagecolorpicker from "../public/img/tweak-apps/ai-bots/imagecolorpicker.png";
+import sitesucker from "../public/img/tweak-apps/ai-bots/sitesucker.png";
+import splitter from "../public/img/tweak-apps/ai-bots/splitter.png";
+import somiibo from "../public/img/tweak-apps/ai-bots/somiibo.png";
+import donotpay from "../public/img/tweak-apps/ai-bots/donotpay-second.png";
+import loom from "../public/img/tweak-apps/ai-bots/loom.png";
+import soundbolt from "../public/img/tweak-apps/ai-bots/soundbolt.png";
+import naturalreader from "../public/img/tweak-apps/ai-bots/naturalreader.png";
+import cleverbot from "../public/img/tweak-apps/ai-bots/cleverbot.png";
+import animaker from "../public/img/tweak-apps/ai-bots/animaker.png";
+
+
+// import  from "../public/img/tweak-apps/ai-bots/.png";
 
 
 export function Index() {
@@ -69,7 +89,7 @@ export function Index() {
               <span>You&apos;re up and running</span>
             </h2>
             <div className="blinker">
-            <a href="./"> Homepage</a>
+              <a href="./"> Homepage</a>
             </div>
           </div>
           <div className="logo-container">
@@ -84,269 +104,651 @@ export function Index() {
         </div>
 
         {/* TWEAK APPS  */}
-        
-           <div className="tweak-apps">
 
-                 {/* SECTION  */}
+        <div className="tweak-apps">
 
-                <div className="movies">
-                    <div className="tweak-title">
-                        <h1>Movies 🎬</h1>
-                    </div>
-                    <p>Most popular movie apps that allow you to watch all movies for free.</p>
-                    <div className="slider" id="slider-spacer">
-                        <div className="slides">
-                            <div id="movies-1">
-                                    {/* MODULE */}
-                                    <div><a href="https://kickass.sx/home/" target="_blank">
-                                    <div className="cardi">
-                                        <div className="app-row">
-                                            <div className="tweak-image">
-                                        <Image src={kickass} alt="kickass" />
-                                           </div>
-                                    <h3 className="cardi__title">Kickass Torent
-                                    </h3>
-                                        </div>
-                                        <div className="app-row">
-                                    <p className="cardi__content">All recent and new movies (Download µTorrent or BitTorrent) </p>
-                                        </div>
-                                    <div className="cardi__date">
-                                            ⭐⭐⭐
-                                    </div>
-                                    <div className="cardi__arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                    </div>
-                                    </div></a>
-                                    </div>
-                                    {/* MODULE */}
-                            </div>
-                            <div id="movies-2">
-                                         {/* MODULE */}
-                                         <div><a href="https://fmovies.wtf/" target="_blank">
-                                    <div className="cardi">
-                                        <div className="app-row">
-                                            <div className="tweak-image">
-                                        <Image src={fmovies} alt="fmovies" />
-                                           </div>
-                                    <h3 className="cardi__title">FMovies
-                                    </h3>
-                                        </div>
-                                        <div className="app-row">
-                                    <p className="cardi__content">All recent and new movies (Online Users Only) </p>
-                                        </div>
-                                    <div className="cardi__date">
-                                            ⭐⭐⭐⭐
-                                    </div>
-                                    <div className="cardi__arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                    </div>
-                                    </div></a>
-                                    </div>
-                                    {/* MODULE */}
-                            </div>
-                            <div id="movies-3">
-                                          {/* MODULE */}
-                                          <div><a href="https://github.com/popcorn-official/popcorn-desktop/releases" target="_blank">
-                                    <div className="cardi">
-                                        <div className="app-row">
-                                            <div className="tweak-image">
-                                        <Image src={popcorn} alt="popcorn" />
-                                           </div>
-                                    <h3 className="cardi__title">Popcorn Time
-                                    </h3>
-                                        </div>
-                                        <div className="app-row">
-                                    <p className="cardi__content">All recent and new movies (Runs on all devices)</p>
-                                        </div>
-                                    <div className="cardi__date">
-                                            ⭐⭐⭐⭐⭐
-                                    </div>
-                                    <div className="cardi__arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                    </div>
-                                    </div></a>
-                                    </div>
-                                    {/* MODULE */}
-                            </div>
-                            <div id="movies-4">
-                                             {/* MODULE */}
-                                             <div><a href="https://www2.putlockers.ws/" target="_blank">
-                                             {/* <div><a href="https://putlocker-movies.space/" target="_blank"> */}
-                                    <div className="cardi">
-                                        <div className="app-row">
-                                            <div className="tweak-image">
-                                        <Image src={putlocker} alt="putlocker" />
-                                           </div>
-                                    <h3 className="cardi__title">Putlocker
-                                    </h3>
-                                        </div>
-                                        <div className="app-row">
-                                    <p className="cardi__content">All recent and new movies (Online Users Only)</p>
-                                        </div>
-                                    <div className="cardi__date">
-                                            ⭐⭐
-                                    </div>
-                                    <div className="cardi__arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                    </div>
-                                    </div></a>
-                                    </div>
-                                    {/* MODULE */}
-                            </div>
-                            <div id="movies-5">
-                                             {/* MODULE */}
-                                             <div><a href="https://bestforandroid.com/apk/showbox/" target="_blank">
-                                    <div className="cardi">
-                                        <div className="app-row">
-                                            <div className="tweak-image">
-                                        <Image src={showbox} alt="showbox" />
-                                           </div>
-                                    <h3 className="cardi__title">Showbox
-                                    </h3>
-                                        </div>
-                                        <div className="app-row">
-                                    <p className="cardi__content">All recent and new movies (Android Users Only)</p>
-                                        </div>
-                                    <div className="cardi__date">
-                                            ⭐
-                                    </div>
-                                    <div className="cardi__arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
-                                            <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
-                                    </svg>
-                                    </div>
-                                    </div></a>
-                                    </div>
-                                    {/* MODULE */}
-                            </div>
-                        </div>
-                        <div className="number-selector">
-                        <a href="#movies-1">1️⃣</a>ㅤ|
-                        ㅤ<a href="#movies-2">2️⃣</a>ㅤ|
-                        ㅤ<a href="#movies-3">3️⃣</a>ㅤ|
-                        ㅤ<a href="#movies-4">4️⃣</a>ㅤ|
-                        ㅤ<a href="#movies-5">5️⃣</a>
-                        </div>
-                    </div>
-                </div>    
-                    {/* SECTION  */}
-                    <div className="divider2"></div>
-                    {/* SECTION  */}
+          {/* SECTION  */}
 
-                    <div className="ai-bots">
-                    <div className="tweak-title">
-                        <h1>AI & Bots 🤖</h1>
-                    </div>
-                    <p>Most advance artificial intelligence tools that will make your life much more easier.</p>
-                    <div className="slider" id="slider-spacer">
-                        <div className="slides">
-                            <div id="ai-bots-1">
-                            1
-                            </div>
-                            <div id="ai-bots-2">
-                            2
-                            </div>
-                            <div id="ai-bots-3">
-                            3
-                            </div>
-                            <div id="ai-bots-4">
-                            4
-                            </div>
-                            <div id="ai-bots-5">
-                            5
-                            </div>
-                        </div>
-                        <div className="number-selector">
-                        <a href="#ai-bots-1">1️⃣</a>ㅤ|
-                        ㅤ<a href="#ai-bots-2">2️⃣</a>ㅤ|
-                        ㅤ<a href="#ai-bots-3">3️⃣</a>ㅤ|
-                        ㅤ<a href="#ai-bots-4">4️⃣</a>ㅤ|
-                        ㅤ<a href="#ai-bots-5">5️⃣</a>
-                        </div>
-                    </div>
-                </div>    
-                            {/* SECTION  */}      
-                            <div className="divider2"></div>
-                            {/* SECTION  */}
-
-                    <div className="editors">
-                    <div className="tweak-title">
-                        <h1>Editors 🎨</h1>
-                    </div>
-                    <p>Find the right tools to create and edit any art or image.</p>
-                    <div className="slider" id="slider-spacer">
-                        <div className="slides">
-                            <div id="editors-1">
-                            1
-                            </div>
-                            <div id="editors-2">
-                            2
-                            </div>
-                            <div id="editors-3">
-                            3
-                            </div>
-                            <div id="editors-4">
-                            4
-                            </div>
-                            <div id="editors-5">
-                            5
-                            </div>
-                        </div>
-                        <div className="number-selector">
-                        <a href="#editors-1">1️⃣</a>ㅤ|
-                        ㅤ<a href="#editors-2">2️⃣</a>ㅤ|
-                        ㅤ<a href="#editors-3">3️⃣</a>ㅤ|
-                        ㅤ<a href="#editors-4">4️⃣</a>ㅤ|
-                        ㅤ<a href="#editors-5">5️⃣</a>
-                        </div>
-                    </div>
-                </div>    
-                            {/* SECTION  */}     
-                            <div className="divider2"></div>
-                            {/* SECTION  */}
-
-                    <div className="cryptocurrencies">
-                    <div className="tweak-title">
-                        <h1>Cryptocurrencies 🪙</h1>
-                    </div>
-                    <p>Top cryptocurrencies you will love to invest your money in.</p>
-                    <div className="slider" id="slider-spacer">
-                        <div className="slides">
-                            <div id="cryptocurrencies-1">
-                            1
-                            </div>
-                            <div id="cryptocurrencies-2">
-                            2
-                            </div>
-                            <div id="cryptocurrencies-3">
-                            3
-                            </div>
-                            <div id="cryptocurrencies-4">
-                            4
-                            </div>
-                            <div id="cryptocurrencies-5">
-                            5
-                            </div>
-                        </div>
-                        <div className="number-selector">
-                        <a href="#cryptocurrencies-1">1️⃣</a>ㅤ|
-                        ㅤ<a href="#cryptocurrencies-2">2️⃣</a>ㅤ|
-                        ㅤ<a href="#cryptocurrencies-3">3️⃣</a>ㅤ|
-                        ㅤ<a href="#cryptocurrencies-4">4️⃣</a>ㅤ|
-                        ㅤ<a href="#cryptocurrencies-5">5️⃣</a>
-                        </div>
-                    </div>
-                </div>    
-                    {/* SECTION  */}           
+          <div className="movies">
+            <div className="tweak-title">
+              <h1>Movies 🎬</h1>
             </div>
+            <p>Most popular movie apps that allow you to watch all movies for free.</p>
+            <div className="slider" id="slider-spacer">
+              <div className="slides">
+                <div id="movies-1">
+                  {/* MODULE */}
+                  <div><a href="https://kickass.sx/home/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={kickass} alt="kickass" />
+                        </div>
+                        <h3 className="cardi__title">Kickass Torrents
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Download µTorrent or BitTorrent) </p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐⭐⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="movies-2">
+                  {/* MODULE */}
+                  <div><a href="https://fmovies.wtf/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={fmovies} alt="fmovies" />
+                        </div>
+                        <h3 className="cardi__title">FMovies
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Online Users Only) </p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐⭐⭐⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="movies-3">
+                  {/* MODULE */}
+                  <div><a href="https://github.com/popcorn-official/popcorn-desktop/releases" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={popcorn} alt="popcorn" />
+                        </div>
+                        <h3 className="cardi__title">Popcorn Time
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Runs on all devices)</p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐⭐⭐⭐⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="movies-4">
+                  {/* MODULE */}
+                  <div><a href="https://www2.putlockers.ws/" target="_blank">
+                    {/* <div><a href="https://putlocker-movies.space/" target="_blank"> */}
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={putlocker} alt="putlocker" />
+                        </div>
+                        <h3 className="cardi__title">Putlocker
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Online Users Only)</p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="movies-5">
+                  {/* MODULE */}
+                  <div><a href="https://bestforandroid.com/apk/showbox/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={showbox} alt="showbox" />
+                        </div>
+                        <h3 className="cardi__title">Showbox
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Android Users Only)</p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+              </div>
+              <div className="number-selector">
+                <a href="#movies-1">1️⃣</a>ㅤ|
+                ㅤ<a href="#movies-2">2️⃣</a>ㅤ|
+                ㅤ<a href="#movies-3">3️⃣</a>ㅤ|
+                ㅤ<a href="#movies-4">4️⃣</a>ㅤ|
+                ㅤ<a href="#movies-5">5️⃣</a>
+              </div>
+            </div>
+          </div>
+          {/* SECTION  */}
+          <div className="divider2"></div>
+          {/* SECTION  */}
+
+          <div className="ai-bots">
+            <div className="tweak-title">
+              <h1>AI & Bots 🤖</h1>
+            </div>
+            <p>Most advance artificial intelligence tools that will make your life much more easier.</p>
+            <div className="slider" id="slider-spacer">
+              <div className="slides">
+                <div id="ai-bots-1">
+                  {/* MODULE */}
+                  <div><a href="https://openai.com/blog/chatgpt/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={chatgpt} alt="chatgpt" />
+                        </div>
+                        <h3 className="cardi__title">Chat GPT
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Top of OpenAI's which can do anything you ask. </p>
+                      </div>
+                      <div className="cardi__date">
+                        🎴
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-2">
+                  {/* MODULE */}
+                  <div><a href="https://writesonic.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={writesonic} alt="writesonic" />
+                        </div>
+                        <h3 className="cardi__title">Writesonic
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Alternative to Chat GPT with better user-interface. </p>
+                      </div>
+                      <div className="cardi__date">
+                        🀄️
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-3">
+                  {/* MODULE */}
+                  <div><a href="https://midjourney.com/home/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image">
+                          <Image src={midjourney} alt="midjourney" />
+                        </div>
+                        <h3 className="cardi__title">Midjourney
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">OpenAI that creates images based on textual descriptions. </p>
+                      </div>
+                      <div className="cardi__date">
+                        🌄
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-4">
+                  {/* MODULE */}
+                  <div><a href="https://www.remove.bg/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={removebg} alt="removebg" />
+                        </div>
+                        <h3 className="cardi__title">Remove Bg
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">AI removes any image background. </p>
+                      </div>
+                      <div className="cardi__date">
+                        🔳
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-5">
+                  {/* MODULE */}
+                  <div><a href="https://quillbot.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={quillbot} alt="quillbot" />
+                        </div>
+                        <h3 className="cardi__title">Quillbot
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Paraphrasing tool that helps you re-write all your essays.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🖊️
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-6">
+                  {/* MODULE */}
+                  <div><a href="https://imagecolorpicker.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={imagecolorpicker} alt="ImageColorPicker" />
+                        </div>
+                        <h3 className="cardi__title">ImageColorPicker
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Gives your picture, image color code when uploaded.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🍭
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-7">
+                  {/* MODULE */}
+                  <div><a href="https://ricks-apps.com/osx/sitesucker/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={sitesucker} alt="Sitesucker" />
+                        </div>
+                        <h3 className="cardi__title">Sitesucker
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Ultimate tool that copies any website.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🖲
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-8">
+                  {/* MODULE */}
+                  <div><a href="https://splitter.ai/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="ai-bots-image">
+                          <Image src={splitter} alt="Splitter" />
+                        </div>
+                        <h3 className="cardi__title">Splitter
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Removes any vocals or audio from music.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🎹
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-9">
+                  {/* MODULE */}
+                  <div><a href="https://somiibo.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={somiibo} alt="Somiibo" />
+                        </div>
+                        <h3 className="cardi__title">Somiibo
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Social media automation platform for marketing.</p>
+                      </div>
+                      <div className="cardi__date">
+                        📣
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-10">
+                  {/* MODULE */}
+                  <div><a href="https://donotpay.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={donotpay} alt="DoNotPay" />
+                        </div>
+                        <h3 className="cardi__title">DoNotPay
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">First robot lawyer which also can cancel your free trials.</p>
+                      </div>
+                      <div className="cardi__date">
+                        ⚖️
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-11">
+                  {/* MODULE */}
+                  <div><a href="https://www.loom.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={loom} alt="Loom" />
+                        </div>
+                        <h3 className="cardi__title">Loom
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Record your laptop screen, yourself and more.</p>
+                      </div>
+                      <div className="cardi__date">
+                        💻
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-12">
+                  {/* MODULE */}
+                  <div><a href="https://soundbolt.me/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={soundbolt} alt="Soundbolt" />
+                        </div>
+                        <h3 className="cardi__title">Soundbolt
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Powerful Soundcloud and Audiomack plays tool.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🔊
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-13">
+                  {/* MODULE */}
+                  <div><a href="https://www.naturalreaders.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={naturalreader} alt="NaturalReader" />
+                        </div>
+                        <h3 className="cardi__title">Natural Reader
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Text-to-Speech reader which reads anything for you.</p>
+                      </div>
+                      <div className="cardi__date">
+                        📒
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-14">
+                  {/* MODULE */}
+                  <div><a href="https://www.cleverbot.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={cleverbot} alt="cleverbot" />
+                        </div>
+                        <h3 className="cardi__title">Cleverbot
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Before Siri or Alexa, Cleverbot was your friend.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🦿
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="ai-bots-15">
+                  {/* MODULE */}
+                  <div><a href="https://www.animaker.com/voice" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-title" id="ai-bots-image">
+                          <Image src={animaker} alt="animaker" />
+                        </div>
+                        <h3 className="cardi__title">Animaker Voice
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">Human voice over with more than 50 languages.</p>
+                      </div>
+                      <div className="cardi__date">
+                        🎼
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+              </div>
+              <div className="number-selector">
+                <a href="#ai-bots-1">1️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-2">2️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-3">3️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-4">4️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-5">5️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-6">6️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-7">7️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-8">8️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-9">9️⃣</a>ㅤ|
+                ㅤ<a href="#ai-bots-10">🔟</a>
+
+
+              </div>
+            </div>
+          </div>
+          {/* SECTION  */}
+          <div className="divider2"></div>
+          {/* SECTION  */}
+
+          <div className="editors">
+            <div className="tweak-title">
+              <h1>Editors 🎨</h1>
+            </div>
+            <p>Find the right tools to create and edit any art or image.</p>
+            <div className="slider" id="slider-spacer">
+              <div className="slides">
+                <div id="editors-1">
+                  1
+                </div>
+                <div id="editors-2">
+                  2
+                </div>
+                <div id="editors-3">
+                  3
+                </div>
+                <div id="editors-4">
+                  4
+                </div>
+                <div id="editors-5">
+                  5
+                </div>
+              </div>
+              <div className="number-selector">
+                <a href="#editors-1">1️⃣</a>ㅤ|
+                ㅤ<a href="#editors-2">2️⃣</a>ㅤ|
+                ㅤ<a href="#editors-3">3️⃣</a>ㅤ|
+                ㅤ<a href="#editors-4">4️⃣</a>ㅤ|
+                ㅤ<a href="#editors-5">5️⃣</a>
+              </div>
+            </div>
+          </div>
+          {/* SECTION  */}
+          <div className="divider2"></div>
+          {/* SECTION  */}
+
+          <div className="cryptocurrencies">
+            <div className="tweak-title">
+              <h1>Cryptocurrencies 🪙</h1>
+            </div>
+            <p>Top cryptocurrencies you will love to invest your money in.</p>
+            <div className="slider" id="slider-spacer">
+              <div className="slides">
+                <div id="cryptocurrencies-1">
+                  1
+                </div>
+                <div id="cryptocurrencies-2">
+                  2
+                </div>
+                <div id="cryptocurrencies-3">
+                  3
+                </div>
+                <div id="cryptocurrencies-4">
+                  4
+                </div>
+                <div id="cryptocurrencies-5">
+                  5
+                </div>
+              </div>
+              <div className="number-selector">
+                <a href="#cryptocurrencies-1">1️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-2">2️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-3">3️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-4">4️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-5">5️⃣</a>
+              </div>
+            </div>
+          </div>
+          {/* SECTION  */}
+        </div>
         {/* TWEAK APPS  */}
 
         <div id="commands" className="rounded shadow">
@@ -421,7 +823,7 @@ export function Index() {
               Terms Of Service
             </summary>
             <pre>
-            <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
+              <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
             </pre>
           </details>
         </div>
@@ -449,29 +851,29 @@ export function Index() {
           </div>
           <ul className="social-icon">
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
-            <div className="social-bar">
-            <Image src={Facebook} alt="Facebook" />
-            </div>
+              <div className="social-bar">
+                <Image src={Facebook} alt="Facebook" />
+              </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
-            <div className="social-bar">
-            <Image src={Twitter} alt="Twitter" />
-            </div>
+              <div className="social-bar">
+                <Image src={Twitter} alt="Twitter" />
+              </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
-            <div className="social-bar">
-            <Image src={Instagram} alt="Instagram" />
-            </div>
+              <div className="social-bar">
+                <Image src={Instagram} alt="Instagram" />
+              </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-            <div className="social-bar">
-            <Image src={Linkedin} alt="Linkedin" />
-            </div>
+              <div className="social-bar">
+                <Image src={Linkedin} alt="Linkedin" />
+              </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
-            <div className="social-bar">
-            <Image src={Youtube} alt="Youtube" />
-            </div>
+              <div className="social-bar">
+                <Image src={Youtube} alt="Youtube" />
+              </div>
             </a></li>
           </ul>
           <ul className="menu">
