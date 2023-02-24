@@ -22,6 +22,7 @@ import fmovies from "../public/img/tweak-apps/movies/fmovies.png";
 import popcorn from "../public/img/tweak-apps/movies/popcorn.png";
 import putlocker from "../public/img/tweak-apps/movies/putlocker.png";
 import showbox from "../public/img/tweak-apps/movies/showbox.png";
+import putlockermovies from "../public/img/tweak-apps/movies/putlocker-movies-space.png";
 // ----- AI & BOTS ----- //
 import chatgpt from "../public/img/tweak-apps/ai-bots/chatgpt.png";
 import writesonic from "../public/img/tweak-apps/ai-bots/writesonic.png";
@@ -45,8 +46,24 @@ import noelshack from "../public/img/tweak-apps/editors/noelshack.png";
 import photoshopfix from "../public/img/tweak-apps/editors/photoshopfix.png";
 import removebged from "../public/img/tweak-apps/editors/removebged.png";
 import iloveimg from "../public/img/tweak-apps/editors/iloveimg.png";
+// ----- CRYPTOCURRENCIES ----- //
+import algorand from "../public/img/tweak-apps/cryptocurrencies/algorand.png";
+import binance from "../public/img/tweak-apps/cryptocurrencies/binance.png";
+import bitcoin from "../public/img/tweak-apps/cryptocurrencies/bitcoin.png";
+import cardano from "../public/img/tweak-apps/cryptocurrencies/cardano.png";
+import ethereum from "../public/img/tweak-apps/cryptocurrencies/ethereum.png";
+import internetcomputer from "../public/img/tweak-apps/cryptocurrencies/internet-computer.png";
+import polkadot from "../public/img/tweak-apps/cryptocurrencies/polkadot.png";
+import polygon from "../public/img/tweak-apps/cryptocurrencies/polygon.png";
+import rally from "../public/img/tweak-apps/cryptocurrencies/rally.png";
+import shibainu from "../public/img/tweak-apps/cryptocurrencies/shiba-inu.png";
+import solana from "../public/img/tweak-apps/cryptocurrencies/solana.png";
+import tether from "../public/img/tweak-apps/cryptocurrencies/tether.png";
+import uniswap from "../public/img/tweak-apps/cryptocurrencies/uniswap.png";
 
-// import  from "../public/img/tweak-apps/ai-bots/.png";
+
+
+// import  from "../public/img/tweak-apps/cryptocurrencies/.png";
 
 
 export function Index() {
@@ -203,7 +220,6 @@ export function Index() {
                 <div id="movies-4">
                   {/* MODULE */}
                   <div><a href="https://www2.putlockers.ws/" target="_blank">
-                    {/* <div><a href="https://putlocker-movies.space/" target="_blank"> */}
                     <div className="cardi">
                       <div className="app-row">
                         <div className="tweak-image">
@@ -228,8 +244,34 @@ export function Index() {
                   {/* MODULE */}
                 </div>
                 <div id="movies-5">
+                     {/* MODULE */}
+                    <div><a href="https://putlocker-movies.space/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image-movie-five">
+                          <Image src={putlockermovies} alt="putlockermovies" />
+                        </div>
+                        <h3 className="cardi__title">Putlocker Movies Space
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">All recent and new movies (Online Users Only)</p>
+                      </div>
+                      <div className="cardi__date">
+                        ⭐⭐⭐
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
                   {/* MODULE */}
-                  <div><a href="https://bestforandroid.com/apk/showbox/" target="_blank">
+                </div>
+                <div id="movies-6">
+                   {/* MODULE */}
+                   <div><a href="https://bestforandroid.com/apk/showbox/" target="_blank">
                     <div className="cardi">
                       <div className="app-row">
                         <div className="tweak-image">
@@ -253,13 +295,15 @@ export function Index() {
                   </div>
                   {/* MODULE */}
                 </div>
+
               </div>
               <div className="number-selector">
                 <a href="#movies-1">1️⃣</a>ㅤ|
                 ㅤ<a href="#movies-2">2️⃣</a>ㅤ|
                 ㅤ<a href="#movies-3">3️⃣</a>ㅤ|
                 ㅤ<a href="#movies-4">4️⃣</a>ㅤ|
-                ㅤ<a href="#movies-5">5️⃣</a>
+                ㅤ<a href="#movies-5">5️⃣</a>ㅤ|
+                ㅤ<a href="#movies-6">6️⃣</a>
               </div>
             </div>
           </div>
@@ -871,19 +915,342 @@ export function Index() {
             <div className="slider" id="slider-spacer">
               <div className="slides">
                 <div id="cryptocurrencies-1">
-                  1
+                  {/* MODULE */}
+                  <div><a href="https://bitcoin.org/en/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={bitcoin} alt="bitcoin" />
+                        </div>
+                        <h3 className="cardi__title">Bitcoin
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                       Satoshi Nakamoto
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="cryptocurrencies-2">
-                  2
+                    {/* MODULE */}
+                    <div><a href="https://ethereum.org/en/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={ethereum} alt="ethereum" />
+                        </div>
+                        <h3 className="cardi__title">Ethereum
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Vitalik Buterin
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="cryptocurrencies-3">
-                  3
+                    {/* MODULE */}
+                    <div><a href="https://www.binance.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={binance} alt="Binance" />
+                        </div>
+                        <h3 className="cardi__title">Binance
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Changpeng Zhao
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="cryptocurrencies-4">
-                  4
+                    {/* MODULE */}
+                    <div><a href="https://cardano.org/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={cardano} alt="Cardano" />
+                        </div>
+                        <h3 className="cardi__title">Cardano
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Charles Hoskinson
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
                 <div id="cryptocurrencies-5">
-                  5
+                    {/* MODULE */}
+                    <div><a href="https://solana.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={solana} alt="Solana" />
+                        </div>
+                        <h3 className="cardi__title">Solana
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Anatoly Yakovenko
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-6">
+                    {/* MODULE */}
+                    <div><a href="https://www.algorand.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={algorand} alt="Algorand" />
+                        </div>
+                        <h3 className="cardi__title">Algorand
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Silvio Micali
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-7">
+                    {/* MODULE */}
+                    <div><a href="https://dfinity.org/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={internetcomputer} alt="internetcomputer" />
+                        </div>
+                        <h3 className="cardi__title">Internet Computer
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Dominic Williams
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-8">
+                    {/* MODULE */}
+                    <div><a href="https://polkadot.network/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={polkadot} alt="polkadot" />
+                        </div>
+                        <h3 className="cardi__title">Polkadot
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Gavin Wood
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-9">
+                    {/* MODULE */}
+                    <div><a href="https://polygon.technology/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={polygon} alt="polygon" />
+                        </div>
+                        <h3 className="cardi__title">Polygon
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Sandeep Nailwal
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-10">
+                   {/* MODULE */}
+                  <div><a href="https://rally.io/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={rally} alt="rally" />
+                        </div>
+                        <h3 className="cardi__title">Rally
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                       Kevin Chou
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-11">
+                    {/* MODULE */}
+                    <div><a href="https://shibatoken.com/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={shibainu} alt="shibainu" />
+                        </div>
+                        <h3 className="cardi__title">Shiba Inu
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Ryoshi
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-12">
+                    {/* MODULE */}
+                    <div><a href="https://uniswap.org/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={uniswap} alt="Uniswap" />
+                        </div>
+                        <h3 className="cardi__title">Uniswap
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ</p>
+                      </div>
+                      <div className="cardi__date">
+                      Hayden Adams
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
+                </div>
+                <div id="cryptocurrencies-13">
+                        {/* MODULE */}
+                        <div><a href="https://tether.to/" target="_blank">
+                    <div className="cardi">
+                      <div className="app-row">
+                        <div className="tweak-image" id="cryptocurrencies-image">
+                          <Image src={tether} alt="Tether" />
+                        </div>
+                        <h3 className="cardi__title">Tether
+                        </h3>
+                      </div>
+                      <div className="app-row">
+                        <p className="cardi__content">ᴀᴜᴛʜᴏʀ(s)</p>
+                      </div>
+                      <div className="cardi__date">
+                      Brock Pierce, Craig Sellars, and Reeve Collins
+                      </div>
+                      <div className="cardi__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15" width="15">
+                          <path fill="#fff" d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"></path>
+                        </svg>
+                      </div>
+                    </div></a>
+                  </div>
+                  {/* MODULE */}
                 </div>
               </div>
               <div className="number-selector">
@@ -891,7 +1258,12 @@ export function Index() {
                 ㅤ<a href="#cryptocurrencies-2">2️⃣</a>ㅤ|
                 ㅤ<a href="#cryptocurrencies-3">3️⃣</a>ㅤ|
                 ㅤ<a href="#cryptocurrencies-4">4️⃣</a>ㅤ|
-                ㅤ<a href="#cryptocurrencies-5">5️⃣</a>
+                ㅤ<a href="#cryptocurrencies-5">5️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-6">6️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-7">7️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-8">8️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-9">9️⃣</a>ㅤ|
+                ㅤ<a href="#cryptocurrencies-10">🔟</a>
               </div>
             </div>
           </div>

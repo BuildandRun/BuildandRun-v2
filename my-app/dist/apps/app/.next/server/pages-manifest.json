@@ -1,14 +1,14 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/api/pricing": "pages/api/pricing.js",
   "/api/team": "pages/api/team.js",
   "/company": "pages/company.html",
   "/": "pages/index.html",
-  "/partners": "pages/partners.html",
   "/privacy-policy": "pages/privacy-policy.html",
-  "/tweak-apps": "pages/tweak-apps.html",
   "/terms-of-service": "pages/terms-of-service.html",
-  "/_error": "pages/_error.js",
+  "/partners": "pages/partners.html",
+  "/tweak-apps": "pages/tweak-apps.html",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

@@ -35,8 +35,25 @@
   margin-top: -2rem;
 }
 
+.tweak-image-movie-five {
+  width: 50px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: -4rem;
+  padding-bottom: 1rem;
+  margin-top: -4rem;
+}
+
 #ai-bots-image {
   padding-top: 1rem;
+}
+
+#cryptocurrencies-image {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
 }
 
 /* DESIGN OF BOX */
