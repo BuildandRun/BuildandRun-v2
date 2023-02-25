@@ -104,7 +104,7 @@ export default function company() {
             <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
             <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
             <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
-            <li className="menu__item"><a className="menu__link" href="http://107.22.108.84/" target="_blank">V.1.0.1</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://github.com/BuildandRun/BuildandRun-v1.0.1#readme" target="_blank">V.1.0.1</a></li>
             <li className="menu__item"><a className="menu__link" href="./privacy-policy" target="_blank">Privacy Policy</a></li>
             <li className="menu__item"><a className="menu__link" href="./terms-of-service" target="_blank">Terms Of Service</a></li>
 

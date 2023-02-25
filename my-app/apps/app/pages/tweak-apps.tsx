@@ -1,14 +1,6 @@
 import Image from "next/image";
 import BRlogo from "../public/img/logo/BRlogo.png";
 import mBRlogo from "../public/img/logo/mBRlogo.png";
-import WebDevTab from "../public/img/navigate/web/82c.png";
-import AdminTab from "../public/img/navigate/admin/a3.png";
-import SocialTab from "../public/img/navigate/social/s2.png";
-import AppProjects from "../public/img/navigate/projects/p2.png";
-import AppBlog from "../public/img/navigate/blog/b2.png";
-import AppTweak from "../public/img/navigate/tweak/t2.png";
-import AppAbout from "../public/img/navigate/about/a1.png";
-import AppTeam from "../public/img/navigate/team/t8.png";
 import Facebook from "../public/img/footer/logo-facebook.svg";
 import Twitter from "../public/img/footer/logo-twitter.svg";
 import Instagram from "../public/img/footer/logo-instagram.svg";
@@ -71,7 +63,7 @@ export function Index() {
   /*
    * Build and Run v.2.0.2 Index.
    *
-   * Note: The corresponding styles are in the ./index.css file.
+   * Note: The corresponding styles are in the ./tweak-apps.css file.
    */
 
   return (
@@ -88,9 +80,9 @@ export function Index() {
           </h1>
         </div>
         <div id="description">
-          <span>You can access our online platform with your mobile device and desktop.</span>
+          <span>The Tweak Apps section is your one-stop-shop for finding applications and software that can simplify your online life.</span>
           <div></div>
-          <span>We are currently building our IOS and Android App. Stay tuned!</span>
+          <span></span>
         </div>
 
         <div id="hero" className="rounded">

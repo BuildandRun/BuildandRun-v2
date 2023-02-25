@@ -16,7 +16,7 @@ function regexEqual(x, y) {
  */
 function getWithNxContext() {
 return {
-workspaceRoot: '/Users/macbookpro/Desktop/BuildandRun-v2/my-app',
+workspaceRoot: '/Users/jbert/Desktop/BuildandRun-v2/my-app',
 libsDir: 'libs'
 }
 }

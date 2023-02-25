@@ -1,0 +1,363 @@
+  /*
+   * Build and Run v.2.0.2 CSS.
+   *
+   * Note: The corresponding styles are in the ./projects.css file.
+   */
+
+
+   .project-card{
+    width: 100%;
+    max-width: 730px;
+    height: 70px;
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+  }
+  
+  
+  .project-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  .project-img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#d7cfcf, #9198e5);
+  }
+  
+  .project-card:hover > .img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(#9198e5, #712020);
+  }
+  
+  .project-textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+  }
+  
+  .project-textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-span {
+    font-size: 10px;
+  }
+  
+  .project-h1 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .project-p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  
+
+
+
+
+  
+  /* LEGEND  */
+
+  /*  SLIDER MOBILE SCREEN */
+  @media only screen and (max-width: 600px) {
+          
+    * {
+      box-sizing: border-box;
+    }
+
+    .legend-container {
+      margin-top: 1rem;
+      width: 360px;
+      height: 80px;
+    }
+    
+    .legend-terminal_toolbar {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      padding: 0 8px;
+      box-sizing: border-box;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: #212121;
+      justify-content: space-between;
+    }
+    
+    .legend-butt {
+      display: flex;
+      align-items: center;
+    }
+    
+    .legend-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-right: 5px;
+      font-size: 8px;
+      height: 12px;
+      width: 12px;
+      box-sizing: border-box;
+      border: none;
+      border-radius: 100%;
+      background: linear-gradient(#7d7871 0%, #595953 100%);
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+    }
+    
+    .legend-btn-color {
+      background: #ee411a;
+    }
+    
+    .legend-btn:hover {
+      cursor: pointer;
+    }
+    
+    .legend-btn:focus {
+      outline: none;
+    }
+    
+    .legend-butt--exit {
+      background: linear-gradient(#f37458 6%, #de4c12 100%);
+    }
+    
+    .legend-add_tab {
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0 6px;
+      border-radius: 4px 4px 0 0;
+      border-bottom: none;
+      cursor: pointer;
+    }
+    
+    .legend-user {
+      color: #d5d0ce;
+      margin-left: 6px;
+      font-size: 14px;
+      line-height: 15px;
+    }
+    
+    .legend-terminal_body {
+      background: rgba(0, 0, 0, 0.6);
+      height: calc(100% - 30px);
+      padding-top: 2px;
+      margin-top: -1px;
+      font-size: 12px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    
+    .legend-terminal_promt {
+      display: flex;
+    }
+    
+    .legend-terminal_promt span {
+      margin-left: 4px;
+    }
+    
+    .legend-terminal_user {
+      color: #1eff8e;
+    }
+    
+    .legend-terminal_location {
+      color: #4878c0;
+    }
+    
+    .legend-terminal_bling {
+      color: #dddddd;
+    }
+    
+    .legend-terminal_cursor {
+      display: block;
+      height: 14px;
+      width: 5px;
+      margin-left: 10px;
+      animation: curbl 1200ms linear infinite;
+    }
+    
+    @keyframes curbl {
+    
+      0% {
+        background: #ffffff;
+      }
+    
+      49% {
+        background: #ffffff;
+      }
+    
+      60% {
+        background: transparent;
+      }
+    
+      99% {
+        background: transparent;
+      }
+    
+      100% {
+        background: #ffffff;
+      }
+    }
+
+  }
+
+  /*  SLIDER MOBILE SCREEN */
+  
+  
+  /*  SLIDER DESKTOP SCREEN */
+
+  @media only screen and (min-width:600px) {
+            
+              
+    * {
+      box-sizing: border-box;
+    }
+
+  .legend-container {
+    margin-top: 1rem;
+    width: 730px;
+    height: 60px;
+  }
+  
+  .legend-terminal_toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #212121;
+    justify-content: space-between;
+  }
+  
+  .legend-butt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .legend-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+  }
+  
+  .legend-btn-color {
+    background: #ee411a;
+  }
+  
+  .legend-btn:hover {
+    cursor: pointer;
+  }
+  
+  .legend-btn:focus {
+    outline: none;
+  }
+  
+  .legend-butt--exit {
+    background: linear-gradient(#f37458 6%, #de4c12 100%);
+  }
+  
+  .legend-add_tab {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    cursor: pointer;
+  }
+  
+  .legend-user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  
+  .legend-terminal_body {
+    background: rgba(0, 0, 0, 0.6);
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .legend-terminal_promt {
+    display: flex;
+  }
+  
+  .legend-terminal_promt span {
+    margin-left: 4px;
+  }
+  
+  .legend-terminal_user {
+    color: #1eff8e;
+  }
+  
+  .legend-terminal_location {
+    color: #4878c0;
+  }
+  
+  .legend-terminal_bling {
+    color: #dddddd;
+  }
+  
+  .legend-terminal_cursor {
+    display: block;
+    height: 14px;
+    width: 5px;
+    margin-left: 10px;
+    animation: curbl 1200ms linear infinite;
+  }
+  
+  @keyframes curbl {
+  
+    0% {
+      background: #ffffff;
+    }
+  
+    49% {
+      background: #ffffff;
+    }
+  
+    60% {
+      background: transparent;
+    }
+  
+    99% {
+      background: transparent;
+    }
+  
+    100% {
+      background: #ffffff;
+    }
+  }
+}
+
+/*  SLIDER DESKTOP SCREEN */

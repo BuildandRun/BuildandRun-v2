@@ -79,7 +79,7 @@ export function Index() {
           <div id="learning-materials" className="rounded shadow">
             <h2>App Features</h2>
             <a
-              href="https://tech.brstore.us"
+              href="./projects"
               rel="noreferrer"
               className="list-item-link"
             >

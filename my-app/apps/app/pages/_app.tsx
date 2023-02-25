@@ -2,6 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
 import './tweak-apps.css';
+import './projects.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
