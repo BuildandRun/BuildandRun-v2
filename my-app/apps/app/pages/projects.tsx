@@ -77,9 +77,9 @@ export function Index() {
                 <div className="legend-container">
     <div className="legend-terminal_toolbar">
         <div className="legend-butt">
-            <button className="legend-btn btn-color"></button>
-            <button className="legend-btn"></button>
-            <button className="legend-btn"></button>
+            <button className="legend-btn legend-btn-red"></button>
+            <button className="legend-btn legend-btn-yellow"></button>
+            <button className="legend-btn legend-btn-green"></button>
         </div>
         <p className="legend-user">Build and Run ~ Terminal</p>
         <a href="https://github.com/BuildandRun"><div className="legend-add_tab">
