@@ -82,9 +82,9 @@ export function Index() {
             <button className="legend-btn"></button>
         </div>
         <p className="legend-user">Build and Run ~ Terminal</p>
-        <div className="legend-add_tab">
+        <a href="https://github.com/BuildandRun"><div className="legend-add_tab">
             +
-        </div>
+        </div></a>
     </div>
     <div className="legend-terminal_body">
         <div className="legend-terminal_promt">
@@ -149,7 +149,7 @@ export function Index() {
                                     <p className="project-h1">Admin Panel</p>
                                     <span className="project-span">November 2022 🟢</span>
                                 </div>
-                                <p className="project-p">Manage password, plan, email, and subscription</p>
+                                <p className="project-p">Manage password, email, site, and subscription</p>
                                 <div>
                                 </div></div></div>
                         </a>  
