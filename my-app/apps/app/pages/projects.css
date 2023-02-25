@@ -81,7 +81,7 @@
 
     .legend-container {
       margin-top: 1rem;
-      width: 400px;
+      width: 395px;
       height: 80px;
     }
     
@@ -186,7 +186,7 @@
       display: block;
       height: 14px;
       width: 10px;
-      margin-right: 1.2rem;
+      margin-right: 2rem;
       
       margin-top: 1.2rem;
       animation: curbl 1200ms linear infinite;
