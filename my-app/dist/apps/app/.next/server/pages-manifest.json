@@ -1,6 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/api/pricing": "pages/api/pricing.js",
+  "/api/success": "pages/api/success.js",
   "/api/team": "pages/api/team.js",
   "/company": "pages/company.html",
   "/": "pages/index.html",

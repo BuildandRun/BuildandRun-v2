@@ -21,6 +21,10 @@ const nextConfig = {
       source: "/public/team/index.html",
       destination: "/pages/api/team.js",
     },
+    {
+      source: "/public/skB55L5WOPPK/success/index.html",
+      destination: "/pages/api/success.js",
+    },
   ],
 };
 
