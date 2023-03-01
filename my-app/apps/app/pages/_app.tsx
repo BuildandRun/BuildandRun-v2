@@ -3,6 +3,7 @@ import Head from 'next/head';
 import './styles.css';
 import './tweak-apps.css';
 import './projects.css';
+import './payment/confirmation.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
