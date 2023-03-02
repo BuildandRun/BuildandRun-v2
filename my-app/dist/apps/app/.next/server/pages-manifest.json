@@ -6,12 +6,13 @@
   "/company": "pages/company.html",
   "/": "pages/index.html",
   "/partners": "pages/partners.html",
+  "/payment/confirmation": "pages/payment/confirmation.html",
   "/privacy-policy": "pages/privacy-policy.html",
   "/projects": "pages/projects.html",
   "/template-start-app": "pages/template-start-app.html",
-  "/_error": "pages/_error.js",
   "/terms-of-service": "pages/terms-of-service.html",
   "/tweak-apps": "pages/tweak-apps.html",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }

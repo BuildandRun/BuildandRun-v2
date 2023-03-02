@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/E4QCQHvuSrxwjXqkjM8fw/_buildManifest.js",
-    "static/E4QCQHvuSrxwjXqkjM8fw/_ssgManifest.js"
+    "static/g6Vqd5HvqJwK4oCcPM34m/_buildManifest.js",
+    "static/g6Vqd5HvqJwK4oCcPM34m/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -21,8 +21,8 @@
       "static/chunks/webpack-69bfa6990bb9e155.js",
       "static/chunks/framework-c02f198d58d34563.js",
       "static/chunks/main-99be3c51c4c22ddc.js",
-      "static/css/3a3fc4eeeb0a4123.css",
-      "static/chunks/pages/_app-7705a85277e06b47.js"
+      "static/css/3e3e8a4e8c4f624f.css",
+      "static/chunks/pages/_app-900fa747993bac0f.js"
     ],
     "/_error": [
       "static/chunks/webpack-69bfa6990bb9e155.js",
@@ -43,6 +43,13 @@
       "static/chunks/main-99be3c51c4c22ddc.js",
       "static/chunks/577-7922cce5e9afe144.js",
       "static/chunks/pages/partners-684980d515f35232.js"
+    ],
+    "/payment/confirmation": [
+      "static/chunks/webpack-69bfa6990bb9e155.js",
+      "static/chunks/framework-c02f198d58d34563.js",
+      "static/chunks/main-99be3c51c4c22ddc.js",
+      "static/chunks/577-7922cce5e9afe144.js",
+      "static/chunks/pages/payment/confirmation-03c2735476dc4d31.js"
     ],
     "/privacy-policy": [
       "static/chunks/webpack-69bfa6990bb9e155.js",

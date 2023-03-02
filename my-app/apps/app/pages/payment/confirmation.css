@@ -28,6 +28,10 @@
     margin-top: 1rem;
 }
 
+.blank-payment-successful {
+  margin-top: 5rem;
+}
+
 .blank-form {
     display: flex;
     flex-direction: column;
@@ -63,9 +67,9 @@
   }
   
   .blank-avatar {
-    height: 50px;
+    height: 20px;
     width: 50px;
-    background-color: rgb(23, 111, 211);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 50%;
     align-self: center;
     padding: 6px;
