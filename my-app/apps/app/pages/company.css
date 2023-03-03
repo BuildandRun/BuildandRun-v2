@@ -1,0 +1,18 @@
+ /*
+   * Build and Run v.2.0.2 CSS.
+   *
+   * Note: The corresponding styles are in the ./company.css file.
+   */
+
+.company-text {
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  #company-text-1 {
+    margin-top: -8rem;
+  }
+#divider-come-closer {
+    margin-bottom: -3.5rem;
+}

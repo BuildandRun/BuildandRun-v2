@@ -1,3 +1,8 @@
+ /*
+   * Build and Run v.2.0.2 CSS.
+   *
+   * Note: The corresponding styles are in the ./payment/confirmation.css file.
+   */
 
 .confetti {
     width: 90px;
@@ -91,7 +96,7 @@
     box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),100px 100px 80px rgba(0, 0, 0, 0.03);
   }
   
-  button {
+  .blank-button {
     margin-top: 12px;
     background-color: rgb(23, 111, 211);
     color: #fff;

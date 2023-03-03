@@ -31,26 +31,26 @@ const Partnership: React.FC = () => {
           </div>
       </div>
         <div className='partner-box'>
-            <div className="card">
-                <div className="card-details">
+            <div className="partner-card">
+                <div className="partner-card-details">
                 <div id="partner-logo" className="partner-logo">
                 <Image src={nftsociale} alt="nftsociale"/>
                 </div>
                 <p className="text-title">Web 3.0</p>
                 <p className="text-body">Wᴇ Bᴜɪʟᴅ Wᴇʙ3 Pʀᴏᴅᴜᴄᴛs.</p>
                 </div>
-                <a href="https://news.nftsociale.net/" target="_blank"><button className="card-button">View site</button></a>
+                <a href="https://news.nftsociale.net/" target="_blank"><button className="partner-card-button">View site</button></a>
             </div>
             <div className='divider'></div>
-            <div className="card">
-                <div className="card-details">
+            <div className="partner-card">
+                <div className="partner-card-details">
                     <div id="partner-logo" className="partner-logo">
                 <Image src={smmfollowers} alt="smmfollowers"/>
                     </div>
                 <p className="text-title">Marketing</p>
                 <p className="text-body">Bᴇsᴛ SMM Fᴏʟʟᴏᴡᴇʀs Sᴇʀᴠɪᴄᴇ.</p>
                 </div>
-                <a href="https://smmfollowers.com/" target="_blank"><button className="card-button">View site</button></a>
+                <a href="https://smmfollowers.com/" target="_blank"><button className="partner-card-button">View site</button></a>
             </div>
         </div>
       <p id="love">
