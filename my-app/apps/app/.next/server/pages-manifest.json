@@ -1,5 +1,9 @@
 {
   "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/projects": "pages/projects.js",
+  "/tweak-apps": "pages/tweak-apps.js",
+  "/": "pages/index.js",
+  "/partners": "pages/partners.js"
 }

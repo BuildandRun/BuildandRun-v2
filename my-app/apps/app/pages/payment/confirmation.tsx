@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from "next/image";
-import br from "/public/img/projects/br.png";
 import Facebook from "/public/img/footer/logo-facebook.svg";
 import Twitter from "/public/img/footer/logo-twitter.svg";
 import Instagram from "/public/img/footer/logo-instagram.svg";
@@ -159,7 +158,7 @@ l-13 65 -1 -50z"/>
               <label >Mᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ᴀʀᴇ sᴀᴛɪsғɪᴇᴅ ᴡɪᴛʜ ʏᴏᴜʀ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ. (Yᴏᴜ ᴡɪʟʟ ɴᴏᴛ ʙᴇ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴍᴀᴋᴇ ᴀɴʏ ᴄʜᴀɴɢᴇs). Cʜᴇᴄᴋ ᴛʜᴇ ʙᴏx ɪғ ʏᴏᴜʀ ᴅᴏᴍᴀɪɴ ɴᴀᴍᴇ ɪs ᴄᴏʀʀᴇᴄᴛ. *</label>
             </div>
             <input type="hidden" name="redirect" value="https://brstore.us/pricing/skB55L5WOPPK/success/index.html"></input>
-            <button type="submit">Submit</button>
+            <button className="blank-button" type="submit">Submit</button>
           </form>
         </div>
 
@@ -211,12 +210,12 @@ l-13 65 -1 -50z"/>
             </ul>
             <div>
               <ul className="menu">
-                <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
-                <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
+                <li className="menu__item"><a className="menu__link" href="../" target="_blank">Homepage</a></li>
+                <li className="menu__item"><a className="menu__link" href="../partners" target="_blank">Partners</a></li>
                 <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
                 <li className="menu__item"><a className="menu__link" href="https://github.com/BuildandRun/BuildandRun-v1.0.1#readme" target="_blank">V.1.0.1</a></li>
-                <li className="menu__item"><a className="menu__link" href="./privacy-policy" target="_blank">Privacy Policy</a></li>
-                <li className="menu__item"><a className="menu__link" href="./terms-of-service" target="_blank">Terms Of Service</a></li>
+                <li className="menu__item"><a className="menu__link" href="../privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li className="menu__item"><a className="menu__link" href="../terms-of-service" target="_blank">Terms Of Service</a></li>
 
               </ul>
               <p>&copy;2023 B&R | All Rights Reserved</p>

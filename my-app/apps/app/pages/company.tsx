@@ -6,6 +6,10 @@ import Twitter from "../public/img/footer/logo-twitter.svg";
 import Instagram from "../public/img/footer/logo-instagram.svg";
 import Linkedin from "../public/img/footer/logo-linkedin.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
+import Crunchbase from "../public/img/footer/crunchbase.svg";
+import Stackshare from "../public/img/footer/stackshare.svg";
+import AngelList from "../public/img/footer/angellist-rounded.svg";
+import Github from "../public/img/footer/github-square.svg";
 
 
 export default function company() {
@@ -70,6 +74,33 @@ export default function company() {
             />
           </svg>
         </p>
+         {/* SECOND SECTION  */}
+        <div className="divider2" id="divider-come-closer">
+        <ul className="social-icon">
+        <li className="social-icon__item"><a className="social-icon__link" href="https://www.crunchbase.com/organization/brstoreus" target="_blank">
+            <div className="social-bar2">
+            <Image src={Crunchbase} alt="Crunchbase" />
+            </div>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://stackshare.io/build-and-run/build-and-run" target="_blank">
+            <div className="social-bar2">
+            <Image src={Stackshare} alt="Stackshare" />
+            </div>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://angel.co/company/bandr" target="_blank">
+            <div className="social-bar2">
+            <Image src={AngelList} alt="AngelList" />
+            </div>
+            </a></li>
+            <li className="social-icon__item"><a className="social-icon__link" href="https://github.com/BuildandRun" target="_blank">
+            <div className="social-bar2">
+            <Image src={Github} alt="Github" />
+            </div>
+            </a></li>
+            </ul>
+        </div>
+        {/* SECOND SECTION  */}
+        {/* FIRST SECTION  */}
         <div className="divider2">
         <footer className="footer">
           <ul className="social-icon">

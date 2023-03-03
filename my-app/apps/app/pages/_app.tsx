@@ -2,8 +2,11 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
 import './tweak-apps.css';
+import './partners.css';
 import './projects.css';
+import './company.css';
 import './payment/confirmation.css';
+import './projects/debit-card.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

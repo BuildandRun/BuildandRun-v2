@@ -103,7 +103,7 @@ export function Index() {
                 {/* PROJECT # 8 */}
                 <div>
                     <div>
-                    <a href="#" target="_blank">
+                    <a href="./projects/debit-card" target="_blank">
                         <div className="project-card">
                             <div className="project-img">
                             <Image src={br} alt="br"/>
@@ -111,7 +111,7 @@ export function Index() {
                             <div className="project-textBox">
                                 <div className="project-textContent">
                                     <p className="project-h1">Debit Card</p>
-                                    <span className="project-span">In Progress 🟡</span>
+                                    <span className="project-span">March 2023 🟢</span>
                                 </div>
                                 <p className="project-p">Use this tool for all your free tials </p>
                                 <div>
