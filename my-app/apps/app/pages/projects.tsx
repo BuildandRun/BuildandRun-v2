@@ -4,7 +4,6 @@ import mBRlogo from "../public/img/logo/mBRlogo.png";
 import Facebook from "../public/img/footer/logo-facebook.svg";
 import Twitter from "../public/img/footer/logo-twitter.svg";
 import Instagram from "../public/img/footer/logo-instagram.svg";
-import Linkedin from "../public/img/footer/logo-linkedin.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
 import br from "../public/img/projects/br.png";
@@ -74,28 +73,28 @@ export function Index() {
                 </div>
                 {/* LEGEND  */}
                 <div>
-                <div className="legend-container">
-    <div className="legend-terminal_toolbar">
-        <div className="legend-butt">
-            <button className="legend-btn legend-btn-red"></button>
-            <button className="legend-btn legend-btn-yellow"></button>
-            <button className="legend-btn legend-btn-green"></button>
-        </div>
-        <p className="legend-user">Build and Run ~ Terminal</p>
-        <a href="https://github.com/BuildandRun"><div className="legend-add_tab">
-            +
-        </div></a>
-    </div>
-    <div className="legend-terminal_body">
-        <div className="legend-terminal_promt">
-            <span className="legend-terminal_user">support@brstore.us:</span>
-            <span className="legend-terminal_location">~</span>
-            <span className="legend-terminal_bling">$ git legend -br update: InProgress 🟡 || Incomplete 🟠 || Critical 🔴 || Done 🟢 </span>
-            <span className="legend-terminal_cursor"></span>
-        </div>
-    </div>
-</div>
-  {/* LEGEND  */}
+                    <div className="legend-container">
+                        <div className="legend-terminal_toolbar">
+                            <div className="legend-butt">
+                                <button className="legend-btn legend-btn-red"></button>
+                                <button className="legend-btn legend-btn-yellow"></button>
+                                <button className="legend-btn legend-btn-green"></button>
+                            </div>
+                            <p className="legend-user">Build and Run ~ Terminal</p>
+                            <a href="https://github.com/BuildandRun"><div className="legend-add_tab">
+                                +
+                            </div></a>
+                        </div>
+                        <div className="legend-terminal_body">
+                            <div className="legend-terminal_promt">
+                                <span className="legend-terminal_user">support@brstore.us:</span>
+                                <span className="legend-terminal_location">~</span>
+                                <span className="legend-terminal_bling">$ git legend -br update: InProgress 🟡 || Incomplete 🟠 || Critical 🔴 || Done 🟢 </span>
+                                <span className="legend-terminal_cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                    {/* LEGEND  */}
                 </div>
 
 
@@ -103,146 +102,146 @@ export function Index() {
                 {/* PROJECT # 8 */}
                 <div>
                     <div>
-                    <a href="./projects/debit-card" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Debit Card</p>
-                                    <span className="project-span">March 2023 🟢</span>
+                        <a href="./projects/debit-card" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Use this tool for all your free tials </p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Debit Card</p>
+                                        <span className="project-span">March 2023 🟢</span>
+                                    </div>
+                                    <p className="project-p">Use this tool for all your free tials </p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 8 */}
                     {/* PROJECT # 7 */}
                     <div>
-                    <a href="https://blog.brstore.us" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Blog</p>
-                                    <span className="project-span">December 2022 🟢</span>
+                        <a href="https://blog.brstore.us" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">New blog experience for you and your friends</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Blog</p>
+                                        <span className="project-span">December 2022 🟢</span>
+                                    </div>
+                                    <p className="project-p">New blog experience for you and your friends</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 7 */}
                     {/* PROJECT # 6 */}
                     <div>
-                    <a href="https://admin.brstore.us" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Admin Panel</p>
-                                    <span className="project-span">November 2022 🟢</span>
+                        <a href="https://admin.brstore.us" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Manage password, email, site, and subscription</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Admin Panel</p>
+                                        <span className="project-span">November 2022 🟢</span>
+                                    </div>
+                                    <p className="project-p">Manage password, email, site, and subscription</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 6 */}
                     {/* PROJECT # 5 */}
                     <div>
-                    <a href="http://brstore.ddns.net/tech/projects/simple-logo/" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Logo and Favicon </p>
-                                    <span className="project-span">October 2021 🟢</span>
+                        <a href="http://brstore.ddns.net/tech/projects/simple-logo/" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Simple logo and favicon generator</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Logo and Favicon </p>
+                                        <span className="project-span">October 2021 🟢</span>
+                                    </div>
+                                    <p className="project-p">Simple logo and favicon generator</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 5 */}
                     {/* PROJECT # 4 */}
                     <div>
-                    <a href="http://brstore.ddns.net/tech/projects/password-generator/" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Password Generator</p>
-                                    <span className="project-span">April 2021 🟢</span>
+                        <a href="http://brstore.ddns.net/tech/projects/password-generator/" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Generate password with up to 32 characters</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Password Generator</p>
+                                        <span className="project-span">April 2021 🟢</span>
+                                    </div>
+                                    <p className="project-p">Generate password with up to 32 characters</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 4 */}
                     {/* PROJECT # 3 */}
                     <div>
-                    <a href="https://media.brstore.us" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Media Panel</p>
-                                    <span className="project-span">December 2020 🟠</span>
+                        <a href="https://media.brstore.us" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Your marketing tool for all your socials</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Media Panel</p>
+                                        <span className="project-span">December 2020 🟠</span>
+                                    </div>
+                                    <p className="project-p">Your marketing tool for all your socials</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 3 */}
                     {/* PROJECT # 2 */}
                     <div>
-                    <a href="./tweak-apps" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Tweak Apps</p>
-                                    <span className="project-span">November 2020 🟢</span>
+                        <a href="./tweak-apps" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">Applications  that can simplify your online life</p>
-                                <div>
-                                </div></div></div>
-                        </a>  
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Tweak Apps</p>
+                                        <span className="project-span">November 2020 🟢</span>
+                                    </div>
+                                    <p className="project-p">Applications  that can simplify your online life</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 2 */}
                     {/* PROJECT # 1 */}
                     <div>
                         <a href="https://github.com/BuildandRun/BuildandRun-v1.0.1#readme" target="_blank">
-                        <div className="project-card">
-                            <div className="project-img">
-                            <Image src={br} alt="br"/>
-                            </div>
-                            <div className="project-textBox">
-                                <div className="project-textContent">
-                                    <p className="project-h1">Build and Run v1.0.1</p>
-                                    <span className="project-span">November 2020 🟢</span>
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
                                 </div>
-                                <p className="project-p">The initial release of Build and Run's Web App</p>
-                                <div>
-                                </div></div></div>
-                        </a>    
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Build and Run v1.0.1</p>
+                                        <span className="project-span">November 2020 🟢</span>
+                                    </div>
+                                    <p className="project-p">The initial release of Build and Run's Web App</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
                     </div>
                     {/* PROJECT # 1 */}
                 </div>
@@ -366,11 +365,6 @@ export function Index() {
                         <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
                             <div className="social-bar">
                                 <Image src={Instagram} alt="Instagram" />
-                            </div>
-                        </a></li>
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-                            <div className="social-bar">
-                                <Image src={Linkedin} alt="Linkedin" />
                             </div>
                         </a></li>
                         <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
