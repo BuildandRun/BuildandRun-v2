@@ -25,6 +25,10 @@ const nextConfig = {
       source: "/public/skB55L5WOPPK/success/index.html",
       destination: "/pages/api/success.js",
     },
+    {
+      source: "/public/email/b-n-r-v2.html",
+      destination: "/pages/api/b-n-r-v2.js",
+    },
   ],
 };
 
