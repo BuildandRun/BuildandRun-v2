@@ -476,6 +476,11 @@ summary svg {
   height: auto;
 }
 
+#github-second {
+  width: 30px;
+  height: auto;
+}
+
 .social-icon,
 .menu {
   position: relative;

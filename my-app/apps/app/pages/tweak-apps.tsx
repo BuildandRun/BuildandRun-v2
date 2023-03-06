@@ -4,7 +4,6 @@ import mBRlogo from "../public/img/logo/mBRlogo.png";
 import Facebook from "../public/img/footer/logo-facebook.svg";
 import Twitter from "../public/img/footer/logo-twitter.svg";
 import Instagram from "../public/img/footer/logo-instagram.svg";
-import Linkedin from "../public/img/footer/logo-linkedin.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
 // ----- TWEAK IMAGE ----- //
@@ -1375,11 +1374,6 @@ export function Index() {
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
               <div className="social-bar">
                 <Image src={Instagram} alt="Instagram" />
-              </div>
-            </a></li>
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-              <div className="social-bar">
-                <Image src={Linkedin} alt="Linkedin" />
               </div>
             </a></li>
             <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
