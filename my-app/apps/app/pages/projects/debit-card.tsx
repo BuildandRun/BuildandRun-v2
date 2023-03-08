@@ -3,17 +3,12 @@ import Image from "next/image";
 import Facebook from "/public/img/footer/logo-facebook.svg";
 import Twitter from "/public/img/footer/logo-twitter.svg";
 import Instagram from "/public/img/footer/logo-instagram.svg";
-import Linkedin from "/public/img/footer/logo-linkedin.svg";
 import Youtube from "/public/img/footer/logo-youtube.svg";
 
 import chip from "/public/img/projects/debit-card/chip.png";
 
 
 // import  from "../public/img/tweak-apps/cryptocurrencies/.png";
-
-function popup() {
-  alert("I am a pop up ! ");
-}
 
 export default function company() {
   return (
@@ -165,11 +160,6 @@ export default function company() {
               <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
                 <div className="social-bar2">
                   <Image src={Instagram} alt="Instagram" />
-                </div>
-              </a></li>
-              <li className="social-icon__item"><a className="social-icon__link" href="https://www.linkedin.com/company/bandr/" target="_blank">
-                <div className="social-bar2">
-                  <Image src={Linkedin} alt="Linkedin" />
                 </div>
               </a></li>
               <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
