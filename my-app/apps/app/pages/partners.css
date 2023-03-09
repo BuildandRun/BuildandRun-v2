@@ -4,6 +4,18 @@
    * Note: The corresponding styles are in the ./partners.css file.
    */
 
+.partner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+  
+.partner-logo {
+  width: 150px; 
+  height: auto;
+}
+
 .partner-card {
     width: 190px;
     height: 254px;
