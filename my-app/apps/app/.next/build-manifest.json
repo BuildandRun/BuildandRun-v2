@@ -25,15 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/projects": [
+    "/company": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/projects.js"
+      "static/chunks/pages/company.js"
     ],
-    "/projects/debit-card": [
+    "/partners": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/projects/debit-card.js"
+      "static/chunks/pages/partners.js"
+    ],
+    "/terms-of-service": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/terms-of-service.js"
     ]
   },
   "ampFirstPages": []

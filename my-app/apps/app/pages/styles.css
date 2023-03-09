@@ -552,7 +552,12 @@ summary svg {
   width:90px;
   height: auto;
   padding-right: 0.8rem;
+
 }
+#HDBRlogo {
+  margin-bottom: 0;
+}
+
 
 .HDBRtitle {
   margin-top: 1rem;
@@ -561,18 +566,6 @@ summary svg {
 #HDBRtitle {
   margin-top: -0.2rem;
 }
-
-.partner-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.partner-logo {
-  width: 150px; 
-  height: auto;
-}
-
 
  .divider{
   width:1px;
