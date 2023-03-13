@@ -99,8 +99,26 @@ export function Index() {
 
 
                 {/* PROJECTS  */}
-                {/* PROJECT # 8 */}
                 <div>
+                     {/* PROJECT # 9 */}
+                     <div>
+                        <a href="#" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
+                                </div>
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Shop</p>
+                                        <span className="project-span">InProgress 🟡</span>
+                                    </div>
+                                    <p className="project-p">All your personal items for cheap </p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
+                    </div>
+                    {/* PROJECT # 9 */}
+                    {/* PROJECT # 8 */}
                     <div>
                         <a href="./projects/debit-card" target="_blank">
                             <div className="project-card">
