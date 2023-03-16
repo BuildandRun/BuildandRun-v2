@@ -130,7 +130,7 @@ export function Index() {
                                         <p className="project-h1">Debit Card</p>
                                         <span className="project-span">March 2023 🟢</span>
                                     </div>
-                                    <p className="project-p">Use this tool for all your free tials </p>
+                                    <p className="project-p">Use this tool for all your free trials </p>
                                     <div>
                                     </div></div></div>
                         </a>
