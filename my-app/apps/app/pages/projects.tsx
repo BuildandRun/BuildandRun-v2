@@ -102,7 +102,7 @@ export function Index() {
                 <div>
                      {/* PROJECT # 9 */}
                      <div>
-                        <a href="#" target="_blank">
+                        <a href="https://shop.brstore.us" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -110,7 +110,7 @@ export function Index() {
                                 <div className="project-textBox">
                                     <div className="project-textContent">
                                         <p className="project-h1">Shop</p>
-                                        <span className="project-span">InProgress 🟡</span>
+                                        <span className="project-span">March 2023 🟢</span>
                                     </div>
                                     <p className="project-p">All your personal items for cheap </p>
                                     <div>
