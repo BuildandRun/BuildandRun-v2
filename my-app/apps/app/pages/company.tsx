@@ -10,6 +10,7 @@ import Crunchbase from "../public/img/footer/crunchbase.svg";
 import Stackshare from "../public/img/footer/stackshare.svg";
 import AngelList from "../public/img/footer/angellist-rounded.svg";
 import Github from "../public/img/footer/github-square.svg";
+import Donate from "../public/img/footer/donation.png";
 
 
 export default function company() {
@@ -57,6 +58,11 @@ export default function company() {
       <p>
       In summary, <strong>Build and Run</strong>  is a technology company that offers a comprehensive range of services to help clients build and run their online presence with ease. With its commitment to customer satisfaction, attention to detail, and expertise in web development, design, social media marketing, and more, <strong>Build and Run</strong> is the perfect partner for anyone looking to succeed online. 
       </p>
+{/* 
+      <div className="donate">
+      <Image src={Donate} alt="Donate" width={50} height={50}/> 
+      </div> */}
+
 
       <p id="love">
           Build and Run v2.0.2 crafted with
@@ -75,10 +81,16 @@ export default function company() {
           </svg>
         </p>
          {/* SECOND SECTION  */}
+      <a href="https://donate.stripe.com/eVadTF89Uacpa8ofZn" target="_blank">
+      <div className="donate">
+      <Image src={Donate} alt="Donate" width={50} height={50}/> 
+      </div></a> 
+         
         <div className="divider2" id="divider-come-closer">
         <ul className="social-icon">
         <li className="social-icon__item"><a className="social-icon__link" href="https://www.crunchbase.com/organization/brstoreus" target="_blank">
             <div className="social-bar2">
+              
             <Image src={Crunchbase} alt="Crunchbase" />
             </div>
             </a></li>
