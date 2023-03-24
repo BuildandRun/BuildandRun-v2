@@ -142,6 +142,8 @@ export default function company() {
             </div>
             </a></li>
           </ul>
+          <a href="https://www.producthunt.com/posts/build-and-run?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-build&#0045;and&#0045;run" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385584&theme=dark" alt="Build&#0032;and&#0032;Run - &#0035;web&#0032;&#0035;development&#0032;&#0035;website&#0032;&#0035;webdesign&#0032;&#0035;hosting&#0032;&#0035;tweaks&#0032; | Product Hunt"  width="150" height="54" /></a>
+
           <div>
           <ul className="menu">
             <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
