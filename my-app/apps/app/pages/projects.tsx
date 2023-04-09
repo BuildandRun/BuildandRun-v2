@@ -100,6 +100,24 @@ export function Index() {
 
                 {/* PROJECTS  */}
                 <div>
+                     {/* PROJECT # 10 */}
+                     <div>
+                        <a href="https://images.brstore.us" target="_blank">
+                            <div className="project-card">
+                                <div className="project-img">
+                                    <Image src={br} alt="br" />
+                                </div>
+                                <div className="project-textBox">
+                                    <div className="project-textContent">
+                                        <p className="project-h1">Images</p>
+                                        <span className="project-span">April 2023 🟢</span>
+                                    </div>
+                                    <p className="project-p">All images from the year 2011 to 2023</p>
+                                    <div>
+                                    </div></div></div>
+                        </a>
+                    </div>
+                    {/* PROJECT # 10 */}
                      {/* PROJECT # 9 */}
                      <div>
                         <a href="https://shop.brstore.us" target="_blank">
