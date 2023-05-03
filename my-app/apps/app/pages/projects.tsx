@@ -112,7 +112,7 @@ export function Index() {
                                         <p className="project-h1">Todos</p>
                                         <span className="project-span">May 2023 🟢</span>
                                     </div>
-                                    <p className="project-p">Fill in your todos list</p>
+                                    <p className="project-p">Create a list of your to-dos</p>
                                     <div>
                                     </div></div></div>
                         </a>
