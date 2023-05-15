@@ -36,9 +36,6 @@ export default function company() {
       </div>
       <div className="company-text" id="company-text-1">
         <div className="blank-payment-successful">
-        <p>
-          Your payment was successful.
-        </p>
         </div>
         <br></br>
         <div className="blank-form-father">
@@ -46,6 +43,8 @@ export default function company() {
           <input type="hidden" name="from_name" value="B&R | Confirmation ✅"></input>
           <input type="hidden" name="replyto" value="support@brstore.us"></input>
           <input type="hidden" name="subject" value="Congrats, Allow up to 24 hours for your website to be running. 🎉"></input>
+          <p className="pay-success-title">Your payment was successful.</p>
+
             <span className="blank-title">Follow These Steps:</span>
             <span className="blank-sub mb">1. Verify if your domain name is available by visiting <a href="https://www.name.com/domain/search/brstore.us" target="_blank">Name.com</a></span>
             <span className="blank-sub mb">2. Choose your domain extension before registering your domain name.</span>
