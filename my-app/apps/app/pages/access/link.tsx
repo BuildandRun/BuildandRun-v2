@@ -15,6 +15,7 @@ import filestash from '/public/img/access/filestash.png';
 
 // import  from "../public/img/tweak-apps/cryptocurrencies/.png";
 
+
 export default function company() {
   return (
     // <Layout title="Hello" description="Hello React Page">
@@ -51,7 +52,6 @@ export default function company() {
                 <img src="https://img.shields.io/badge/SLIDE%20-DOWN-brightgreen?style=for-the-badge&logo="></img>
               </a>
             </div>
-
             <div className="access-main">
               {/* SLIDERS  */}
               <div>{'‎'}</div>
