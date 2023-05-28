@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/payment/confirmation": [
+    "/access/link": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/payment/confirmation.js"
+      "static/chunks/pages/access/link.js"
     ]
   },
   "ampFirstPages": []
