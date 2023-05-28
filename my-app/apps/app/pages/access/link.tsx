@@ -15,6 +15,7 @@ import filestash from '/public/img/access/filestash.png';
 
 // import  from "../public/img/tweak-apps/cryptocurrencies/.png";
 
+
 export default function company() {
   return (
     // <Layout title="Hello" description="Hello React Page">
@@ -45,13 +46,12 @@ export default function company() {
             </span>
             <div className="debit-update-icon">
               <a
-                href="https://free.timeanddate.com/countdown/i8qut7vg/n70/cf100/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pct/tcfff/fs100/szw192/szh81/iso2023-03-30T00:00:00"
+                href="#"
                 target="_blank"
               >
                 <img src="https://img.shields.io/badge/SLIDE%20-DOWN-brightgreen?style=for-the-badge&logo="></img>
               </a>
             </div>
-
             <div className="access-main">
               {/* SLIDERS  */}
               <div>{'‎'}</div>

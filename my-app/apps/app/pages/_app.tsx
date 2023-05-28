@@ -8,6 +8,7 @@ import './company.css';
 import './payment/confirmation.css';
 import './projects/debit-card.css';
 import './access/link.css';
+import './maintenance/upgrade.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

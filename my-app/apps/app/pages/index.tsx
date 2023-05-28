@@ -14,6 +14,9 @@ import Twitter from "../public/img/footer/logo-twitter.svg";
 import Instagram from "../public/img/footer/logo-instagram.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
+// Notification
+import Upgrade from './maintenance/upgrade';
+
 export function Index() {
 
   /*
@@ -40,6 +43,10 @@ export function Index() {
           <div></div>
           <span>We are currently building our IOS and Android App. Stay tuned!</span>
         </div>
+
+        {/* NOTIFICATION  */}
+
+        <Upgrade></Upgrade>
 
         <div id="hero" className="rounded">
           <div className="text-container">
