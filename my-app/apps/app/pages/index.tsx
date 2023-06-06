@@ -46,7 +46,9 @@ export function Index() {
 
         {/* NOTIFICATION  */}
 
-        <Upgrade></Upgrade>
+        {/* <Upgrade></Upgrade> */}
+
+        {/* NOTIFICATION  */}
 
         <div id="hero" className="rounded">
           <div className="text-container">
@@ -250,13 +252,13 @@ export function Index() {
               <p>
                 Using this platform, you may control what happens on your website
               </p>
-              <a href="https://admin.brstore.us" target="_blank">
+              <a href="https://admin.brstore.us/login" target="_blank">
                 <div>
                   <pre>Access Now</pre>
                 </div>
               </a>
               <a
-                href="https://admin.brstore.us/admin-panel-v1.0.1/"
+                href="https://build-and-run.gitbook.io/admin-panel-v1.0.1/"
                 target="_blank"
                 rel="noreferrer"
               >
