@@ -192,7 +192,7 @@ export function Index() {
                     {/* PROJECT # 7 */}
                     {/* PROJECT # 6 */}
                     <div>
-                        <a href="https://admin.brstore.us" target="_blank">
+                        <a href="https://admin.brstore.us/login" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
