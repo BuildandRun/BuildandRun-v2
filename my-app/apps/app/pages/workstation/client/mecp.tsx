@@ -6,22 +6,12 @@ import Instagram from '/public/img/footer/logo-instagram.svg';
 import Youtube from '/public/img/footer/logo-youtube.svg';
 
 import mecp from './images/logo3.png';
-import { useEffect } from 'react';
 import Link from 'next/link';
 
 
 // import  from "../public/img/tweak-apps/cryptocurrencies/.png";
 
-function copyToClipboard(text: string): void {
-  navigator.clipboard.writeText(text)
-    .then(() => {
-      console.log(`Copied "${text}" to clipboard`);
-      alert('Card Number Copied');
-    })
-    .catch((error) => {
-      console.error(`Error copying "${text}" to clipboard:`, error);
-    });
-}
+
 
 export default function company() {
   return (
@@ -64,9 +54,9 @@ export default function company() {
           <div className="mecp">
 
           <div className="mecp-card">
-    <Link href="test" alt="email"><p><span>EMAIL HTML</span></p></Link>
-    <Link href="test" alt="social"><p><span>SOCIAL PNG</span></p></Link>
-    <Link href="test" alt="sms"><p><span>SMS PROMO</span></p></Link>
+    <Link href="test"><p><span>EMAIL HTML</span></p></Link>
+    <Link href="test" ><p><span>SOCIAL PNG</span></p></Link>
+    <Link href="test"><p><span>SMS PROMO</span></p></Link>
 </div>
 
           </div>
