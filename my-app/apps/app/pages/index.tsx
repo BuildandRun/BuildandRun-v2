@@ -15,7 +15,7 @@ import Instagram from "../public/img/footer/logo-instagram.svg";
 import Youtube from "../public/img/footer/logo-youtube.svg";
 
 // Notification
-import Upgrade from './maintenance/upgrade';
+// import Upgrade from './maintenance/upgrade';
 
 export function Index() {
 

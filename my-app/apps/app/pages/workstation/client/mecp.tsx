@@ -54,7 +54,7 @@ export default function company() {
           <div className="mecp">
 
           <div className="mecp-card">
-    <Link href="./mecp.html"><p><span>EMAIL HTML</span></p></Link>
+    <Link href="./email-mecp.html"><p><span>EMAIL HTML</span></p></Link>
     <Link href="./mecp.png" ><p><span>SOCIAL PNG</span></p></Link>
     <Link href="./mecp.txt"><p><span>SMS PROMO</span></p></Link>
 </div>
