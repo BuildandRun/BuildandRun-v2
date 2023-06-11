@@ -9,6 +9,13 @@
     margin-top: 3rem;  
 }
 
+.mecp-logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+  margin-top: 40px;
+ }
+
 .mecp-card {
     width: 210px;
     height: 254px;

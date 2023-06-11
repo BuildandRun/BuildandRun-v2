@@ -26,7 +26,7 @@ export default function company() {
           fontSize: '20px',
         }}
       >
-        <div className="chip" id="chip">
+        <div className="mecp-logo" id="chip">
           <Image src={mecp}  alt="mecp" />
         </div>
         <div className="thankyou">
@@ -54,9 +54,9 @@ export default function company() {
           <div className="mecp">
 
           <div className="mecp-card">
-    <Link href="test"><p><span>EMAIL HTML</span></p></Link>
-    <Link href="test" ><p><span>SOCIAL PNG</span></p></Link>
-    <Link href="test"><p><span>SMS PROMO</span></p></Link>
+    <Link href="./mecp.html"><p><span>EMAIL HTML</span></p></Link>
+    <Link href="./mecp.png" ><p><span>SOCIAL PNG</span></p></Link>
+    <Link href="./mecp.txt"><p><span>SMS PROMO</span></p></Link>
 </div>
 
           </div>
