@@ -15,17 +15,17 @@
 - Passcode: garcia123
 - Email1: j.garcia7797@yahoo.com
 - Email2: admin@shinecitydetailing.net
-- Number: (972) 267 6584
-- Website: https://www.viinart.com
+ - Number: 469 427 8162
+- Website: https://www.shinecitydetailing.net
+- Monthly: Every 2nd of the month
 --------------------------
 --------------------------
 - Account: Earvin
 - Passcode: Kissi123
 - Email1: earvinkissi@outlook.com
 - Email2: admin@viinart.com
-- Number: 469 427 8162
-- Website: https://www.shinecitydetailing.net
-- Monthly: Every 2nd of the month
+- Number: (972) 267 6584
+- Website: https://www.viinart.com
 --------------------------
 --------------------------
 - Account: Amon
