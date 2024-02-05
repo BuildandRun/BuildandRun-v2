@@ -158,7 +158,7 @@ export function Index() {
                 </div>
                 <div id="movies-2">
                   {/* MODULE */}
-                  <div><a href="https://fmovies.wtf/" target="_blank">
+                  <div><a href="https://ww4.fmovies.co/24/" target="_blank">
                     <div className="cardi">
                       <div className="app-row">
                         <div className="tweak-image">
