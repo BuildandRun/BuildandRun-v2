@@ -3,6 +3,7 @@ import Head from 'next/head';
 import './styles.css';
 import './tweak-apps.css';
 import './partners.css';
+import './plan.css';
 import './projects.css';
 import './company.css';
 import './payment/confirmation.css';

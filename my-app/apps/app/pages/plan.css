@@ -1,0 +1,57 @@
+ /*
+   * Build and Run v.2.0.2 CSS.
+   *
+   * Note: The corresponding styles are in the ./partners.css file.
+   */
+
+   .plan-container {
+    text-align: center;
+    padding: 8rem 8rem 8rem 8rem;
+    display: block;
+  }
+  
+  .plan-house {
+    background-color: rgba(59, 130, 246, 0.5);
+    border-radius: 20px; /* Rounded corners */
+    padding: 10rem; /* Padding on all sides */
+    margin: -5rem; /* Negative margin to create space outside */
+  }
+  
+  .plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plan {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2f2f2; /* Gray background */
+    border-radius: 10px;
+  }
+  
+  .plan h2 {
+    margin-top: 0;
+  }
+  
+  .plan button {
+    background-color: #272a2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .plan button:hover {
+    background-color: #000000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .plans {
+      flex-direction: column; /* Align vertically on mobile view */
+    }
+  }
+  
