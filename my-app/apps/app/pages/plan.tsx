@@ -6,16 +6,17 @@ interface PlanProps {
   price: string;
   description: string;
   features: string;
+  href: string; // Add href prop
 }
 
-const Plan: React.FC<PlanProps> = ({ name, price, description, features }) => {
+const Plan: React.FC<PlanProps> = ({ name, price, description, features, href }) => {
   return (
     <div className="plan cardplan">
       <h3>{name}</h3>
       <p className="plan-price">{price}</p>
       <p className="plan-description">{description}</p>
       <p className="plan-features">{features}</p>
-      <button>Get started</button>
+      <a href={href}><button>Get started</button></a> {/* Wrap button in an anchor tag with href */}
     </div>
   );
 };
@@ -43,21 +44,26 @@ const ChoosePlan: React.FC = () => {
             price="$1012.99/mo"
             description="For building your first simple dream site"
             features=" • Domain • Web Hosting • MySQL Database • SSL Certificate"
+            href="https://buy.stripe.com/5kA3coezybMh2OIaEE" // Example href for Regular plan
           ></Plan>
           <Plan
             name="Premium"
             price="$1032.99/mo"
             description="For organization launches, frequently updated UI/UX, and more"
             features=" • Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails"
+            href="https://buy.stripe.com/7sI3co6328A574YcMN" // Example href for Regular plan
+
           />
           <Plan
             name="Unlimited Access"
             price="$1069.99/mo"
             description="For Enterprise, directories, and commercial websites"
             features="Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails • Unlimited Access • User Support • VPS Server • Application Development"
+            href="https://buy.stripe.com/fZe7sEaji3fL4WQ5km" // Example href for Regular plan
+
           />
         </div>
-      </div>
+      </div> 
     </div>
   );
 };

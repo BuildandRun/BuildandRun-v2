@@ -69,6 +69,8 @@
 
 .pricing-description-plan {
   margin-bottom: 8rem;
+  font-weight: 500;
+  font-size: medium;
 }
 
 .pricing-text-plan {
@@ -76,7 +78,7 @@
     83.3deg,
     #ff1d72 5.23%,
     #8f1fff 47.02%,
-    #dda042 94.72%
+    #17bfd6 94.72%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -91,7 +93,7 @@
     83.3deg,
     #ff1d72 5.23%,
     #8f1fff 47.02%,
-    #dda042 94.72%
+    #17bfd6 94.72%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -131,3 +133,5 @@
 .cardplan:active {
   transform: scale(0.95) rotateZ(1.7deg);
 }
+
+
