@@ -1,57 +1,133 @@
- /*
+/*
    * Build and Run v.2.0.2 CSS.
    *
    * Note: The corresponding styles are in the ./partners.css file.
    */
 
-   .plan-container {
-    text-align: center;
-    padding: 8rem 8rem 8rem 8rem;
-    display: block;
-  }
-  
-  .plan-house {
-    background-color: rgba(59, 130, 246, 0.5);
-    border-radius: 20px; /* Rounded corners */
-    padding: 10rem; /* Padding on all sides */
-    margin: -5rem; /* Negative margin to create space outside */
-  }
-  
+.plan-container {
+  text-align: center;
+  padding: 8rem 8rem 8rem 8rem;
+  display: block;
+}
+
+.plan-house {
+  background-color: rgba(59, 130, 246, 0.5);
+  border-radius: 20px; /* Rounded corners */
+  padding: 5rem; /* Padding on all sides */
+  margin: -5rem; /* Negative margin to create space outside */
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan {
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f2f2f2; /* Gray background */
+  border-radius: 10px;
+  /* display: block; */
+  align-self: center;
+}
+
+.plan h2 {
+  margin-top: 0;
+}
+
+.plan button {
+  background-color: #272a2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan button:hover {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 768px) {
   .plans {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Align vertically on mobile view */
   }
-  
-  .plan {
-    width: 200px;
-    padding: 20px;
-    margin: 20px;
-    background-color: #f2f2f2; /* Gray background */
-    border-radius: 10px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .plan-house {
+    padding-left: 10rem;
   }
-  
-  .plan h2 {
-    margin-top: 0;
-  }
-  
-  .plan button {
-    background-color: #272a2e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .plan button:hover {
-    background-color: #000000;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .plans {
-      flex-direction: column; /* Align vertically on mobile view */
-    }
-  }
-  
+} */
+
+.plan-house-bold {
+  text-align: center;
+}
+
+.pricing-description-plan {
+  margin-bottom: 8rem;
+}
+
+.pricing-text-plan {
+  background-image: linear-gradient(
+    83.3deg,
+    #ff1d72 5.23%,
+    #8f1fff 47.02%,
+    #dda042 94.72%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.plan-price {
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  background-image: linear-gradient(
+    83.3deg,
+    #ff1d72 5.23%,
+    #8f1fff 47.02%,
+    #dda042 94.72%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+}
+.plan-description {
+  margin-bottom: 1rem;
+}
+
+.plan-features {
+  margin-bottom: 1rem;
+}
+
+.plan-logo {
+  margin-top: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
+.cardplan {
+  border: 1px solid white;
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  color: black;
+}
+
+.cardplan:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.cardplan:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
