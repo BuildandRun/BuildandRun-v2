@@ -11,7 +11,9 @@
 }
 
 .plan-house {
-  background-color: rgba(59, 130, 246, 0.5);
+  background-image: url(https://demos.creative-tim.com/soft-ui-design-system/assets/img/curved-images/curved11.jpg);
+  background-size: cover; /* Cover the entire element */
+  background-position: center; /* Center the background */
   border-radius: 20px; /* Rounded corners */
   padding: 5rem; /* Padding on all sides */
   margin: -5rem; /* Negative margin to create space outside */
@@ -134,37 +136,71 @@
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-
 .plan-footer {
-    margin-top: 8rem;
+  margin-top: 8rem;
 }
 
 .plan-shadow__btn {
-    padding: 10px 20px;
-    border: none;
-    font-size: 17px;
-    color: #fff;
-    border-radius: 7px;
-    letter-spacing: 4px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: 0.5s;
-    transition-property: box-shadow;
-    width: 170px;
-  }
-  
-  .plan-shadow__btn {
-    background: rgba(59, 130, 246, 0.5);
-    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
-  }
-  
-  .plan-shadow__btn:hover {
-    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5),
-                0 0 25px rgba(59, 130, 246, 0.5),
-                0 0 50px rgba(59, 130, 246, 0.5),
-                0 0 100px rgba(59, 130, 246, 0.5);
-  }
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  width: 170px;
+}
 
-  .plan-footer-text {
-    margin-top: 2rem;
-  }
+.plan-shadow__btn {
+  background-image: url(https://demos.creative-tim.com/soft-ui-design-system/assets/img/curved-images/curved11.jpg);
+  box-shadow: 0 0 25px rgba(246, 78, 59, 0.5);
+}
+
+.plan-shadow__btn:hover {
+  box-shadow: 0 0 5px rgba(246, 90, 59, 0.5), 0 0 25px rgba(246, 62, 59, 0.5),
+    0 0 50px rgba(246, 109, 59, 0.5), 0 0 100px rgba(246, 59, 59, 0.5);
+}
+
+.plan-footer-text {
+  margin-top: 2rem;
+}
+
+.navigation-home {
+  margin-top: -6rem;
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-image: url(https://demos.creative-tim.com/soft-ui-design-system/assets/img/curved-images/curved11.jpg);
+  padding: 15px 20px;
+  border-radius: 50px;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(252, 252, 252);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.tab:hover {
+  background-color: rgb(223, 223, 223);
+}
