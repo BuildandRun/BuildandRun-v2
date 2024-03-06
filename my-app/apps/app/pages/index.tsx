@@ -1,24 +1,25 @@
-import Image from "next/image";
-import BRlogo from "../public/img/logo/BRlogo.png";
-import mBRlogo from "../public/img/logo/mBRlogo.png";
-import WebDevTab from "../public/img/navigate/web/82c.png";
-import AdminTab from "../public/img/navigate/admin/a3.png";
-import SocialTab from "../public/img/navigate/social/s2.png";
-import AppProjects from "../public/img/navigate/projects/p2.png";
-import AppBlog from "../public/img/navigate/blog/b2.png";
-import AppTweak from "../public/img/navigate/tweak/t2.png";
-import AppAbout from "../public/img/navigate/about/a1.png";
-import AppTeam from "../public/img/navigate/team/t8.png";
-import Facebook from "../public/img/footer/logo-facebook.svg";
-import Twitter from "../public/img/footer/logo-twitter.svg";
-import Instagram from "../public/img/footer/logo-instagram.svg";
-import Youtube from "../public/img/footer/logo-youtube.svg";
+import Image from 'next/image';
+import BRlogo from '../public/img/logo/BRlogo.png';
+import NewBRlogo from '../public/img/logo/brstore.png';
+import MewBRlogo from '../public/img/logo/brstore3.png';
+import mBRlogo from '../public/img/logo/mBRlogo.png';
+import WebDevTab from '../public/img/navigate/web/82c.png';
+import AdminTab from '../public/img/navigate/admin/a3.png';
+import SocialTab from '../public/img/navigate/social/s2.png';
+import AppProjects from '../public/img/navigate/projects/p2.png';
+import AppBlog from '../public/img/navigate/blog/b2.png';
+import AppTweak from '../public/img/navigate/tweak/t2.png';
+import AppAbout from '../public/img/navigate/about/a1.png';
+import AppTeam from '../public/img/navigate/team/t8.png';
+import Facebook from '../public/img/footer/logo-facebook.svg';
+import Twitter from '../public/img/footer/logo-twitter.svg';
+import Instagram from '../public/img/footer/logo-instagram.svg';
+import Youtube from '../public/img/footer/logo-youtube.svg';
 
 // Notification
 // import Upgrade from './maintenance/upgrade';
 
 export function Index() {
-
   /*
    * Build and Run v.2.0.2 Index.
    *
@@ -29,7 +30,7 @@ export function Index() {
     <div className="wrapper">
       <div className="container">
         <div id="mBRlogo" className="show-on-desktop hide-on-mobile">
-          <Image src={mBRlogo} alt="mBRlogo" />
+          <Image src={NewBRlogo} alt="mBRlogo" />
         </div>
 
         <div id="welcome">
@@ -39,9 +40,14 @@ export function Index() {
           </h1>
         </div>
         <div id="description">
-          <span>You can access our online platform with your mobile device and desktop.</span>
+          <span>
+            You can access our online platform with your mobile device and
+            desktop.
+          </span>
           <div></div>
-          <span>We are currently building our IOS and Android App. Stay tuned!</span>
+          <span>
+            We are currently building our IOS and Android App. Stay tuned!
+          </span>
         </div>
 
         {/* NOTIFICATION  */}
@@ -69,7 +75,7 @@ export function Index() {
               <span>You&apos;re up and running</span>
             </h2>
             <div className="blinker">
-            <a href="#webdev-tab"> Build a Website </a>
+              <a href="#webdev-tab"> Build a Website </a>
             </div>
           </div>
           <div className="logo-container">
@@ -79,22 +85,18 @@ export function Index() {
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             ></svg>
-            <Image src={BRlogo} alt="BRlogo" />
+            <Image src={MewBRlogo} alt="BRlogo" />
           </div>
         </div>
 
         <div id="middle-content">
           <div id="learning-materials" className="rounded shadow">
             <h2>App Features</h2>
-            <a
-              href="./projects"
-              rel="noreferrer"
-              className="list-item-link"
-            >
+            <a href="./projects" rel="noreferrer" className="list-item-link">
               <div className="features">
-              <Image src={AppProjects} alt="AppProjects" />
+                <Image src={AppProjects} alt="AppProjects" />
               </div>
-        
+
               <span>
                 Projects
                 <span>Good art inspires, Good design motivates </span>
@@ -119,9 +121,9 @@ export function Index() {
               className="list-item-link"
             >
               <div className="features">
-              <Image src={AppBlog} alt="AppBlog" />
+                <Image src={AppBlog} alt="AppBlog" />
               </div>
-           
+
               <span>
                 Blog
                 <span>Be part of our community ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
@@ -140,16 +142,12 @@ export function Index() {
                 />
               </svg>
             </a>
-            <a
-              href="./tweak-apps"
-              rel="noreferrer"
-              className="list-item-link"
-            >
-               <div className="features">
-              <Image src={AppTweak} alt="AppTweak" />
+            <a href="./tweak-apps" rel="noreferrer" className="list-item-link">
+              <div className="features">
+                <Image src={AppTweak} alt="AppTweak" />
               </div>
-                <title>Tweak Apps</title>
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              <title>Tweak Apps</title>
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               {/* </svg> */}
               <span>
                 Tweak Apps
@@ -169,16 +167,11 @@ export function Index() {
                 />
               </svg>
             </a>
-            <a
-              href="./company"
-              rel="noreferrer"
-              className="list-item-link"
-            >
-              
+            <a href="./company" rel="noreferrer" className="list-item-link">
               <div className="features">
-              <Image src={AppAbout} alt="AppAbout" />
+                <Image src={AppAbout} alt="AppAbout" />
               </div>
-              
+
               <span>
                 About
                 <span> What we represent to you ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
@@ -202,12 +195,14 @@ export function Index() {
               rel="noreferrer"
               className="list-item-link"
             >
-                <div className="features">
-              <Image src={AppTeam} alt="AppTeam" />
+              <div className="features">
+                <Image src={AppTeam} alt="AppTeam" />
               </div>
               <span>
                 Team
-                <span>Individuals with outstanding skills ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</span>
+                <span>
+                  Individuals with outstanding skills ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                </span>
               </span>
               <svg
                 fill="none"
@@ -228,7 +223,7 @@ export function Index() {
             <a
               id="webdev-tab"
               className="button-pill rounded shadow"
-              href="./pricing/index.html"
+              href="./plan"
               rel="noreferrer"
             >
               <Image src={WebDevTab} alt="WebDevTab" />
@@ -250,7 +245,8 @@ export function Index() {
                 </h2>
               </div>
               <p>
-                Using this platform, you may control what happens on your website
+                Using this platform, you may control what happens on your
+                website
               </p>
               <a href="https://admin.brstore.us/login" target="_blank">
                 <div>
@@ -263,7 +259,7 @@ export function Index() {
                 rel="noreferrer"
               >
                 {' '}
-                Docs 📖 {' '}
+                Docs 📖{' '}
               </a>
             </div>
             <a
@@ -306,17 +302,26 @@ export function Index() {
             </summary>
             <pre>
               <span>⎆ What is Build and Run?</span>
-              Build and Run (B&R) is a technology company that provides multiple services from all categories for a fair price.
+              Build and Run (B&R) is a technology company that provides multiple
+              services from all categories for a fair price.
               <span>⎆ What service do we provide?</span>
-              We provides all kinds of services, such as Website, Application Development, Design, Arts, Social Media Marketing, News, Tweaks, and More.
+              We provides all kinds of services, such as Website, Application
+              Development, Design, Arts, Social Media Marketing, News, Tweaks,
+              and More.
               <span>⎆ What makes our Administrator Panel so special?</span>
-              First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
+              First and foremost, it is incredibly user-friendly. Whether you
+              are a tech-savvy individual or someone who is new to using
+              software, the administrator panel is easy to navigate and
+              understand. This makes it accessible to everyone, regardless of
+              their level of expertise.
               <span>⎆ How can you reach us?</span>
               Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
               <span>⎆ How can you partner with us?</span>
-              Send us an email at support@brstore.us if you are a person or business and would want to collaborate with us.
+              Send us an email at support@brstore.us if you are a person or
+              business and would want to collaborate with us.
               <span>⎆ How can you join our team?</span>
-              Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@brstore.us.
+              Apply for a position at B&R to help us build and Run a world with
+              tech that has no limits. Send us your CV at jobs@brstore.us.
             </pre>
           </details>
           <details>
@@ -336,7 +341,9 @@ export function Index() {
               </svg>
               Privacy Policy
             </summary>
-            <pre><a href="./privacy-policy">Click ➤ Privacy Policy 🔒</a></pre>
+            <pre>
+              <a href="./privacy-policy">Click ➤ Privacy Policy 🔒</a>
+            </pre>
           </details>
           <details>
             <summary>
@@ -356,13 +363,13 @@ export function Index() {
               Terms Of Service
             </summary>
             <pre>
-            <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
+              <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
             </pre>
           </details>
         </div>
 
         <p id="love">
-          Build and Run v2.0.2 crafted with
+          Build and Run v3.0.3 crafted with
           <svg
             fill="currentColor"
             stroke="none"
@@ -380,40 +387,84 @@ export function Index() {
       </div>
       <div>
         <footer className="footer">
-          <div className="waves">
-          </div>
+          <div className="waves"></div>
           <ul className="social-icon">
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
-            <div className="social-bar">
-            <Image src={Facebook} alt="Facebook" />
-            </div>
-            </a></li>
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
-            <div className="social-bar">
-            <Image src={Twitter} alt="Twitter" />
-            </div>
-            </a></li>
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
-            <div className="social-bar">
-            <Image src={Instagram} alt="Instagram" />
-            </div>
-            </a></li>
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
-            <div className="social-bar">
-            <Image src={Youtube} alt="Youtube" />
-            </div>
-            </a></li>
+            <li className="social-icon__item">
+              <a
+                className="social-icon__link"
+                href="https://www.facebook.com/brstore.us/"
+                target="_blank"
+              >
+                <div className="social-bar">
+                  <Image src={Facebook} alt="Facebook" />
+                </div>
+              </a>
+            </li>
+            <li className="social-icon__item">
+              <a
+                className="social-icon__link"
+                href="https://www.twitter.com/brstore_us"
+                target="_blank"
+              >
+                <div className="social-bar">
+                  <Image src={Twitter} alt="Twitter" />
+                </div>
+              </a>
+            </li>
+            <li className="social-icon__item">
+              <a
+                className="social-icon__link"
+                href="https://www.instagram.com/bdrstoreus/"
+                target="_blank"
+              >
+                <div className="social-bar">
+                  <Image src={Instagram} alt="Instagram" />
+                </div>
+              </a>
+            </li>
+            <li className="social-icon__item">
+              <a
+                className="social-icon__link"
+                href="https://www.youtube.com/@buildandrun."
+                target="_blank"
+              >
+                <div className="social-bar">
+                  <Image src={Youtube} alt="Youtube" />
+                </div>
+              </a>
+            </li>
           </ul>
           <ul className="menu">
-            <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
-            <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
-
+            <li className="menu__item">
+              <a className="menu__link" href="./company" target="_blank">
+                Company
+              </a>
+            </li>
+            <li className="menu__item">
+              <a className="menu__link" href="./partners" target="_blank">
+                Partners
+              </a>
+            </li>
+            <li className="menu__item">
+              <a
+                className="menu__link"
+                href="https://www.dmca.com/compliance/brstore.us"
+                target="_blank"
+              >
+                DMCA.com
+              </a>
+            </li>
           </ul>
           <p>&copy;2023 B&R | All Rights Reserved</p>
         </footer>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+          noModule
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
       </div>
     </div>
   );

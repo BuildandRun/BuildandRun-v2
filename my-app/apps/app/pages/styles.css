@@ -113,7 +113,7 @@ pre {
 }
 #hero {
   align-items: center;
-  background-color: rgb(3, 169, 244, 48);
+  background-color: rgba(44,155,229,255);
   border: none;
   box-sizing: border-box;
   color: rgba(55, 65, 81, 1);
@@ -433,8 +433,9 @@ summary svg {
  display: block;
  margin-left: auto;
  margin-right: auto;
+ margin-top: 1rem;
  margin-bottom: -2rem;
- width: 180px;
+ width: 200px;
  height: auto;
  display:none;
 }

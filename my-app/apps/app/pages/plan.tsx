@@ -50,8 +50,8 @@ const ChoosePlan: React.FC = () => {
     </svg> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="54"
-              height="54"
+              width="104"
+              height="104"
               viewBox="0 0 24 24"
               id="home"
             >
@@ -119,7 +119,7 @@ const ChoosePlan: React.FC = () => {
             </svg>
           </a>
 
-          <a href="https://app.brstore.us/" className="navigation-tab">
+          <a href="./" className="navigation-tab">
             <svg
               width="101"
               height="114"
