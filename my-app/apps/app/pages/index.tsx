@@ -116,7 +116,7 @@ export function Index() {
               </svg>
             </a>
             <a
-              href="https://blog.brstore.us"
+              href="https://blog.buildandrun.net"
               rel="noreferrer"
               className="list-item-link"
             >
@@ -248,7 +248,7 @@ export function Index() {
                 Using this platform, you may control what happens on your
                 website
               </p>
-              <a href="https://admin.brstore.us/login" target="_blank">
+              <a href="https://admin.buildandrun.net/login" target="_blank">
                 <div>
                   <pre>Access Now</pre>
                 </div>
@@ -265,7 +265,7 @@ export function Index() {
             <a
               id="nx-repo"
               className="button-pill rounded shadow"
-              href="https://media.brstore.us"
+              href="https://media.buildandrun.net"
               target="_blank"
               rel="noreferrer"
             >
@@ -315,13 +315,13 @@ export function Index() {
               understand. This makes it accessible to everyone, regardless of
               their level of expertise.
               <span>⎆ How can you reach us?</span>
-              Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
+              Email us at suppport@buildandrun.net or via text at +1 (469) 215-1582.
               <span>⎆ How can you partner with us?</span>
-              Send us an email at support@brstore.us if you are a person or
+              Send us an email at support@buildandrun.net if you are a person or
               business and would want to collaborate with us.
               <span>⎆ How can you join our team?</span>
               Apply for a position at B&R to help us build and Run a world with
-              tech that has no limits. Send us your CV at jobs@brstore.us.
+              tech that has no limits. Send us your CV at jobs@buildandrun.net.
             </pre>
           </details>
           <details>
@@ -392,7 +392,7 @@ export function Index() {
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
-                href="https://www.facebook.com/brstore.us/"
+                href="https://www.facebook.com/buildandrun.net/"
                 target="_blank"
               >
                 <div className="social-bar">
@@ -448,7 +448,7 @@ export function Index() {
             <li className="menu__item">
               <a
                 className="menu__link"
-                href="https://www.dmca.com/compliance/brstore.us"
+                href="https://www.dmca.com/compliance/buildandrun.net"
                 target="_blank"
               >
                 DMCA.com

@@ -34,7 +34,7 @@ const ChoosePlan: React.FC = () => {
       {/* NAVIGATION  */}
       <div className="navigation-home">
         <div className="navigation-card">
-          <a href="https://brstore.us" className="navigation-tab">
+          <a href="https://buildandrun.net" className="navigation-tab">
             {/* <svg
       className="svgIcon"
       viewBox="0 0 104 100"
@@ -67,7 +67,7 @@ const ChoosePlan: React.FC = () => {
             </svg>
           </a>
 
-          <a href="https://admin.brstore.us/login" className="navigation-tab">
+          <a href="https://admin.buildandrun.net/login" className="navigation-tab">
             <svg
               width="104"
               height="100"
@@ -151,7 +151,7 @@ const ChoosePlan: React.FC = () => {
       <div className="plan-house-bold">
         <div className="plan-logo">
           <img
-            src="https://www.brstore.us/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrstore.5c796320.png&w=256&q=75"
+            src="https://www.buildandrun.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrstore.5c796320.png&w=256&q=75"
             alt="Brstore"
           />
         </div>
@@ -197,7 +197,7 @@ const ChoosePlan: React.FC = () => {
 const Footer: React.FC = () => {
   return (
     <div className="plan-footer">
-      <a href="https://brstore.us" className="plan-shadow__btn">
+      <a href="https://buildandrun.net" className="plan-shadow__btn">
         Homepage
       </a>
       <p className="plan-footer-text">

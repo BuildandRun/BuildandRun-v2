@@ -245,7 +245,7 @@ export default function company() {
               <li className="social-icon__item">
                 <a
                   className="social-icon__link"
-                  href="https://www.facebook.com/brstore.us/"
+                  href="https://www.facebook.com/buildandrun.net/"
                   target="_blank"
                 >
                   <div className="social-bar2">
@@ -302,7 +302,7 @@ export default function company() {
                 <li className="menu__item">
                   <a
                     className="menu__link"
-                    href="https://www.dmca.com/compliance/brstore.us"
+                    href="https://www.dmca.com/compliance/buildandrun.net"
                     target="_blank"
                   >
                     DMCA.com

@@ -60,7 +60,7 @@ export default function company() {
           <ul className="menu">
             <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
             <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
             <li className="menu__item"><a className="menu__link" href="./terms-of-service" target="_blank">Terms Of Service</a></li>
 
           </ul>

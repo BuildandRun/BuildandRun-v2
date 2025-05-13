@@ -34,8 +34,8 @@
 --------------------------
 - Account: Amon
 - Passcode: roxane16
-- Email: support@brstore.us
-- Website:  https://brstore.us
+- Email: support@buildandrun.net
+- Website:  https://buildandrun.net
 --------------------------
 --------------------------
 - Account: roxane

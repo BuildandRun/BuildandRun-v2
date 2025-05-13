@@ -105,11 +105,11 @@ export function Index() {
               <span>⎆ What makes our Administrator Panel so special?</span>
               First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
               <span>⎆ How can you reach us?</span>
-              Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
+              Email us at suppport@buildandrun.net or via text at +1 (469) 215-1582.
               <span>⎆ How can you partner with us?</span>
-              Send us an email at support@brstore.us if you are a person or business and would want to collaborate with us.
+              Send us an email at support@buildandrun.net if you are a person or business and would want to collaborate with us.
               <span>⎆ How can you join our team?</span>
-              Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@brstore.us.
+              Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@buildandrun.net.
             </pre>
           </details>
           <details>
@@ -176,7 +176,7 @@ export function Index() {
           <div className="waves">
           </div>
           <ul className="social-icon">
-            <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
+            <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/buildandrun.net/" target="_blank">
             <div className="social-bar">
             <Image src={Facebook} alt="Facebook" />
             </div>
@@ -205,7 +205,7 @@ export function Index() {
           <ul className="menu">
             <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
             <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
 
           </ul>
           <p>&copy;2023 B&R | All Rights Reserved</p>

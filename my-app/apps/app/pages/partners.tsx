@@ -70,7 +70,7 @@ const Partnership: React.FC = () => {
       </p>
       <footer className="footer">
         <ul className="social-icon">
-          <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
+          <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/buildandrun.net/" target="_blank">
             <div className="social-bar">
               <Image src={Facebook} alt="Facebook" />
             </div>
@@ -94,7 +94,7 @@ const Partnership: React.FC = () => {
         <ul className="menu">
           <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
           <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
-          <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+          <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
 
         </ul>
         <p>&copy;2023 B&R | All Rights Reserved</p>

@@ -87,7 +87,7 @@ export function Index() {
                         </div>
                         <div className="legend-terminal_body">
                             <div className="legend-terminal_promt">
-                                <span className="legend-terminal_user">support@brstore.us:</span>
+                                <span className="legend-terminal_user">support@buildandrun.net:</span>
                                 <span className="legend-terminal_location">~</span>
                                 <span className="legend-terminal_bling">$ git legend -br update: InProgress 🟡 || Incomplete 🟠 || Critical 🔴 || Done 🟢 </span>
                                 <span className="legend-terminal_cursor"></span>
@@ -102,7 +102,7 @@ export function Index() {
                 <div>
                     {/* PROJECT # 11 */}
                     <div>
-                        <a href="https://todos.brstore.us" target="_blank">
+                        <a href="https://todos.buildandrun.net" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -120,7 +120,7 @@ export function Index() {
                     {/* PROJECT # 11 */}
                      {/* PROJECT # 10 */}
                      <div>
-                        <a href="https://images.brstore.us" target="_blank">
+                        <a href="https://images.buildandrun.net" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -138,7 +138,7 @@ export function Index() {
                     {/* PROJECT # 10 */}
                      {/* PROJECT # 9 */}
                      <div>
-                        <a href="https://shop.brstore.us" target="_blank">
+                        <a href="https://shop.buildandrun.net" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -174,7 +174,7 @@ export function Index() {
                     {/* PROJECT # 8 */}
                     {/* PROJECT # 7 */}
                     <div>
-                        <a href="https://blog.brstore.us" target="_blank">
+                        <a href="https://blog.buildandrun.net" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -192,7 +192,7 @@ export function Index() {
                     {/* PROJECT # 7 */}
                     {/* PROJECT # 6 */}
                     <div>
-                        <a href="https://admin.brstore.us/login" target="_blank">
+                        <a href="https://admin.buildandrun.net/login" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -246,7 +246,7 @@ export function Index() {
                     {/* PROJECT # 4 */}
                     {/* PROJECT # 3 */}
                     <div>
-                        <a href="https://media.brstore.us" target="_blank">
+                        <a href="https://media.buildandrun.net" target="_blank">
                             <div className="project-card">
                                 <div className="project-img">
                                     <Image src={br} alt="br" />
@@ -335,11 +335,11 @@ export function Index() {
                             <span>⎆ What makes our Administrator Panel so special?</span>
                             First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
                             <span>⎆ How can you reach us?</span>
-                            Email us at suppport@brstore.us or via text at +1 (469) 215-1582.
+                            Email us at suppport@buildandrun.net or via text at +1 (469) 215-1582.
                             <span>⎆ How can you partner with us?</span>
-                            Send us an email at support@brstore.us if you are a person or business and would want to collaborate with us.
+                            Send us an email at support@buildandrun.net if you are a person or business and would want to collaborate with us.
                             <span>⎆ How can you join our team?</span>
-                            Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@brstore.us.
+                            Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@buildandrun.net.
                         </pre>
                     </details>
                     <details>
@@ -406,7 +406,7 @@ export function Index() {
                     <div className="waves">
                     </div>
                     <ul className="social-icon">
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/brstore.us/" target="_blank">
+                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/buildandrun.net/" target="_blank">
                             <div className="social-bar">
                                 <Image src={Facebook} alt="Facebook" />
                             </div>
@@ -430,7 +430,7 @@ export function Index() {
                     <ul className="menu">
                         <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
                         <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-                        <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+                        <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
 
                     </ul>
                     <p>&copy;2023 B&R | All Rights Reserved</p>

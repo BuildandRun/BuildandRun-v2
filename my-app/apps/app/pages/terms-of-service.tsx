@@ -31,7 +31,7 @@ export default function company() {
       <div>
         <div className="company-text" id="company-text-1">
           <p>
-          Terms of Use: Build and Run is a platform for where all online users can access multiple service. You and Build and Run, ( Build and Run,” “Company,” “we,” or “us”) have agreed to these Terms of Use. The following terms and conditions regulate your access to and usage of Build and Run, including any content, features, and services provided on or via https://brstore.us (the “Site”), as well as any documents specifically incorporated by reference.          </p>
+          Terms of Use: Build and Run is a platform for where all online users can access multiple service. You and Build and Run, ( Build and Run,” “Company,” “we,” or “us”) have agreed to these Terms of Use. The following terms and conditions regulate your access to and usage of Build and Run, including any content, features, and services provided on or via https://buildandrun.net (the “Site”), as well as any documents specifically incorporated by reference.          </p>
         </div>
         <div className="legal">
         <embed src="Terms.pdf" type="application/pdf" width="100%" height="600px" />
@@ -59,7 +59,7 @@ export default function company() {
           <ul className="menu">
             <li className="menu__item"><a className="menu__link" href="./" target="_blank">Homepage</a></li>
             <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/brstore.us" target="_blank">DMCA.com</a></li>
+            <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
             <li className="menu__item"><a className="menu__link" href="./privacy-policy" target="_blank">Privacy Policy</a></li>
 
           </ul>
