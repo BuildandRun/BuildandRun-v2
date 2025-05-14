@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
     { name: 'Shine City Detailing', url: 'https://shinecitydetailing.com' },
     { name: 'Braided Diva', url: 'https://braideddiva.net' },
     { name: 'AMG Records', url: 'https://amgrecord.com' },
-    { name: 'REA', url: 'https://rea.Fmobi' },
+    { name: 'REA', url: 'https://rea.mobi' },
     { name: 'Fine Ivoire', url: 'https://fineivoire.com' },
   ];
 
