@@ -55,21 +55,21 @@ const ChoosePlan: React.FC = () => {
           price="$1,000 one-time + $12.99/mo"
           description="Perfect for launching your dream site"
           features=" Domain • Web Hosting • MySQL Database • SSL Certificate"
-          href="https://buy.stripe.com/5kA3coezybMh2OIaEE"
+          href="https://buy.stripe.com/dR62aoaeAdvEbDi4gt"
         />
         <Plan
           name="Premium"
           price="$2,000 one-time + $34.99/mo"
           description="Ideal for businesses & creative portfolios"
           features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails"
-          href="https://buy.stripe.com/7sI3co6328A574YcMN"
+          href="https://buy.stripe.com/8wMdT6cmI77ggXCdR4"
         />
         <Plan
           name="Unlimited"
           price="$3,000 one-time + $59.99/mo"
           description="Full access for enterprises and custom platforms"
           features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails • User Support • VPS Server • Application Dev"
-          href="https://buy.stripe.com/fZe7sEaji3fL4WQ5km"
+          href="https://buy.stripe.com/aEU02g72o8bkePuaET"
         />
       </div>
 
