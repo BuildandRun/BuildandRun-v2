@@ -593,3 +593,158 @@ summary svg {
   clear: both;
 }
 
+/* General Container */
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.plans-header img.brand-logo {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+
+.plans-header h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-text {
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Grid */
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* Card */
+.plan-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.plan-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 1.25rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.plan-description {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.plan-features li::before {
+  content: '✔️';
+  margin-right: 0.5rem;
+  color: green;
+}
+
+.plan-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plan-button:hover {
+  background: #3730a3;
+}
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  background: #f9fafb;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-home-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.footer-note {
+  font-size: 0.875rem;
+  color: #777;
+  margin: 1rem 0;
+}
+
+.trusted-partners {
+  margin-top: 2rem;
+}
+
+.partners-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.partners-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.partners-list li a {
+  background: #4f46e5;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background 0.3s;
+}
+
+.partners-list li a:hover {
+  background: #3730a3;
+}

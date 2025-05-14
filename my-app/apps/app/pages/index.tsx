@@ -265,7 +265,7 @@ export function Index() {
             <a
               id="nx-repo"
               className="button-pill rounded shadow"
-              href="https://media.buildandrun.net"
+              href="https://smmfollowers.com/"
               target="_blank"
               rel="noreferrer"
             >

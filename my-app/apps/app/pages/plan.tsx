@@ -16,13 +16,17 @@ const Plan: React.FC<PlanProps> = ({
   href,
 }) => {
   return (
-    <div className="plan cardplan">
-      <h3>{name}</h3>
+    <div className="plan-card">
+      <h3 className="plan-title">{name}</h3>
       <p className="plan-price">{price}</p>
       <p className="plan-description">{description}</p>
-      <p className="plan-features">{features}</p>
-      <a href={href}>
-        <button>Get started</button>
+      <ul className="plan-features">
+        {features.split('•').map((f, i) => (
+          <li key={i}>{f.trim()}</li>
+        ))}
+      </ul>
+      <a href={href} className="plan-button">
+        Get Started
       </a>
     </div>
   );
@@ -30,180 +34,78 @@ const Plan: React.FC<PlanProps> = ({
 
 const ChoosePlan: React.FC = () => {
   return (
-    <div className="plan-container">
-      {/* NAVIGATION  */}
-      <div className="navigation-home">
-        <div className="navigation-card">
-          <a href="https://buildandrun.net" className="navigation-tab">
-            {/* <svg
-      className="svgIcon"
-      viewBox="0 0 104 100"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
-        stroke="black"
-        stroke-width="7"
-      ></path>
-      
-    </svg> */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="104"
-              height="104"
-              viewBox="0 0 24 24"
-              id="home"
-            >
-              <path
-                fill="none"
-                stroke="#200E32"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M6.65721519,18.7714023 L6.65721519,15.70467 C6.65719744,14.9246392 7.29311743,14.2908272 8.08101266,14.2855921 L10.9670886,14.2855921 C11.7587434,14.2855921 12.4005063,14.9209349 12.4005063,15.70467 L12.4005063,15.70467 L12.4005063,18.7809263 C12.4003226,19.4432001 12.9342557,19.984478 13.603038,20 L15.5270886,20 C17.4451246,20 19,18.4606794 19,16.5618312 L19,16.5618312 L19,7.8378351 C18.9897577,7.09082692 18.6354747,6.38934919 18.0379747,5.93303245 L11.4577215,0.685301154 C10.3049347,-0.228433718 8.66620456,-0.228433718 7.51341772,0.685301154 L0.962025316,5.94255646 C0.362258604,6.39702249 0.00738668938,7.09966612 0,7.84735911 L0,16.5618312 C0,18.4606794 1.55487539,20 3.47291139,20 L5.39696203,20 C6.08235439,20 6.63797468,19.4499381 6.63797468,18.7714023 L6.63797468,18.7714023"
-                transform="translate(2.5 2)"
-              ></path>
-            </svg>
-          </a>
-
-          <a href="https://admin.buildandrun.net/login" className="navigation-tab">
-            <svg
-              width="104"
-              height="100"
-              viewBox="0 0 104 100"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                x="21.5"
-                y="3.5"
-                width="60"
-                height="60"
-                rx="30"
-                stroke="black"
-                stroke-width="7"
-              ></rect>
-              <g clip-path="url(#clip0_41_27)">
-                <mask
-                  id="mask0_41_27"
-                  // style="mask-type:luminance"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="61"
-                  width="104"
-                  height="52"
-                >
-                  <path
-                    d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
-                    fill="white"
-                  ></path>
-                </mask>
-                <g mask="url(#mask0_41_27)">
-                  <path
-                    d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
-                    fill="black"
-                  ></path>
-                </g>
-              </g>
-              <defs>
-                <clipPath id="clip0_41_27">
-                  <rect
-                    width="104"
-                    height="39"
-                    fill="white"
-                    transform="translate(0 61)"
-                  ></rect>
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
-
-          <a href="./" className="navigation-tab">
-            <svg
-              width="101"
-              height="114"
-              viewBox="0 0 101 114"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="46.1726"
-                cy="46.1727"
-                r="29.5497"
-                transform="rotate(36.0692 46.1726 46.1727)"
-                stroke="black"
-                stroke-width="7"
-              ></circle>
-              <line
-                x1="61.7089"
-                y1="67.7837"
-                x2="97.7088"
-                y2="111.784"
-                stroke="black"
-                stroke-width="7"
-              ></line>
-            </svg>
-          </a>
-        </div>
-      </div>
-      {/* NAVIGATION  */}
-      <div className="plan-house-bold">
-        <div className="plan-logo">
-          <img
-            src="https://www.buildandrun.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrstore.5c796320.png&w=256&q=75"
-            alt="Brstore"
-          />
-        </div>
+    <div className="pricing-container">
+      <div className="plans-header">
+        <img
+          className="brand-logo"
+          src="./img/logo/logobr.png"
+          alt="Brstore"
+        />
         <h3>
-          Find the right <a className="pricing-text-plan">pricing</a> plan for
-          you
+          Find the right <span className="highlight-text">pricing</span> plan for you
         </h3>
+        <p className="sub-text">
+          Build a stunning website or app with full support every step of the way 🚀
+        </p>
       </div>
-      <h5 className="pricing-description-plan">
-        Create a website, platform for your online users. We will help you every
-        step of the way. 🚀
-      </h5>
-      <div className="plan-house">
-        <div className="plans">
-          <Plan
-            name="Regular"
-            price="$1012.99/mo"
-            description="For building your first simple dream site"
-            features=" • Domain • Web Hosting • MySQL Database • SSL Certificate"
-            href="https://buy.stripe.com/5kA3coezybMh2OIaEE"
-          />
-          <Plan
-            name="Premium"
-            price="$1032.99/mo"
-            description="For organization launches, frequently updated UI/UX, and more"
-            features=" • Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails"
-            href="https://buy.stripe.com/7sI3co6328A574YcMN"
-          />
-          <Plan
-            name="Unlimited Access"
-            price="$1069.99/mo"
-            description="For Enterprise, directories, and commercial websites"
-            features="Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails • Unlimited Access • User Support • VPS Server • Application Development"
-            href="https://buy.stripe.com/fZe7sEaji3fL4WQ5km"
-          />
-        </div>
+
+      <div className="plans-grid">
+        <Plan
+          name="Regular"
+          price="$1,000 one-time + $12.99/mo"
+          description="Perfect for launching your dream site"
+          features=" Domain • Web Hosting • MySQL Database • SSL Certificate"
+          href="https://buy.stripe.com/5kA3coezybMh2OIaEE"
+        />
+        <Plan
+          name="Premium"
+          price="$2,000 one-time + $34.99/mo"
+          description="Ideal for businesses & creative portfolios"
+          features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails"
+          href="https://buy.stripe.com/7sI3co6328A574YcMN"
+        />
+        <Plan
+          name="Unlimited"
+          price="$3,000 one-time + $59.99/mo"
+          description="Full access for enterprises and custom platforms"
+          features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails • User Support • VPS Server • Application Dev"
+          href="https://buy.stripe.com/fZe7sEaji3fL4WQ5km"
+        />
       </div>
-      <Footer /> {/* Include Footer component */}
+
+      <Footer />
     </div>
   );
 };
 
 const Footer: React.FC = () => {
+  const partners = [
+    { name: 'Shine City Detailing', url: 'https://shinecitydetailing.com' },
+    { name: 'Braided Diva', url: 'https://braideddiva.net' },
+    { name: 'AMG Records', url: 'https://amgrecord.com' },
+    { name: 'REA', url: 'https://rea.Fmobi' },
+    { name: 'Fine Ivoire', url: 'https://fineivoire.com' },
+  ];
+
   return (
-    <div className="plan-footer">
-      <a href="https://buildandrun.net" className="plan-shadow__btn">
-        Homepage
+    <footer className="footer">
+      <a href="https://buildandrun.net" className="footer-home-btn">
+        🏠 Homepage
       </a>
-      <p className="plan-footer-text">
-        © 2024 Build and Run v3.0.3 crafted with ❤️.
-      </p>
-    </div>
+      <p className="footer-note">© 2025 Build and Run v3.0.3 — Made with ❤️</p>
+      <div className="trusted-partners">
+        <h4 className="partners-title">Trusted Development Partners</h4>
+        <ul className="partners-list">
+          {partners.map((p) => (
+            <li key={p.name}>
+              <a href={p.url} target="_blank" rel="noopener noreferrer">
+                {p.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </footer>
   );
 };
 
