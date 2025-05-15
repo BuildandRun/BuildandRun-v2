@@ -388,7 +388,7 @@ export function Index() {
       <div>
         <footer className="footer">
           <div className="waves"></div>
-          <ul className="social-icon">
+          {/* <ul className="social-icon">
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
@@ -433,7 +433,7 @@ export function Index() {
                 </div>
               </a>
             </li>
-          </ul>
+          </ul>  */}
           <ul className="menu">
             <li className="menu__item">
               <a className="menu__link" href="./company" target="_blank">
