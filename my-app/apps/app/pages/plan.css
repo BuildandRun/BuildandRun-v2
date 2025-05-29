@@ -204,3 +204,31 @@
 .navigation-tab:hover {
   background-color: rgb(223, 223, 223);
 }
+
+.notification-banner {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  opacity: 0;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/* Slide in */
+.notification-banner.slide-in {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Slide out */
+.notification-banner.slide-out {
+  transform: translateX(-50%) translateY(-100px);
+  opacity: 0;
+}

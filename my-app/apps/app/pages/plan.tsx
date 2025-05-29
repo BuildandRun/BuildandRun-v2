@@ -1,4 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+// Notification Banner Component
+const NotificationBanner: React.FC = () => {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 4000); // Hide after 4 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className={`notification-banner ${visible ? 'slide-in' : 'slide-out'}`}>
+      🚧 Your business website will be <strong>built from scratch</strong> by our expert team!
+    </div>
+  );
+};
 
 interface PlanProps {
   name: string;
@@ -35,6 +51,8 @@ const Plan: React.FC<PlanProps> = ({
 const ChoosePlan: React.FC = () => {
   return (
     <div className="pricing-container">
+      <NotificationBanner /> {/* Cool Notification */}
+
       <div className="plans-header">
         <img
           className="brand-logo"

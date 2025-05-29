@@ -272,6 +272,15 @@ export default function company() {
                     V.1.0.1
                   </a>
                 </li>
+                 <li className="menu__item">
+                  <a
+                    className="menu__link"
+                    href="https://buildandrun.awsapps.com/mail "
+                    target="_blank"
+                  >
+                    WorkMail
+                  </a>
+                </li>
                 <li className="menu__item">
                   <a
                     className="menu__link"

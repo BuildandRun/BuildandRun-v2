@@ -392,7 +392,7 @@ export function Index() {
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
-                href="https://www.facebook.com/buildandrun.net/"
+                href="https://github.com/BuildandRun"
                 target="_blank"
               >
                 <div className="social-bar">
@@ -403,7 +403,7 @@ export function Index() {
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
-                href="https://www.twitter.com/brstore_us"
+                href="https://github.com/BuildandRun"
                 target="_blank"
               >
                 <div className="social-bar">
@@ -414,7 +414,7 @@ export function Index() {
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
-                href="https://www.instagram.com/bdrstoreus/"
+                href="https://github.com/BuildandRun"
                 target="_blank"
               >
                 <div className="social-bar">
@@ -425,7 +425,7 @@ export function Index() {
             <li className="social-icon__item">
               <a
                 className="social-icon__link"
-                href="https://www.youtube.com/@buildandrun."
+                href="https://github.com/BuildandRun"
                 target="_blank"
               >
                 <div className="social-bar">
