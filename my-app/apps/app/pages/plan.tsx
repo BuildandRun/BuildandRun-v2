@@ -1,129 +1,152 @@
 import React, { useEffect, useState } from 'react';
 
-// Notification Banner Component
-const NotificationBanner: React.FC = () => {
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 4000); // Hide after 4 seconds
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <div className={`notification-banner ${visible ? 'slide-in' : 'slide-out'}`}>
-      🚧 Your business website will be <strong>built from scratch</strong> by our expert team!
-    </div>
-  );
+// --- Feature data for plans (cleaner structure) ---
+const planFeatures = {
+  regular: [
+    { text: 'Domain & Hosting', icon: '🌐' },
+    { text: 'MySQL Database', icon: '🗄️' },
+    { text: 'SSL Certificate (Basic)', icon: '🔒' },
+    { text: 'Priority Support', icon: '📞' },
+  ],
+  premium: [
+    { text: 'Domain & Hosting (Premium)', icon: '✨' },
+    { text: 'MySQL Database', icon: '🗄️' },
+    { text: 'SSL Certificate (Wildcard)', icon: '🛡️' },
+    { text: 'FTP Access', icon: '📂' },
+    { text: 'Unlimited Emails', icon: '📧' },
+    { text: '24/7 User Support', icon: '🌟' },
+  ],
+  unlimited: [
+    { text: 'Everything in Premium', icon: '✅' },
+    { text: 'Dedicated VPS Server', icon: '🚀' },
+    { text: 'Application Development', icon: '💻' },
+    { text: 'Full Enterprise Access', icon: '🏢' },
+  ],
 };
 
+// --- Plan Card Component ---
 interface PlanProps {
   name: string;
-  price: string;
+  oneTimePrice: string;
+  monthlyPrice: string;
   description: string;
-  features: string;
+  features: { text: string; icon: string }[];
   href: string;
+  isRecommended?: boolean;
 }
 
 const Plan: React.FC<PlanProps> = ({
   name,
-  price,
+  oneTimePrice,
+  monthlyPrice,
   description,
   features,
   href,
+  isRecommended = false,
 }) => {
   return (
-    <div className="plan-card">
-      <h3 className="plan-title">{name}</h3>
-      <p className="plan-price">{price}</p>
-      <p className="plan-description">{description}</p>
-      <ul className="plan-features">
-        {features.split('•').map((f, i) => (
-          <li key={i}>{f.trim()}</li>
+    <div className={`br-plan-card ${isRecommended ? 'br-plan-recommended' : ''}`}>
+      {isRecommended && <div className="br-badge-recommended">Most Popular</div>}
+      
+      <h3 className="br-plan-title">{name}</h3>
+      <p className="br-plan-description">{description}</p>
+      
+      <div className="br-price-group">
+        <div className="br-price-main">
+          <span className="br-price-monthly">{monthlyPrice}</span>/mo
+        </div>
+        <p className="br-price-onetime">
+          Plus {oneTimePrice} one-time setup
+        </p>
+      </div>
+
+      <a href={href} className="br-plan-button">
+        Choose Plan
+      </a>
+
+      <ul className="br-plan-features-list">
+        {features.map((f, i) => (
+          <li key={i}>
+            <span className="br-feature-icon">{f.icon}</span> {f.text}
+          </li>
         ))}
       </ul>
-      <a href={href} className="plan-button">
-        Get Started
-      </a>
     </div>
   );
 };
 
-const ChoosePlan: React.FC = () => {
+// --- Footer Component ---
+const Footer: React.FC = () => {
   return (
-    <div className="pricing-container">
-      <NotificationBanner /> {/* Cool Notification */}
-
-      <div className="plans-header">
-        <img
-          className="brand-logo"
-          src="./img/logo/logobr.png"
-          alt="Brstore"
-        />
-        <h3>
-          Find the right <span className="highlight-text">pricing</span> plan for you
-        </h3>
-        <p className="sub-text">
-          Build a stunning website or app with full support every step of the way 🚀
+    <footer className="br-footer">
+      <div className="br-footer-content">
+        {/* Homepage button removed from here */}
+        <p className="br-footer-note">
+          © 2025 Build and Run v3.0.3 — Made with ❤️
         </p>
       </div>
+    </footer>
+  );
+};
 
-      <div className="plans-grid">
+
+// --- Main Component (Homepage button added to header) ---
+const ChoosePlan: React.FC = () => {
+  return (
+    <div className="br-pricing-page">
+      <header className="br-header">
+        
+        {/* NEW BUTTON LOCATION */}
+        <div className="br-header-top-bar">
+          <a href="https://buildandrun.net" className="br-homepage-link">
+            🏠 Homepage
+          </a>
+        </div>
+        {/* END NEW BUTTON LOCATION */}
+
+        <img
+          className="br-brand-logo"
+          src="./img/logo/logobr.png" // Ensure this path is correct
+          alt="Brstore Logo"
+        />
+        <h1 className="br-page-title">
+          Find the right <span className="br-highlight-text">hosting</span> plan for you
+        </h1>
+        <p className="br-page-subtitle">
+          Build a stunning website or app with full support every step of the way 🚀
+        </p>
+      </header>
+      
+      <main className="br-plans-grid-container">
         <Plan
           name="Regular"
-          price="$1,000 one-time + $12.99/mo"
-          description="Perfect for launching your dream site"
-          features=" Domain • Web Hosting • MySQL Database • SSL Certificate"
+          oneTimePrice="$1,000"
+          monthlyPrice="$12.99"
+          description="Perfect for launching your dream site and getting started."
+          features={planFeatures.regular}
           href="https://buy.stripe.com/dR62aoaeAdvEbDi4gt"
         />
         <Plan
           name="Premium"
-          price="$2,000 one-time + $34.99/mo"
-          description="Ideal for businesses & creative portfolios"
-          features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails"
+          oneTimePrice="$2,000"
+          monthlyPrice="$34.99"
+          description="Ideal for businesses, creative portfolios, and growing traffic."
+          features={planFeatures.premium}
           href="https://buy.stripe.com/8wMdT6cmI77ggXCdR4"
+          isRecommended={true} // Highlighted plan
         />
         <Plan
           name="Unlimited"
-          price="$3,000 one-time + $59.99/mo"
-          description="Full access for enterprises and custom platforms"
-          features=" Domain • Web Hosting • MySQL Database • SSL Certificate • FTP Access • Unlimited Emails • User Support • VPS Server • Application Dev"
+          oneTimePrice="$3,000"
+          monthlyPrice="$59.99"
+          description="Full access for enterprises, custom platforms, and high-demand applications."
+          features={planFeatures.unlimited}
           href="https://buy.stripe.com/aEU02g72o8bkePuaET"
         />
-      </div>
+      </main>
 
       <Footer />
     </div>
-  );
-};
-
-const Footer: React.FC = () => {
-  const partners = [
-    { name: 'Shine City Detailing', url: 'https://shinecitydetailing.com' },
-    { name: 'Braided Diva', url: 'https://braideddiva.net' },
-    { name: 'AMG Records', url: 'https://amgrecord.com' },
-    { name: 'REA', url: 'https://rea.mobi' },
-    { name: 'Fine Ivoire', url: 'https://fineivoire.com' },
-  ];
-
-  return (
-    <footer className="footer">
-      <a href="https://buildandrun.net" className="footer-home-btn">
-        🏠 Homepage
-      </a>
-      <p className="footer-note">© 2025 Build and Run v3.0.3 — Made with ❤️</p>
-      <div className="trusted-partners">
-        <h4 className="partners-title">Trusted Development Partners</h4>
-        <ul className="partners-list">
-          {partners.map((p) => (
-            <li key={p.name}>
-              <a href={p.url} target="_blank" rel="noopener noreferrer">
-                {p.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </footer>
   );
 };
 

@@ -25,11 +25,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/company": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/company.js"
-    ],
     "/plan": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
