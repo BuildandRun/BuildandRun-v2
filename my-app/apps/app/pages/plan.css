@@ -61,50 +61,22 @@ body {
   margin-top: 20px;
 }
 
-/* DELETE THESE CSS RULES */
-/* Notification Banner */
-.br-notification-banner {
-  background-color: #fff3cd; 
-  color: #856404; 
-  padding: 15px 20px;
-  border-radius: var(--radius-md);
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: 500;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.br-notification-icon {
-  margin-right: 10px;
-  font-size: 1.2rem;
-}
-
-.br-notification-dismiss {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin-left: 15px;
-    color: #856404;
-    padding: 0;
-    line-height: 1;
-}
-
-.br-bold-text { 
-    font-weight: 700;
-}
-/* END OF DELETED CSS RULES */
-
-
-/* Pricing Grid Container */
+/* --- Pricing Grid Container --- */
 .br-plans-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 60px;
+}
+
+/* Single Plan Container Fix (for discount page) */
+.br-single-plan-focus {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+    max-width: none; 
+    margin: 40px auto 60px;
 }
 
 /* Individual Plan Card */
@@ -162,12 +134,15 @@ body {
     margin: 20px 0;
     border-top: 1px solid var(--color-border);
     border-bottom: 1px solid var(--color-border);
+    /* FIX: Center the text content (prices and labels) */
+    text-align: center;
 }
 
 .br-price-main {
   font-size: 1.1rem;
   color: var(--color-secondary);
   font-weight: 500;
+  text-align: center; /* Ensures centering */
 }
 
 .br-price-monthly {
@@ -181,6 +156,7 @@ body {
   font-size: 0.85rem;
   color: #a0a0a0;
   margin-top: 5px;
+  text-align: center; /* Ensures centering */
 }
 
 /* Button */
@@ -215,21 +191,58 @@ body {
   color: var(--color-primary); /* Use brand color for icons */
 }
 
-/* Mobile Responsiveness for Plans */
-@media (max-width: 992px) {
-  .br-plans-grid-container {
-    grid-template-columns: 1fr; /* Stacks cards on smaller screens */
-    gap: 20px;
-  }
+/* --- Homepage Link (Header Top Bar) --- */
+.br-header-top-bar {
+    text-align: right; /* Pushes the link to the right edge on desktop */
+    padding-bottom: 20px;
+    width: 100%;
 }
 
-@media (max-width: 576px) {
-  .br-page-title {
-    font-size: 2rem;
-  }
+.br-homepage-link {
+    text-decoration: none;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+    display: inline-block; /* Essential for centering/alignment */
 }
 
+.br-homepage-link:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
 
+/* --- Template Buttons Styling --- */
+.br-template-buttons-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Center the group of buttons */
+    gap: 15px; /* Space between the buttons */
+    flex-wrap: wrap; /* Allows buttons to wrap on small screens */
+}
+
+.br-template-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+    font-size: 0.95rem;
+}
+
+.br-button-secondary {
+    background-color: var(--color-card-bg); /* White background */
+    color: var(--color-text-dark); /* Dark text */
+    border: 1px solid var(--color-secondary);
+}
+
+.br-button-secondary:hover {
+    background-color: var(--color-border); /* Light grey hover */
+    border-color: var(--color-text-dark);
+}
 
 /* Footer Styling */
 .br-footer {
@@ -243,30 +256,46 @@ body {
     margin-bottom: 20px;
 }
 
-/* New Top Bar Container */
-.br-header-top-bar {
-    text-align: right; /* Pushes the link to the right edge */
-    padding-bottom: 20px;
-    width: 100%;
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 992px) {
+  .br-plans-grid-container {
+    grid-template-columns: 1fr; /* Stacks plans vertically */
+    gap: 20px;
+  }
 }
 
-/* Stylized Homepage Link */
-.br-homepage-link {
-    text-decoration: none;
-    color: var(--color-primary); /* Primary brand color */
-    border: 1px solid var(--color-primary);
-    padding: 8px 15px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background-color 0.2s, color 0.2s;
+@media (max-width: 576px) {
+  .br-page-title {
+    font-size: 2rem;
+  }
+
+  /* Fix: Center align the homepage button for mobile view */
+  .br-header-top-bar {
+    text-align: center;
+  }
+
+  /* Template buttons stack vertically on mobile */
+  .br-template-buttons-container {
+      flex-direction: column; 
+      gap: 10px;
+  }
+  
+  .br-template-button {
+      width: 100%;
+      box-sizing: border-box; /* Ensures padding/border is included in the width */
+  }
+
+  /* Optional/unused old styles (keeping for reference if you have them) */
+  .br-partners-section { margin-top: 20px; }
+  .br-partners-title { font-size: 1rem; }
+  .br-partners-list-container { display: flex; }
+  .br-partners-list { display: flex; }
+  .br-partners-list li { margin: 5px 15px; }
+  .br-partners-list a { font-size: 0.85rem; }
 }
 
-.br-homepage-link:hover {
-    background-color: var(--color-primary);
-    color: white;
-}
-
+/* --- Styles for partner links (kept but likely unused on this page) --- */
 .br-partners-section {
     margin-top: 20px;
 }
@@ -306,3 +335,5 @@ body {
 .br-partners-list a:hover {
   color: var(--color-primary);
 }
+
+/* --- Deleted Notification Styles (Removed from code) --- */

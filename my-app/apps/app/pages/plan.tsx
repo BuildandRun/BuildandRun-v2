@@ -24,7 +24,7 @@ const planFeatures = {
   ],
 };
 
-// --- Plan Card Component ---
+// --- Plan Card Component (No changes) ---
 interface PlanProps {
   name: string;
   oneTimePrice: string;
@@ -75,12 +75,11 @@ const Plan: React.FC<PlanProps> = ({
   );
 };
 
-// --- Footer Component ---
+// --- Footer Component (No changes) ---
 const Footer: React.FC = () => {
   return (
     <footer className="br-footer">
       <div className="br-footer-content">
-        {/* Homepage button removed from here */}
         <p className="br-footer-note">
           © 2025 Build and Run v3.0.3 — Made with ❤️
         </p>
@@ -90,19 +89,18 @@ const Footer: React.FC = () => {
 };
 
 
-// --- Main Component (Homepage button added to header) ---
+// --- Main Component (Homepage button and new template buttons added to header) ---
 const ChoosePlan: React.FC = () => {
   return (
     <div className="br-pricing-page">
       <header className="br-header">
         
-        {/* NEW BUTTON LOCATION */}
+        {/* TOP BAR: Homepage Link */}
         <div className="br-header-top-bar">
           <a href="https://buildandrun.net" className="br-homepage-link">
             🏠 Homepage
           </a>
         </div>
-        {/* END NEW BUTTON LOCATION */}
 
         <img
           className="br-brand-logo"
@@ -115,6 +113,18 @@ const ChoosePlan: React.FC = () => {
         <p className="br-page-subtitle">
           Build a stunning website or app with full support every step of the way 🚀
         </p>
+
+        {/* NEW TEMPLATE BUTTONS CONTAINER */}
+        <div className="br-template-buttons-container">
+          <a href="https://typedream.com/templates" target="_blank" rel="noopener noreferrer" className="br-template-button br-button-secondary">
+            View Templates 🏞️
+          </a>
+          <a href="https://ui8.net/" target="_blank" rel="noopener noreferrer" className="br-template-button br-button-secondary">
+            View Templates 🌆
+          </a>
+        </div>
+        {/* END NEW TEMPLATE BUTTONS CONTAINER */}
+
       </header>
       
       <main className="br-plans-grid-container">
