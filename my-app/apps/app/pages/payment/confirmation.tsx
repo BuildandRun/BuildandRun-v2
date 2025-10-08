@@ -41,7 +41,7 @@ export default function FuturisticConfirmationPage() {
             <input type="hidden" name="replyto" value="support@buildandrun.net" />
             <input type="hidden" name="subject" value="Congrats, Allow up to 24 hours for your website to be running. 🎉" />
             <input type="hidden" name="access_key" value="d9e56840-a70c-492f-ba4c-db537e07d1de" />
-            <input type="hidden" name="redirect" value="https://buildandrun.net/pricing/skB55L5WOPPK/success/index.html" />
+            <input type="hidden" name="redirect" value="https://app.buildandrun.net/pricing/skB55L5WOPPK/success/index.html" />
 
             {/* Verification Steps */}
             <div className="activation-steps-list">
