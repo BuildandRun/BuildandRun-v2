@@ -1,163 +1,200 @@
-import React, { useEffect, useState } from 'react';
+import Image from "next/image";
+import {
+    Home,
+    Heart,
+    Facebook,
+    Twitter,
+    Instagram,
+    Youtube,
+    Globe,      // Domain
+    Database,   // MySQL
+    ShieldCheck,// SSL
+    Phone,      // Support
+    Star,       // Premium
+    FileTerminal, // FTP
+    Mail,       // Emails
+    CheckCheck, // Everything in
+    Server,     // VPS
+    AppWindow,  // App Dev
+    Building,   // Enterprise
+    LayoutGrid, // Templates
+    Monitor,    // UI8 Templates
+} from "lucide-react";
 
-// --- Feature data for plans (cleaner structure) ---
+// Use the official logo
+import BRLogoOfficial from "../public/img/logo/logo-official.png"; 
+
+// --- Feature data with Lucide Icons ---
 const planFeatures = {
   regular: [
-    { text: 'Domain & Hosting', icon: '🌐' },
-    { text: 'MySQL Database', icon: '🗄️' },
-    { text: 'SSL Certificate (Basic)', icon: '🔒' },
-    { text: 'Priority Support', icon: '📞' },
+    { text: 'Domain & Hosting', icon: Globe },
+    { text: 'MySQL Database', icon: Database },
+    { text: 'SSL Certificate (Basic)', icon: ShieldCheck },
+    { text: 'Priority Support', icon: Phone },
   ],
   premium: [
-    { text: 'Domain & Hosting (Premium)', icon: '✨' },
-    { text: 'MySQL Database', icon: '🗄️' },
-    { text: 'SSL Certificate (Wildcard)', icon: '🛡️' },
-    { text: 'FTP Access', icon: '📂' },
-    { text: 'Unlimited Emails', icon: '📧' },
-    { text: '24/7 User Support', icon: '🌟' },
+    { text: 'Domain & Hosting (Premium)', icon: Star },
+    { text: 'MySQL Database', icon: Database },
+    { text: 'SSL Certificate (Wildcard)', icon: ShieldCheck },
+    { text: 'FTP Access', icon: FileTerminal },
+    { text: 'Unlimited Emails', icon: Mail },
+    { text: '24/7 User Support', icon: Phone },
   ],
   unlimited: [
-    { text: 'Everything in Premium', icon: '✅' },
-    { text: 'Dedicated VPS Server', icon: '🚀' },
-    { text: 'Application Development', icon: '💻' },
-    { text: 'Full Enterprise Access', icon: '🏢' },
+    { text: 'Everything in Premium', icon: CheckCheck },
+    { text: 'Dedicated VPS Server', icon: Server },
+    { text: 'Application Development', icon: AppWindow },
+    { text: 'Full Enterprise Access', icon: Building },
   ],
 };
 
-// --- Plan Card Component (No changes) ---
-interface PlanProps {
-  name: string;
-  oneTimePrice: string;
-  monthlyPrice: string;
-  description: string;
-  features: { text: string; icon: string }[];
-  href: string;
-  isRecommended?: boolean;
+// --- Array of all plans for mapping ---
+const ALL_PLANS = [
+    {
+        name: "Regular",
+        oneTimePrice: "$1,000",
+        monthlyPrice: "$12.99",
+        description: "Perfect for launching your dream site and getting started.",
+        features: planFeatures.regular,
+        href: "https://buy.stripe.com/dR62aoaeAdvEbDi4gt",
+        isRecommended: false,
+    },
+    {
+        name: "Premium",
+        oneTimePrice: "$2,000",
+        monthlyPrice: "$34.99",
+        description: "Ideal for businesses, creative portfolios, and growing traffic.",
+        features: planFeatures.premium,
+        href: "https://buy.stripe.com/8wMdT6cmI77ggXCdR4",
+        isRecommended: true, // Highlighted plan
+    },
+    {
+        name: "Unlimited",
+        oneTimePrice: "$3,000",
+        monthlyPrice: "$59.99",
+        description: "Full access for enterprises, custom platforms, and high-demand applications.",
+        features: planFeatures.unlimited,
+        href: "https://buy.stripe.com/aEU02g72o8bkePuaET",
+        isRecommended: false,
+    }
+];
+
+// --- Main Plan Page Component ---
+export default function PlanPage() {
+    const currentYear = new Date().getFullYear();
+
+    return (
+        <div className="landing-wrapper" data-theme="light">
+            
+            {/* Simple Top Nav */}
+            <nav className="plan-header-nav">
+                <a href="/" className="plan-homepage-link">
+                    <Home size={16} /> Back to Homepage
+                </a>
+            </nav>
+
+            <div className="landing-container">
+                
+                {/* 1. HERO SECTION */}
+                <header className="hero-section plan-header">
+                    <div className="header-logo-container">
+                        <Image 
+                            src={BRLogoOfficial} 
+                            alt="Build & Run Logo" 
+                            width={200} 
+                            height={100} 
+                            style={{ width: '100%', height: 'auto', maxWidth: '200px' }} 
+                            priority 
+                        /> 
+                    </div>
+                    
+                    <h1 className="hero-title">
+                        Find the right <span className="text-accent-blue">hosting</span> plan for you
+                    </h1>
+                    
+                    <p className="hero-subtitle">
+                        Build a stunning website or app with full support every step of the way 🚀
+                    </p>
+
+                    {/* TEMPLATE BUTTONS CONTAINER */}
+                    <div className="template-buttons-container">
+                        <a href="https://typedream.com/templates" target="_blank" rel="noopener noreferrer" className="cta-button secondary-cta">
+                            <LayoutGrid size={18} /> View Templates (Typedream)
+                        </a>
+                        <a href="https://ui8.net/" target="_blank" rel="noopener noreferrer" className="cta-button secondary-cta">
+                            <Monitor size={18} /> View Templates (UI8)
+                        </a>
+                    </div>
+                </header>
+
+                {/* 2. PRICING GRID SECTION */}
+                <section className="pricing-grid-section">
+                    <div className="pricing-grid-v2">
+                        {ALL_PLANS.map((plan, index) => {
+                            const isRecommended = plan.isRecommended;
+                            return (
+                                <div key={index} className={`plan-card-v2 ${isRecommended ? 'plan-card-recommended' : ''}`}>
+                                    {isRecommended && (
+                                        <div className="plan-badge-recommended">Most Popular</div>
+                                    )}
+                                    
+                                    <h3 className="plan-title-v2">{plan.name}</h3>
+                                    <p className="plan-description-v2">{plan.description}</p>
+                                    
+                                    <div className="plan-price-group">
+                                        <div className="plan-price-main">
+                                            {plan.monthlyPrice}
+                                            <span className="plan-price-suffix">/mo</span>
+                                        </div>
+                                        <p className="plan-price-onetime">
+                                            Plus {plan.oneTimePrice} one-time setup
+                                        </p>
+                                    </div>
+
+                                    <a href={plan.href} className={`cta-button ${isRecommended ? 'primary-cta' : 'secondary-cta'}`}>
+                                        Choose Plan
+                                    </a>
+
+                                    <ul className="plan-features-list-v2">
+                                        {plan.features.map((feature, i) => {
+                                            const Icon = feature.icon;
+                                            return (
+                                                <li key={i}>
+                                                    <Icon size={18} className="plan-feature-icon" /> {feature.text}
+                                                </li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </section>
+                
+            </div>
+            
+            {/* FOOTER - Standardized Footer */}
+            <footer className="footer-new">
+                 <div className="footer-content">
+                    <div className="footer-links-group">
+                        <a className="footer-link" href="./company">Company</a>
+                        <a className="footer-link" href="./partners">Partners</a>
+                        <a className="footer-link" href="./privacy-policy">Privacy</a>
+                        <a className="footer-link" href="./terms-of-service">Terms</a>
+                        <a className="footer-link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank" rel="noopener noreferrer">DMCA.com</a>
+                    </div>
+                    
+                    <div className="social-icons-group">
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                    </div>
+                </div>
+                <p className="copyright">
+                    &copy;{currentYear} B&R | All Rights Reserved. Crafted with <Heart size={16} className="heart-icon"/> 
+                </p>
+            </footer>
+        </div>
+    );
 }
-
-const Plan: React.FC<PlanProps> = ({
-  name,
-  oneTimePrice,
-  monthlyPrice,
-  description,
-  features,
-  href,
-  isRecommended = false,
-}) => {
-  return (
-    <div className={`br-plan-card ${isRecommended ? 'br-plan-recommended' : ''}`}>
-      {isRecommended && <div className="br-badge-recommended">Most Popular</div>}
-      
-      <h3 className="br-plan-title">{name}</h3>
-      <p className="br-plan-description">{description}</p>
-      
-      <div className="br-price-group">
-        <div className="br-price-main">
-          <span className="br-price-monthly">{monthlyPrice}</span>/mo
-        </div>
-        <p className="br-price-onetime">
-          Plus {oneTimePrice} one-time setup
-        </p>
-      </div>
-
-      <a href={href} className="br-plan-button">
-        Choose Plan
-      </a>
-
-      <ul className="br-plan-features-list">
-        {features.map((f, i) => (
-          <li key={i}>
-            <span className="br-feature-icon">{f.icon}</span> {f.text}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-// --- Footer Component (No changes) ---
-const Footer: React.FC = () => {
-  return (
-    <footer className="br-footer">
-      <div className="br-footer-content">
-        <p className="br-footer-note">
-          © 2025 Build and Run v3.0.3 — Made with ❤️
-        </p>
-      </div>
-    </footer>
-  );
-};
-
-
-// --- Main Component (Homepage button and new template buttons added to header) ---
-const ChoosePlan: React.FC = () => {
-  return (
-    <div className="br-pricing-page">
-      <header className="br-header">
-        
-        {/* TOP BAR: Homepage Link */}
-        <div className="br-header-top-bar">
-          <a href="https://buildandrun.net" className="br-homepage-link">
-            🏠 Homepage
-          </a>
-        </div>
-
-        <img
-          className="br-brand-logo"
-          src="./img/logo/logobr.png" // Ensure this path is correct
-          alt="Brstore Logo"
-        />
-        <h1 className="br-page-title">
-          Find the right <span className="br-highlight-text">hosting</span> plan for you
-        </h1>
-        <p className="br-page-subtitle">
-          Build a stunning website or app with full support every step of the way 🚀
-        </p>
-
-        {/* NEW TEMPLATE BUTTONS CONTAINER */}
-        <div className="br-template-buttons-container">
-          <a href="https://typedream.com/templates" target="_blank" rel="noopener noreferrer" className="br-template-button br-button-secondary">
-            View Templates 🏞️
-          </a>
-          <a href="https://ui8.net/" target="_blank" rel="noopener noreferrer" className="br-template-button br-button-secondary">
-            View Templates 🌆
-          </a>
-        </div>
-        {/* END NEW TEMPLATE BUTTONS CONTAINER */}
-
-      </header>
-      
-      <main className="br-plans-grid-container">
-        <Plan
-          name="Regular"
-          oneTimePrice="$1,000"
-          monthlyPrice="$12.99"
-          description="Perfect for launching your dream site and getting started."
-          features={planFeatures.regular}
-          href="https://buy.stripe.com/dR62aoaeAdvEbDi4gt"
-        />
-        <Plan
-          name="Premium"
-          oneTimePrice="$2,000"
-          monthlyPrice="$34.99"
-          description="Ideal for businesses, creative portfolios, and growing traffic."
-          features={planFeatures.premium}
-          href="https://buy.stripe.com/8wMdT6cmI77ggXCdR4"
-          isRecommended={true} // Highlighted plan
-        />
-        <Plan
-          name="Unlimited"
-          oneTimePrice="$3,000"
-          monthlyPrice="$59.99"
-          description="Full access for enterprises, custom platforms, and high-demand applications."
-          features={planFeatures.unlimited}
-          href="https://buy.stripe.com/aEU02g72o8bkePuaET"
-        />
-      </main>
-
-      <Footer />
-    </div>
-  );
-};
-
-export default ChoosePlan;

@@ -1,445 +1,197 @@
 import Image from "next/image";
-import BRlogo from "../public/img/logo/BRlogo.png";
-import mBRlogo from "../public/img/logo/mBRlogo.png";
-import Facebook from "../public/img/footer/logo-facebook.svg";
-import Twitter from "../public/img/footer/logo-twitter.svg";
-import Instagram from "../public/img/footer/logo-instagram.svg";
-import Youtube from "../public/img/footer/logo-youtube.svg";
+import {
+    Home,
+    Code,
+    Zap, // Todos
+    Lock, // Password Generator
+    GitBranch, 
+    Activity, // Admin Panel
+    Image as ImageIcon, // Images Project
+    ShoppingBag, // Shop Project
+    CreditCard, // Debit Card Project
+    FileText, // Blog Project
+    Wrench, // Tweak Apps / Socials Placeholder
+    BookOpen, // Old Version Project
+    MessageSquare,
+    Shield,
+    Globe, // Logo/Favicon, Placeholder for social icons
+    AlertTriangle, // Media Panel (Incomplete/Warning)
+    Twitter, // Social Icons
+    Instagram,
+    Youtube,
+    Facebook,
+    Heart,
+} from "lucide-react";
 
-import br from "../public/img/projects/br.png";
+// Assuming this is your main logo file
+import BRLogo from "../public/img/logo/BRlogo.png"; 
+import BRLogoOfficial from "../public/img/logo/logo-official.png"; 
 
-// import  from "../public/img/projects/.png";
+// --- PROJECT DATA MAPPED TO ICONS AND STATUS (ALL 11 PROJECTS INCLUDED) ---
+// Statuses: 🟢 Done, 🟠 Incomplete, 🟡 InProgress, 🔴 Critical
+const PROJECTS = [
+    // Project #11
+    { title: "Todos", date: "May 2023", status: "🟢", desc: "Create a list of your to-dos", link: "https://todos.buildandrun.net", icon: Zap },
+    // Project #10
+    { title: "Images", date: "April 2023", status: "🟢", desc: "All images from the year 2011 to 2023", link: "https://images.buildandrun.net", icon: ImageIcon },
+    // Project #9
+    { title: "Shop", date: "March 2023", status: "🟢", desc: "All your personal items for cheap", link: "https://shop.buildandrun.net", icon: ShoppingBag },
+    // Project #8
+    { title: "Debit Card", date: "March 2023", status: "🟢", desc: "Use this tool for all your free trials", link: "./projects/debit-card", icon: CreditCard },
+    // Project #7
+    { title: "Blog", date: "December 2022", status: "🟢", desc: "New blog experience for you and your friends", link: "https://blog.buildandrun.net", icon: FileText },
+    // Project #6
+    { title: "Admin Panel", date: "November 2022", status: "🟢", desc: "Manage password, email, site, and subscription", link: "https://admin.buildandrun.net/login", icon: Activity },
+    // Project #5
+    { title: "Logo and Favicon", date: "October 2021", status: "🟢", desc: "Simple logo and favicon generator", link: "http://brstore.ddns.net/tech/projects/simple-logo/", icon: Globe },
+    // Project #4
+    { title: "Password Generator", date: "April 2021", status: "🟢", desc: "Generate password with up to 32 characters", link: "http://brstore.ddns.net/tech/projects/password-generator/", icon: Lock },
+    // Project #3
+    { title: "Media Panel", date: "December 2020", status: "🟠", desc: "Your marketing tool for all your socials", link: "https://media.buildandrun.net", icon: AlertTriangle },
+    // Project #2
+    { title: "Tweak Apps", date: "November 2020", status: "🟢", desc: "Applications that can simplify your online life", link: "./tweak-apps", icon: Wrench },
+    // Project #1
+    { title: "Build and Run v1.0.1", date: "November 2020", status: "🟢", desc: "The initial release of Build and Run's Web App", link: "https://github.com/BuildandRun/BuildandRun-v1.0.1#readme", icon: BookOpen },
+];
 
+// --- Status to Color Mapping for Legend (remains the same) ---
+const STATUS_COLORS: { [key: string]: string } = {
+    "🟢": "green",
+    "🟠": "orange",
+    "🔴": "red",
+    "🟡": "yellow",
+};
 
-export function Index() {
-
-    /*
-     * Build and Run v.2.0.2 Index.
-     *
-     * Note: The corresponding styles are in the ./projects.css file.
-     */
+export default function ProjectsPage() {
+    const currentYear = new Date().getFullYear();
 
     return (
-        <div className="wrapper">
-            <div className="container">
-                <div id="mBRlogo" className="show-on-desktop hide-on-mobile">
-                    <Image src={mBRlogo} alt="mBRlogo" />
-                </div>
-
-                <div id="welcome">
-                    <h1>
-                        <span> Introducing The Future</span>
-                        Projects 🪄
+        <div className="landing-wrapper" data-theme="light">
+            <div className="landing-container">
+                
+                {/* 1. HERO & INTRO SECTION */}
+                <header className="hero-section projects-header">
+                    <div className="header-logo-container">
+                         {/* Using the official logo for prominence on this page */}
+                        <Image src={BRLogoOfficial} alt="Build & Run Logo" width={300} height={120} style={{ width: '100%', height: 'auto', maxWidth: '300px' }} /> 
+                    </div>
+                    
+                    <h1 className="hero-title">
+                        Introducing The Future: <span className="text-accent-blue">Projects</span> 🚀
                     </h1>
-                </div>
-                <div id="description">
-                    <span>The Projects section is where you can discover and explore all of the innovative projects created by the <strong>Build and Run</strong> team.</span>
-                    <div></div>
-                    <span></span>
-                </div>
-
-
-                <div id="hero" className="rounded">
-                    <div className="text-container">
-                        <h2>
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                                />
-                            </svg>
-                            <span>You&apos;re up and running</span>
-                        </h2>
-                        <div className="blinker">
-                            <a href="./"> Homepage</a>
-                        </div>
+                    
+                    <p className="hero-subtitle">
+                        Discover and explore the innovative projects created by the **Build and Run** team. We are constantly building technology with no limits.
+                    </p>
+                    
+                    <div className="hero-cta-group">
+                        <a href="/" className="cta-button primary-cta">
+                            <Home size={20} />  Back to Homepage
+                        </a>
+                        <a href="https://github.com/Buildandrun" className="cta-button secondary-cta" target="_blank" rel="noopener noreferrer">
+                            <GitBranch size={20} /> View on GitHub
+                        </a>
                     </div>
-                    <div className="logo-container">
-                        <svg
-                            fill="currentColor"
-                            role="img"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                        ></svg>
-                        <Image src={BRlogo} alt="BRlogo" />
-                    </div>
-                </div>
-                {/* LEGEND  */}
-                <div>
-                    <div className="legend-container">
-                        <div className="legend-terminal_toolbar">
-                            <div className="legend-butt">
-                                <button className="legend-btn legend-btn-red"></button>
-                                <button className="legend-btn legend-btn-yellow"></button>
-                                <button className="legend-btn legend-btn-green"></button>
+                </header>
+
+                {/* 2. LEGEND TERMINAL (Cleaned Up) */}
+                <section className="terminal-section">
+                    <h2 className="section-title">Project Status Key</h2>
+                    <div className="terminal-container">
+                        <div className="terminal-toolbar">
+                            <div className="terminal-buttons">
+                                <button className="terminal-btn terminal-btn-red"></button>
+                                <button className="terminal-btn terminal-btn-yellow"></button>
+                                <button className="terminal-btn terminal-btn-green"></button>
                             </div>
-                            <p className="legend-user">Build and Run ~ Terminal</p>
-                            <a href="https://github.com/BuildandRun"><div className="legend-add_tab">
-                                +
-                            </div></a>
+                            <p className="terminal-title">Build and Run ~ Status Terminal</p>
                         </div>
-                        <div className="legend-terminal_body">
-                            <div className="legend-terminal_promt">
-                                <span className="legend-terminal_user">support@buildandrun.net:</span>
-                                <span className="legend-terminal_location">~</span>
-                                <span className="legend-terminal_bling">$ git legend -br update: InProgress 🟡 || Incomplete 🟠 || Critical 🔴 || Done 🟢 </span>
-                                <span className="legend-terminal_cursor"></span>
+                        <div className="terminal-body">
+                            <div className="terminal-prompt">
+                                <span className="terminal-user">support@buildandrun.net:</span>
+                                <span className="terminal-location">~</span>
+                                <span className="terminal-bling">$ git status -br legend: </span>
+                                <span className="terminal-key-item"><span className="status-dot green"></span> Done 🟢</span>
+                                <span className="terminal-key-item"><span className="status-dot yellow"></span> In Progress 🟡</span>
+                                <span className="terminal-key-item"><span className="status-dot orange"></span> Incomplete 🟠</span>
+                                <span className="terminal-key-item"><span className="status-dot red"></span> Critical 🔴</span>
+                                <span className="terminal-cursor"></span>
                             </div>
                         </div>
                     </div>
-                    {/* LEGEND  */}
+                </section>
+
+                {/* 3. PROJECTS GRID */}
+                <section className="projects-grid-section">
+                    <h2 className="section-title">Our Innovation Portfolio ({PROJECTS.length})</h2>
+                    <div className="projects-grid">
+                        {PROJECTS.map((project, index) => {
+                            const IconComponent = project.icon;
+                            const statusColor = STATUS_COLORS[project.status];
+                            return (
+                                <a key={index} href={project.link} target="_blank" rel="noopener noreferrer" className="project-card">
+                                    <div className={`project-icon-box project-icon-box-${statusColor}`}>
+                                        <IconComponent size={32} />
+                                    </div>
+                                    <div className="project-info">
+                                        <h3 className="project-title">{project.title}</h3>
+                                        <p className="project-description">{project.desc}</p>
+                                    </div>
+                                    <div className="project-status">
+                                        <span className={`project-status-text status-${statusColor}`}>{project.date} {project.status}</span>
+                                    </div>
+                                </a>
+                            );
+                        })}
+                    </div>
+                </section>
+                
+                {/* 4. INFO & FAQ COMMANDS (Using modern utility links) */}
+                <section className="info-commands-section">
+                    <h2 className="section-title">Essential Info & Commands</h2>
+                    <div className="info-commands-grid">
+                        {/* FAQ Link Button */}
+                        <a href="/faq" className="utility-link">
+                            <MessageSquare size={24} /> FAQs & Support
+                        </a>
+                        
+                        {/* Privacy Policy Link Button */}
+                        <a href="/privacy-policy" className="utility-link">
+                            <Shield size={24} /> Privacy Policy 🔒
+                        </a>
+
+                        {/* Terms of Service Link Button */}
+                        <a href="/terms-of-service" className="utility-link">
+                            <FileText size={24} /> Terms Of Service 📜
+                        </a>
+                    </div>
+                </section>
+                
+            </div>
+            
+            {/* FOOTER - Reusing the modern footer for consistency */}
+            <footer className="footer-new">
+                 <div className="footer-content">
+                    <div className="footer-links-group">
+                        <a className="footer-link" href="./company">Company</a>
+                        <a className="footer-link" href="./partners">Partners</a>
+                        <a className="footer-link" href="./privacy-policy">Privacy</a>
+                        <a className="footer-link" href="./terms-of-service">Terms</a>
+                        <a className="footer-link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank" rel="noopener noreferrer">DMCA.com</a>
+                    </div>
+                    
+                    {/* Social icons updated to use the standard Lucide icons */}
+                    <div className="social-icons-group">
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                    </div>
                 </div>
-
-
-                {/* PROJECTS  */}
-                <div>
-                    {/* PROJECT # 11 */}
-                    <div>
-                        <a href="https://todos.buildandrun.net" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Todos</p>
-                                        <span className="project-span">May 2023 🟢</span>
-                                    </div>
-                                    <p className="project-p">Create a list of your to-dos</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 11 */}
-                     {/* PROJECT # 10 */}
-                     <div>
-                        <a href="https://images.buildandrun.net" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Images</p>
-                                        <span className="project-span">April 2023 🟢</span>
-                                    </div>
-                                    <p className="project-p">All images from the year 2011 to 2023</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 10 */}
-                     {/* PROJECT # 9 */}
-                     <div>
-                        <a href="https://shop.buildandrun.net" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Shop</p>
-                                        <span className="project-span">March 2023 🟢</span>
-                                    </div>
-                                    <p className="project-p">All your personal items for cheap </p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 9 */}
-                    {/* PROJECT # 8 */}
-                    <div>
-                        <a href="./projects/debit-card" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Debit Card</p>
-                                        <span className="project-span">March 2023 🟢</span>
-                                    </div>
-                                    <p className="project-p">Use this tool for all your free trials </p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 8 */}
-                    {/* PROJECT # 7 */}
-                    <div>
-                        <a href="https://blog.buildandrun.net" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Blog</p>
-                                        <span className="project-span">December 2022 🟢</span>
-                                    </div>
-                                    <p className="project-p">New blog experience for you and your friends</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 7 */}
-                    {/* PROJECT # 6 */}
-                    <div>
-                        <a href="https://admin.buildandrun.net/login" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Admin Panel</p>
-                                        <span className="project-span">November 2022 🟢</span>
-                                    </div>
-                                    <p className="project-p">Manage password, email, site, and subscription</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 6 */}
-                    {/* PROJECT # 5 */}
-                    <div>
-                        <a href="http://brstore.ddns.net/tech/projects/simple-logo/" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Logo and Favicon </p>
-                                        <span className="project-span">October 2021 🟢</span>
-                                    </div>
-                                    <p className="project-p">Simple logo and favicon generator</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 5 */}
-                    {/* PROJECT # 4 */}
-                    <div>
-                        <a href="http://brstore.ddns.net/tech/projects/password-generator/" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Password Generator</p>
-                                        <span className="project-span">April 2021 🟢</span>
-                                    </div>
-                                    <p className="project-p">Generate password with up to 32 characters</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 4 */}
-                    {/* PROJECT # 3 */}
-                    <div>
-                        <a href="https://media.buildandrun.net" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Media Panel</p>
-                                        <span className="project-span">December 2020 🟠</span>
-                                    </div>
-                                    <p className="project-p">Your marketing tool for all your socials</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 3 */}
-                    {/* PROJECT # 2 */}
-                    <div>
-                        <a href="./tweak-apps" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Tweak Apps</p>
-                                        <span className="project-span">November 2020 🟢</span>
-                                    </div>
-                                    <p className="project-p">Applications  that can simplify your online life</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 2 */}
-                    {/* PROJECT # 1 */}
-                    <div>
-                        <a href="https://github.com/BuildandRun/BuildandRun-v1.0.1#readme" target="_blank">
-                            <div className="project-card">
-                                <div className="project-img">
-                                    <Image src={br} alt="br" />
-                                </div>
-                                <div className="project-textBox">
-                                    <div className="project-textContent">
-                                        <p className="project-h1">Build and Run v1.0.1</p>
-                                        <span className="project-span">November 2020 🟢</span>
-                                    </div>
-                                    <p className="project-p">The initial release of Build and Run's Web App</p>
-                                    <div>
-                                    </div></div></div>
-                        </a>
-                    </div>
-                    {/* PROJECT # 1 */}
-                </div>
-                {/* PROJECTS  */}
-
-                {/* <div>
-    <p>
-    Our team is dedicated to building accessible UI/UX designs that help improve the online experiences of users all over the world. Our goal is to use technology to create a better future for everyone. In this section, you can see the wide range of projects we've worked on, from website redesigns to mobile app development, and everything in between. We're constantly pushing the boundaries of what's possible with technology, and our projects reflect our commitment to innovation and excellence. Browse our collection of projects to see how we're making a difference in the world of tech.
-    </p>
- </div> */}
-
-                <div id="commands" className="rounded shadow">
-                    <h2>Build and Run</h2>
-                    <p>Learn How To Get Started</p>
-                    <details>
-                        <summary>
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                />
-                            </svg>
-                            FAQs
-                        </summary>
-                        <pre>
-                            <span>⎆ What is Build and Run?</span>
-                            Build and Run (B&R) is a technology company that provides multiple services from all categories for a fair price.
-                            <span>⎆ What service do we provide?</span>
-                            We provides all kinds of services, such as Website, Application Development, Design, Arts, Social Media Marketing, News, Tweaks, and More.
-                            <span>⎆ What makes our Administrator Panel so special?</span>
-                            First and foremost, it is incredibly user-friendly. Whether you are a tech-savvy individual or someone who is new to using software, the administrator panel is easy to navigate and understand. This makes it accessible to everyone, regardless of their level of expertise.
-                            <span>⎆ How can you reach us?</span>
-                            Email us at suppport@buildandrun.net or via text at +1 (469) 215-1582.
-                            <span>⎆ How can you partner with us?</span>
-                            Send us an email at support@buildandrun.net if you are a person or business and would want to collaborate with us.
-                            <span>⎆ How can you join our team?</span>
-                            Apply for a position at B&R to help us build and Run a world with tech that has no limits. Send us your CV at jobs@buildandrun.net.
-                        </pre>
-                    </details>
-                    <details>
-                        <summary>
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                />
-                            </svg>
-                            Privacy Policy
-                        </summary>
-                        <pre><a href="./privacy-policy">Click ➤ Privacy Policy 🔒</a></pre>
-                    </details>
-                    <details>
-                        <summary>
-                            <svg
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                />
-                            </svg>
-                            Terms Of Service
-                        </summary>
-                        <pre>
-                            <a href="./terms-of-service">Click ➤ Terms Of Service 📜</a>
-                        </pre>
-                    </details>
-                </div>
-
-                <p id="love">
-                    Build and Run v2.0.2 crafted with
-                    <svg
-                        fill="currentColor"
-                        stroke="none"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                    </svg>
+                <p className="copyright">
+                    &copy;{currentYear} B&R | All Rights Reserved. Crafted with <Heart size={16} className="heart-icon"/> 
                 </p>
-            </div>
-            <div>
-                <footer className="footer">
-                    <div className="waves">
-                    </div>
-                    <ul className="social-icon">
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.facebook.com/buildandrun.net/" target="_blank">
-                            <div className="social-bar">
-                                <Image src={Facebook} alt="Facebook" />
-                            </div>
-                        </a></li>
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.twitter.com/brstore_us" target="_blank">
-                            <div className="social-bar">
-                                <Image src={Twitter} alt="Twitter" />
-                            </div>
-                        </a></li>
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.instagram.com/bdrstoreus/" target="_blank">
-                            <div className="social-bar">
-                                <Image src={Instagram} alt="Instagram" />
-                            </div>
-                        </a></li>
-                        <li className="social-icon__item"><a className="social-icon__link" href="https://www.youtube.com/@buildandrun." target="_blank">
-                            <div className="social-bar">
-                                <Image src={Youtube} alt="Youtube" />
-                            </div>
-                        </a></li>
-                    </ul>
-                    <ul className="menu">
-                        <li className="menu__item"><a className="menu__link" href="./company" target="_blank">Company</a></li>
-                        <li className="menu__item"><a className="menu__link" href="./partners" target="_blank">Partners</a></li>
-                        <li className="menu__item"><a className="menu__link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank">DMCA.com</a></li>
-
-                    </ul>
-                    <p>&copy;2023 B&R | All Rights Reserved</p>
-                </footer>
-                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            </div>
+            </footer>
         </div>
     );
 }
-
-export default Index;

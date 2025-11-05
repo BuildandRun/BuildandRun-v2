@@ -1,84 +1,75 @@
- /*
-   * Build and Run v.2.0.2 CSS.
-   *
-   * Note: The corresponding styles are in the ./partners.css file.
-   */
 
-.partner-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-  
-.partner-logo {
-  width: 150px; 
-  height: auto;
+/* -------------------------------------------------------------------------- */
+/* PARTNERS PAGE STYLES (for ./pages/partners.tsx)                            */
+/* -------------------------------------------------------------------------- */
+
+.partners-grid-section {
+    padding: 60px 0;
+    text-align: center;
 }
 
-.partner-card {
-    width: 190px;
-    height: 254px;
-    border-radius: 20px;
-    background: #f5f5f5;
-    position: relative;
-    padding: 1.8rem;
-    border: 2px solid #c3c6ce;
-    transition: 0.5s ease-out;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-top: -8rem;
-   }
-   
-   .partner-card-details {
-    color: black;
-    height: 100%;
-    gap: .5em;
+.partners-grid-v2 {
     display: grid;
-    place-content: center;
-    
-   }
-   
-   .partner-card-button {
-    transform: translate(-50%, 125%);
-    width: 60%;
-    border-radius: 1rem;
-    border: none;
-    background-color: #008bf8;
-    color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner-card-v2 {
+    background: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.partner-card-v2:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.partner-logo-wrapper {
+    margin-bottom: 15px;
+}
+
+.partner-logo-img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid var(--color-accent-blue);
+    padding: 3px;
+}
+
+.partner-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--color-text-dark);
+}
+
+.partner-category {
     font-size: 1rem;
-    padding: .5rem 1rem;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.3s ease-out;
-    
-   }
-   
-   .text-body {
-    color: rgb(134, 134, 134);
-    
-   }
-   
-   /*Text*/
-   .text-title {
-    font-size: 1.5em;
-    font-weight: bold;
-   }
-   
-   /*Hover*/
-   .partner-card:hover {
-    border-color: #008bf8;
-    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-   }
-   
-   .partner-card:hover .partner-card-button {
-    transform: translate(-50%, 50%);
-    opacity: 1;
-   }
-  
+    font-weight: 600;
+    color: var(--color-accent-blue);
+    margin-bottom: 10px;
+}
+
+.partner-tagline {
+    color: var(--color-text-subtle);
+    font-style: italic;
+    min-height: 40px; /* Ensures consistent vertical rhythm */
+    margin-bottom: 20px;
+}
+
+.partner-view-button {
+    margin-top: auto; /* Pushes button to the bottom */
+}
