@@ -16,10 +16,10 @@ import {
     Shield,
     Globe, // Logo/Favicon, Placeholder for social icons
     AlertTriangle, // Media Panel (Incomplete/Warning)
-    Twitter, // Social Icons
-    Instagram,
-    Youtube,
-    Facebook,
+    // Twitter, // Social Icons
+    // Instagram,
+    // Youtube,
+    // Facebook,
     Heart,
 } from "lucide-react";
 
@@ -181,11 +181,19 @@ export default function ProjectsPage() {
                     </div>
                     
                     {/* Social icons updated to use the standard Lucide icons */}
-                    <div className="social-icons-group">
-                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
-                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
-                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                     <div className="social-icons-group">
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer">
+                        {/* <Facebook size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer">
+                        {/* <Twitter size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer">
+                        {/* <Instagram size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer">
+                        {/* <Youtube size={24} /> */}
+                        </a>
                     </div>
                 </div>
                 <p className="copyright">

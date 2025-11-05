@@ -6,10 +6,10 @@ import {
     Mail,
     Users,
     FileText,
-    Facebook,
-    Twitter,
-    Instagram,
-    Youtube,
+    // Facebook,
+    // Twitter,
+    // Instagram,
+    // Youtube,
     Slack, // Using Slack as a stand-in for Discord, or you can import a specific Discord icon if available
     Github,
     Link, // Generic link for Crunchbase, AngelList, etc.
@@ -184,12 +184,19 @@ export default function CompanyPage() {
                          <a className="footer-link" href="https://buildandrun.awsapps.com/mail " target="_blank" rel="noopener noreferrer">WorkMail</a>
                     </div>
                     
-                    <div className="social-icons-group">
-                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
-                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
-                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                        <a className="social-icon-link" href="https://discord.gg/HVB2XNFtCQ" target="_blank" rel="noopener noreferrer"><Slack size={24} /></a>
-                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                     <div className="social-icons-group">
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer">
+                        {/* <Facebook size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer">
+                        {/* <Twitter size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer">
+                        {/* <Instagram size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer">
+                        {/* <Youtube size={24} /> */}
+                        </a>
                     </div>
                 </div>
                 <p className="copyright">
