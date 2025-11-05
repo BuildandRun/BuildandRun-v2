@@ -6,10 +6,10 @@ import {
     Settings, // Admin Panel
     Globe, // Build Site
     Users, // Social
-    Twitter,
-    Instagram,
-    Youtube,
-    Facebook,
+    // Twitter,
+    // Instagram,
+    // Youtube,
+    // Facebook,
     Code,
     MessageSquare,
     DollarSign,
@@ -137,11 +137,19 @@ export default function HostingLandingPage() {
                         <a className="footer-link" href="https://www.dmca.com/compliance/buildandrun.net" target="_blank" rel="noopener noreferrer">DMCA.com</a>
                     </div>
                     
-                    <div className="social-icons-group">
-                        <a className="social-icon-link" href="https://github.com/BuildandRun" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
-                        <a className="social-icon-link" href="https://github.com/BuildandRun" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                        <a className="social-icon-link" href="https://github.com/BuildandRun" target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
-                        <a className="social-icon-link" href="https://github.com/BuildandRun" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
+                 <div className="social-icons-group">
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer">
+                        {/* <Facebook size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer">
+                        {/* <Twitter size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer">
+                        {/* <Instagram size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer">
+                        {/* <Youtube size={24} /> */}
+                        </a>
                     </div>
                 </div>
                 <p className="copyright">

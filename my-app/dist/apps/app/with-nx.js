@@ -16,12 +16,16 @@ function regexEqual(x, y) {
  */
 function getWithNxContext() {
 return {
-workspaceRoot: '/Users/jbert/Desktop/WORKSPACE/BuildandRun-v2/my-app',
+workspaceRoot: '/Users/juniorkissi/Downloads/WORKSPACE/BuildandRun-v2/my-app',
 libsDir: 'libs'
 }
 }
 function withNx(nextConfig = {}, context = getWithNxContext()) {
     var _a;
+    // If `next-compose-plugins` is used, the context argument is invalid.
+    if (!context.libsDir || !context.workspaceRoot) {
+        context = getWithNxContext();
+    }
     const userWebpack = nextConfig.webpack || ((x) => x);
     const { nx } = nextConfig, validNextConfig = tslib_1.__rest(nextConfig, ["nx"]);
     return Object.assign(Object.assign({ eslint: Object.assign({ ignoreDuringBuilds: true }, ((_a = validNextConfig.eslint) !== null && _a !== void 0 ? _a : {})) }, validNextConfig), { webpack: (config, options) => {
@@ -48,7 +52,7 @@ function withNx(nextConfig = {}, context = getWithNxContext()) {
              */
             const nextCssLoader = nextCssLoaders.oneOf.find((rule) => rule.sideEffects === false && regexEqual(rule.test, /\.module\.css$/));
             // Might not be found if Next.js webpack config changes in the future
-            if (nextCssLoader) {
+            if (nextCssLoader && nextCssLoader.issuer) {
                 nextCssLoader.issuer.or = nextCssLoader.issuer.and
                     ? nextCssLoader.issuer.and.concat(includes)
                     : includes;
@@ -60,7 +64,7 @@ function withNx(nextConfig = {}, context = getWithNxContext()) {
             const nextSassLoader = nextCssLoaders.oneOf.find((rule) => rule.sideEffects === false &&
                 regexEqual(rule.test, /\.module\.(scss|sass)$/));
             // Might not be found if Next.js webpack config changes in the future
-            if (nextSassLoader) {
+            if (nextSassLoader && nextSassLoader.issuer) {
                 nextSassLoader.issuer.or = nextSassLoader.issuer.and
                     ? nextSassLoader.issuer.and.concat(includes)
                     : includes;
@@ -89,7 +93,7 @@ function withNx(nextConfig = {}, context = getWithNxContext()) {
                 return (_b = (_a = rule.include) === null || _a === void 0 ? void 0 : _a.and) === null || _b === void 0 ? void 0 : _b.find((include) => regexEqual(include, /node_modules/));
             });
             // Might not be found if Next.js webpack config changes in the future
-            if (nextGlobalCssLoader) {
+            if (nextGlobalCssLoader && nextGlobalCssLoader.issuer) {
                 nextGlobalCssLoader.issuer.or = nextGlobalCssLoader.issuer.and
                     ? nextGlobalCssLoader.issuer.and.concat(includes)
                     : includes;

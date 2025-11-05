@@ -10,11 +10,12 @@ import {
     Coffee,     // Coffee icon for team culture/perks
     Users,      // Icon for company link
     FileText,
-    Facebook,
-    Instagram,
-    Twitter,
-    Youtube,   // Icon for TOS
+    // Facebook,
+    // Instagram,
+    // Twitter,
+    // Youtube,   // Icon for TOS
 } from "lucide-react";
+
 
 // Assuming BRLogoOfficial is imported from local source 
 import BRLogoOfficial from "../public/img/logo/logo-official.png"; 
@@ -151,10 +152,18 @@ export default function CareersPage() {
                     </div>
                     
                     <div className="social-icons-group">
-                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer"><Facebook size={24} /></a>
-                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer"><Twitter size={24} /></a>
-                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                        <a className="social-icon-link" href="https://www.facebook.com/buildandrun.net/" target="_blank" rel="noopener noreferrer">
+                        {/* <Facebook size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.twitter.com/brstore_us" target="_blank" rel="noopener noreferrer">
+                        {/* <Twitter size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.instagram.com/bdrstoreus/" target="_blank" rel="noopener noreferrer">
+                        {/* <Instagram size={24} /> */}
+                        </a>
+                        <a className="social-icon-link" href="https://www.youtube.com/@buildandrun." target="_blank" rel="noopener noreferrer">
+                        {/* <Youtube size={24} /> */}
+                        </a>
                     </div>
                 </div>
                 <p className="copyright">
