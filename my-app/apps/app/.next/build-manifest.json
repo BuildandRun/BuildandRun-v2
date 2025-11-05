@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/plan": [
+    "/terms-of-service": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/plan.js"
+      "static/chunks/pages/terms-of-service.js"
     ]
   },
   "ampFirstPages": []
